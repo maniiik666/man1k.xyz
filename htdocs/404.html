@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR 404</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --glitch-color-1: #ff0000;
+            --glitch-color-2: #00ff00;
+            --glitch-color-3: #0066ff;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'GlitchGothic', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .glitch-container {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .error-code {
+            font-size: 150px;
+            font-weight: bold;
+            position: relative;
+            animation: textGlitch 2s infinite;
+        }
+
+        .error-code::before,
+        .error-code::after {
+            content: '404';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        .error-code::before {
+            color: var(--glitch-color-2);
+            animation: glitchEffect1 2.5s infinite;
+        }
+
+        .error-code::after {
+            color: var(--glitch-color-3);
+            animation: glitchEffect2 3s infinite;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 20px 0;
+            opacity: 0.8;
+        }
+
+        .glitch-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: var(--glitch-color-1);
+            animation: glitchLine 2s infinite;
+            opacity: 0;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 30px;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid var(--glitch-color-1);
+            background: rgba(255, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-size: 18px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .home-button:hover {
+            background: rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        .binary-message {
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            opacity: 0.5;
+            width: 100%;
+            text-align: center;
+        }
+
+        @keyframes textGlitch {
+            0%, 100% { transform: none; opacity: 1; }
+            94% { transform: none; opacity: 1; }
+            95% { transform: translateX(3px); opacity: 0.8; }
+            96% { transform: translateX(-3px); opacity: 0.8; }
+            97% { transform: none; opacity: 1; }
+        }
+
+        @keyframes glitchEffect1 {
+            0%, 100% { transform: none; opacity: 0; }
+            94% { transform: none; opacity: 0; }
+            95% { transform: translate(-3px, 3px); opacity: 0.5; }
+            96% { transform: none; opacity: 0; }
+        }
+
+        @keyframes glitchEffect2 {
+            0%, 100% { transform: none; opacity: 0; }
+            94% { transform: none; opacity: 0; }
+            95% { transform: translate(3px, -3px); opacity: 0.5; }
+            96% { transform: none; opacity: 0; }
+        }
+
+        @keyframes glitchLine {
+            0% { top: -50%; opacity: 0; }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            100% { top: 150%; opacity: 0; }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 100px;
+            }
+
+            .error-message {
+                font-size: 18px;
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-message {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-container">
+        <div class="error-code">404</div>
+        <div class="error-message">LOST IN THE DIGITAL VOID</div>
+        <a href="/" class="home-button">RETURN TO REALITY</a>
+    </div>
+
+    <div class="binary-message">
+        01010010 01000101 01010100 01010101 01010010 01001110
+    </div>
+
+    <script>
+        // Create glitch lines
+        function createGlitchLines() {
+            const container = document.body;
+            setInterval(() => {
+                if (Math.random() < 0.3) {
+                    const line = document.createElement('div');
+                    line.className = 'glitch-line';
+                    line.style.top = `${Math.random() * 100}%`;
+                    container.appendChild(line);
+                    setTimeout(() => line.remove(), 2000);
+                }
+            }, 200);
+        }
+
+        // Console message
+        console.log(`%c⛧ Lost in the shadows... ⛧
+
+The path you seek lies elsewhere
+But in darkness, we find light
+01010010 01000101 01010100 01010101 01010010 01001110 = "RETURN"
+
+`, "color: #ff0000; font-family: monospace; font-size: 14px;");
+
+        // Initialize
+        createGlitchLines();
+    </script>
+
+    <!-- Connect to global functionality -->
+    <script src="global.js"></script>
+</body>
+</html>

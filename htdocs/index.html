@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--
+© 2026 Yaroslav Boruk (MAN1K) - All Rights Reserved.
+Unauthorized distribution is strictly prohibited.
+Contact maniiik666@gmail.com
+-->
+<html lang="en" data-author="MAN1K" data-build="26.1">
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NT5X6BHQ');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="description" content="MAN1K — WitchHouse producer">
+<meta name="author" content="Yaroslav Boruk (MAN1K)">
+<meta name="copyright" content="© 2026 Yaroslav Boruk (MAN1K). All rights reserved.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="MAN1K — Øfficial Web">
+<meta property="og:description" content="WITCHHØUSE???">
+<meta property="og:image" content="https://man1k.xyz/img/og.jpg">
+<meta property="og:url" content="https://man1k.xyz/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MAN1K — ETERNAL NIGHT...">
+<meta name="twitter:description" content="MAN1K - Øfficial Web">
+<meta name="twitter:image" content="https://man1k.xyz/img/og.jpg">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<title>MAN1K — Øfficial Web</title>
+<link rel="icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://i.ibb.co" crossorigin>
+<link rel="preload" href="https://i.ibb.co/TQFm3Cs/IMG-1156.png" as="image">
+<link rel="preload" href="https://fonts.cdnfonts.com/css/vcr-osd-mono" as="style">
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vcr-osd-mono">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--c-red:#ff0000;--c-dark-red:#8b0000;--c-white:#fff;--c-black:#000;--c-gray:#888;--c-dark-gray:#1a1a1a;--font-main:'VCR OSD Mono','Courier New',monospace;--font-term:'Courier New',Courier,monospace}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--c-black);color:var(--c-white);font-family:var(--font-main);overflow:hidden;height:100vh;height:100dvh;width:100vw;cursor:default;-webkit-font-smoothing:antialiased}
+#vhs-noise{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.08}
+.glitch-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;mix-blend-mode:screen}
+.glitch-line{position:absolute;width:100%;height:2px;opacity:0;background:linear-gradient(90deg,var(--glitch-color,#0f0),transparent);animation:glitchLine 100ms linear}
+.glitch-flash{position:fixed;inset:0;background:rgba(0,255,255,.03);pointer-events:none;opacity:0;z-index:2;animation:flash 150ms linear;mix-blend-mode:screen}
+@keyframes glitchLine{0%{transform:translateX(-100%);opacity:0}10%,90%{opacity:1}to{transform:translateX(100%);opacity:0}}
+@keyframes flash{0%,to{opacity:0}50%{opacity:.5}}
+.loading-bar{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,transparent 0%,rgba(139,0,0,.8) 20%,var(--c-red) 50%,rgba(139,0,0,.8) 80%,transparent);box-shadow:0 0 20px rgba(255,0,0,.8),0 0 40px rgba(139,0,0,.6),0 2px 10px rgba(0,0,0,.9);z-index:9999;opacity:0;filter:blur(.5px);transition:width .4s cubic-bezier(.4,0,.2,1);will-change:width}
+.loading-bar.active{opacity:1;animation:pulseBar 2s ease-in-out infinite}
+.loading-bar::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,rgba(255,0,0,.3) 2px,transparent 4px);animation:scanline .5s linear infinite}
+.loading-bar::after{content:'';position:absolute;top:-1px;right:0;width:150px;height:5px;background:radial-gradient(ellipse at center,var(--c-red),rgba(255,0,0,.5) 40%,transparent 70%);filter:blur(3px);animation:glowPulse 1.5s ease-in-out infinite}
+@keyframes pulseBar{0%,to{filter:blur(.5px) brightness(1);box-shadow:0 0 20px rgba(255,0,0,.8),0 0 40px rgba(139,0,0,.6),0 2px 10px rgba(0,0,0,.9)}50%{filter:blur(.8px) brightness(1.3);box-shadow:0 0 30px var(--c-red),0 0 60px rgba(139,0,0,.8),0 2px 15px rgba(0,0,0,.9)}}
+@keyframes scanline{to{transform:translateX(100%)}}
+@keyframes glowPulse{0%,to{opacity:.6;transform:scaleX(1)}50%{opacity:1;transform:scaleX(1.2)}}
+.logo-container{position:relative;width:min(90vw,600px);height:min(50vh,400px);margin-bottom:20px;filter:contrast(1.2);contain:layout style;-webkit-user-select:none;user-select:none;pointer-events:none}
+.logo-container img{-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none}
+.logo-fragment{position:absolute;inset:0;background:url('https://i.ibb.co/rk9RfXk/PNG.png') no-repeat center/contain;mix-blend-mode:difference}
+.main-nav{position:fixed;top:30px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:25px;justify-content:center;flex-wrap:wrap;width:80%;max-width:1000px}
+.nav-button{color:var(--c-white);text-decoration:none;font-size:16px;padding:8px 16px;border:1px solid var(--c-red);background:rgba(255,0,0,.1);position:relative;overflow:hidden;transition:all .3s ease;letter-spacing:1px}
+.nav-button:hover,.nav-button:focus-visible{background:rgba(255,0,0,.2);box-shadow:0 0 15px rgba(255,0,0,.5);transform:scale(1.05);animation:vhsGlitchLight .8s infinite}
+.nav-button.glitching{animation:buttonGlitch 150ms linear}
+@keyframes buttonGlitch{0%,to{transform:scale(1.05)}20%{transform:translate(-2px,1px) scale(1.05) skew(-1deg)}40%{transform:translate(2px,-1px) scale(1.05) skew(1deg)}60%{transform:translate(-1px,-1px) scale(1.05) skew(-.5deg)}80%{transform:translate(1px,1px) scale(1.05) skew(.5deg)}}
+.social-icon{transform:rotate(180deg);transition:color .3s ease;color:rgba(255,255,255,.7);font-size:20px}
+.social-icon:hover,.social-icon:focus-visible{color:var(--c-red);animation:vhsGlitchMedium .6s infinite}
+.footer-link{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px;transition:color .3s ease}
+.footer-link:hover,.footer-link:focus-visible{color:var(--c-red);animation:vhsGlitchMedium .6s infinite}
+.copyright-text{color:rgba(255,255,255,.5);transition:color .3s ease;cursor:default}
+.copyright-text:hover{color:var(--c-red)}
+@keyframes vhsGlitchLight{0%,6%,24%,54%,to{transform:scale(1.05);text-shadow:none}2%{transform:translate(-.5px) scale(1.05);text-shadow:1px 0 0 rgba(255,0,0,.3),-1px 0 0 rgba(0,255,255,.3)}4%{transform:translate(.5px) scale(1.05);text-shadow:-1px 0 0 rgba(255,0,0,.3),1px 0 0 rgba(0,255,255,.3)}22%{transform:translateY(.5px) scale(1.05);text-shadow:.5px 0 0 rgba(255,0,0,.2),-.5px 0 0 rgba(0,255,0,.2)}52%{transform:translate(-1px) scale(1.05);text-shadow:1.5px 0 0 rgba(255,0,0,.4),-1px 0 0 rgba(0,255,255,.3);opacity:.95}}
+@keyframes vhsGlitchMedium{0%,6%,10%,27%,54%,77%,to{transform:none;text-shadow:none}2%{transform:translate(-1px,.5px);text-shadow:2px 0 0 rgba(255,0,0,.5),-1.5px 0 0 rgba(0,255,255,.4)}4%{transform:translate(1px,-.5px);text-shadow:-2px 0 0 rgba(255,0,0,.5),1.5px 0 0 rgba(0,255,0,.4)}8%{transform:translate(-.5px);text-shadow:1px 0 0 rgba(255,0,0,.3),-1px 0 0 rgba(0,255,255,.3)}25%{transform:translateY(1px);text-shadow:1.5px 0 0 rgba(255,0,0,.4),-1px 0 0 rgba(0,255,0,.3)}50%{transform:translate(-1.5px);text-shadow:2px 0 0 rgba(255,0,0,.6),-1.5px 0 0 rgba(0,255,255,.5);opacity:.9}52%{transform:translate(.5px);text-shadow:-1px 0 0 rgba(255,0,0,.4),1px 0 0 rgba(0,255,0,.3)}75%{transform:translate(1px,-.5px);text-shadow:-1.5px 0 0 rgba(255,0,0,.4),1px 0 0 rgba(0,255,255,.3)}}
+@keyframes vhsGlitchSubtle{0%,98%,to{transform:none;text-shadow:none}99%{transform:translate(.5px);text-shadow:.5px 0 0 rgba(255,0,0,.2),-.5px 0 0 rgba(0,255,255,.2)}}
+.nav-button::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,0,0,.03) 2px,rgba(255,0,0,.03) 4px);pointer-events:none;opacity:0}
+.nav-button:hover::before{animation:scanlineFlicker 3s infinite}
+@keyframes scanlineFlicker{0%,20%,22%,to{opacity:0}10%,12%{opacity:.3}50%,52%{opacity:.2}}
+.main-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;height:100dvh;padding:0 20px}
+.genre-text{font-size:16px;letter-spacing:2px;color:rgba(255,255,255,.7);margin:20px 0;text-align:center}
+.player-container{width:min(90vw,600px);margin:20px 0;background:var(--c-black)}
+.japanese-text{position:fixed;font-family:"Yu Gothic",serif;color:rgba(255,0,0,.4);font-size:24px;z-index:2;writing-mode:vertical-rl;letter-spacing:.8em;text-orientation:upright}
+.japanese-text-left{top:50%;left:30px;transform:translateY(-50%)}
+.japanese-text-right{top:50%;right:30px;transform:translateY(-50%)}
+.bottom-container{position:fixed;bottom:30px;width:100%;display:flex;justify-content:space-between;align-items:center;padding:0 40px;z-index:3}
+.social-links{display:flex;gap:20px}
+.footer-links{display:flex;gap:30px;flex-wrap:wrap}
+.copyright-section{text-align:right;font-size:12px}
+.powered-by{color:var(--c-red);font-size:14px;margin-top:5px}
+.vhs-modal{display:none;position:fixed;z-index:10000;inset:0;background:rgba(0,0,0,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.vhs-modal.active{display:flex;align-items:center;justify-content:center;padding:clamp(10px,3vw,20px);animation:vhsModalOpen .4s ease-out}
+@keyframes vhsModalOpen{0%{opacity:0;filter:brightness(3) contrast(2)}15%{opacity:1;filter:brightness(2) contrast(1.5);transform:translateX(-5px)}30%{filter:brightness(1.5);transform:translateX(3px)}45%{filter:brightness(1.2);transform:translateX(-2px)}60%{filter:brightness(1);transform:translateX(1px)}to{filter:none;transform:none}}
+@keyframes vhsModalClose{0%{opacity:1;filter:none}30%{filter:brightness(1.5);transform:translateX(3px)}60%{filter:brightness(2) contrast(1.5);transform:translateX(-5px)}to{opacity:0;filter:brightness(3) contrast(2)}}
+.vhs-modal.closing{animation:vhsModalClose .3s ease-in forwards}
+.vhs-modal::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,rgba(100,100,100,.02) 1px,transparent 2px);pointer-events:none;z-index:1;animation:vhsScanModal 8s linear infinite}
+@keyframes vhsScanModal{to{transform:translateY(100%)}}
+.vhs-modal-content{background:linear-gradient(180deg,rgba(15,15,15,.98),rgba(5,5,5,.99));border:2px solid rgba(80,80,80,.5);box-shadow:0 0 30px rgba(0,0,0,.8),inset 0 0 100px rgba(20,20,20,.5);padding:clamp(20px,4vw,40px);width:clamp(280px,90vw,700px);max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);position:relative;animation:vhsContentGlitch .15s linear;overflow:hidden}
+.vhs-modal-content::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(50,50,50,.05) 2px,rgba(50,50,50,.05) 4px);pointer-events:none;z-index:10}
+.vhs-modal-content::after{content:'';position:absolute;top:0;left:0;right:0;height:100%;background:linear-gradient(180deg,rgba(255,255,255,.02) 0%,transparent 3%,transparent 97%,rgba(0,0,0,.3) 100%);pointer-events:none;z-index:11}
+@keyframes vhsContentGlitch{0%{transform:translate(-3px,1px)}20%{transform:translate(2px,-1px)}40%{transform:translate(-1px,2px)}60%{transform:translate(1px,-2px)}80%{transform:translate(-2px,1px)}to{transform:none}}
+.vhs-modal-close{position:absolute;top:clamp(10px,2vw,20px);right:clamp(15px,3vw,30px);font-size:clamp(24px,4vw,36px);font-weight:700;color:rgba(150,150,150,.6);cursor:pointer;transition:all .2s ease;line-height:1;user-select:none;z-index:20;background:0 0;border:0;padding:10px;text-shadow:2px 2px 0 rgba(0,0,0,.5)}
+.vhs-modal-close:hover,.vhs-modal-close:focus-visible{color:var(--c-red);transform:rotate(90deg) scale(1.1);text-shadow:0 0 15px rgba(255,0,0,.9),2px 2px 0 rgba(0,255,255,.3),-2px -2px 0 rgba(255,0,0,.3);animation:closeGlitch .1s infinite}
+@keyframes closeGlitch{0%,to{transform:rotate(90deg) scale(1.1)}50%{transform:rotate(90deg) scale(1.1) translate(1px,-1px)}}
+.vhs-modal-title{font-size:clamp(18px,4vw,28px);color:rgba(200,200,200,.9);text-transform:uppercase;letter-spacing:clamp(2px,.5vw,4px);margin-bottom:clamp(15px,3vw,25px);text-shadow:2px 2px 0 rgba(0,0,0,.8),-1px -1px 0 rgba(50,50,50,.3);border-bottom:1px solid rgba(80,80,80,.4);padding-bottom:clamp(10px,2vw,15px);font-weight:700;position:relative}
+.vhs-modal-title::after{content:'';position:absolute;bottom:-1px;left:0;width:30%;height:1px;background:linear-gradient(90deg,rgba(255,0,0,.5),transparent)}
+.vhs-modal-text{font-size:clamp(12px,2.5vw,15px);line-height:1.7;color:rgba(180,180,180,.85);margin-bottom:clamp(12px,2vw,20px);text-align:justify;letter-spacing:.3px;text-shadow:1px 1px 0 rgba(0,0,0,.5)}
+.vhs-modal-text:last-of-type{margin-bottom:0}
+.vhs-modal-footer{margin-top:clamp(15px,3vw,25px);padding-top:clamp(10px,2vw,15px);border-top:1px dashed rgba(80,80,80,.3)}
+.vhs-modal-footer-link{color:rgba(120,120,120,.7);font-size:clamp(10px,2vw,12px);text-decoration:none;letter-spacing:1px;transition:all .2s ease;display:inline-block}
+.vhs-modal-footer-link:hover{color:var(--c-red);animation:vhsGlitchMedium .6s infinite}
+.streaming-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,20px);width:100%;margin:clamp(15px,3vw,25px) 0}
+.streaming-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(12px,2.5vw,20px) clamp(8px,1.5vw,15px);background:rgba(30,30,30,.5);border:1px solid rgba(80,80,80,.4);text-decoration:none;color:rgba(180,180,180,.85);transition:all .3s ease;position:relative;overflow:hidden}
+.streaming-btn:hover,.streaming-btn:focus-visible{background:rgba(50,50,50,.6);border-color:rgba(255,0,0,.4);box-shadow:0 0 15px rgba(255,0,0,.2);transform:translateY(-2px)}
+.streaming-btn::before{content:'';position:absolute;inset:0 0 0 -100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent);transition:inset .5s ease}
+.streaming-btn:hover::before{inset:0 -100% 0 100%}
+.streaming-icon{font-size:clamp(28px,5vw,42px);margin-bottom:clamp(6px,1.5vw,10px);transition:transform .3s ease;opacity:.8}
+.streaming-btn:hover .streaming-icon{transform:scale(1.1);opacity:1}
+.streaming-name{font-size:clamp(9px,1.8vw,12px);letter-spacing:1px;text-transform:uppercase;font-weight:700;opacity:.7}
+.streaming-btn:hover .streaming-name{opacity:1}
+.press-modal .vhs-modal-content{background:radial-gradient(circle,rgba(0,15,0,.95),rgba(0,5,0,.98));border-color:rgba(0,80,0,.5);box-shadow:0 0 30px rgba(0,50,0,.5),inset 0 0 60px rgba(0,20,0,.5)}
+.press-modal .vhs-modal-content::before{background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,50,0,.08) 2px,rgba(0,50,0,.08) 4px)}
+.press-modal .vhs-modal-title{color:#0f0;text-shadow:0 0 10px rgba(0,255,0,.5),2px 2px 0 rgba(0,50,0,.8);border-bottom-color:rgba(0,100,0,.4)}
+.press-modal .vhs-modal-title::after{background:linear-gradient(90deg,rgba(0,255,0,.5),transparent)}
+.press-modal .vhs-modal-close{color:rgba(0,150,0,.6)}
+.press-modal .vhs-modal-close:hover{color:#0f0;text-shadow:0 0 15px rgba(0,255,0,.9),2px 2px 0 rgba(255,0,0,.3),-2px -2px 0 rgba(0,255,0,.3)}
+.press-file-list{list-style:none;padding:0;margin:clamp(15px,3vw,25px) 0}
+.press-file-list li{margin-bottom:clamp(8px,1.5vw,12px)}
+.press-file-link{text-decoration:none;color:#0f0;font-size:clamp(12px,2.5vw,16px);font-weight:700;display:flex;justify-content:space-between;align-items:center;padding:clamp(8px,1.5vw,12px) clamp(10px,2vw,15px);border:1px solid transparent;transition:all .2s;cursor:pointer;text-shadow:0 0 3px rgba(0,255,0,.3);font-family:var(--font-term);background:rgba(0,20,0,.3)}
+.press-file-link:hover{background:#0f0;color:var(--c-black);box-shadow:0 0 20px rgba(0,255,0,.5);border-color:#0f0;transform:scale(1.02);text-shadow:none}
+.press-file-link .prefix{opacity:.7;margin-right:clamp(8px,1.5vw,15px);color:var(--c-red)}
+.press-file-link:hover .prefix{color:var(--c-black)}
+.press-status-bar{margin-top:clamp(15px,3vw,25px);font-size:clamp(9px,1.8vw,11px);font-weight:700;border-top:1px dashed rgba(0,100,0,.4);padding-top:clamp(8px,1.5vw,12px);display:flex;justify-content:space-between;text-shadow:0 0 3px rgba(0,255,0,.3);color:rgba(0,200,0,.7);font-family:var(--font-term)}
+.press-status-bar .blink{animation:blinker 1s linear infinite}
+@keyframes blinker{50%{opacity:0}}
+@media (max-width:480px) and (orientation:portrait){
+.japanese-text{display:none}
+.main-nav{top:8px;width:96%;gap:5px;display:grid;grid-template-columns:repeat(3,1fr);max-width:none}
+.nav-button{font-size:8px;padding:5px 3px;letter-spacing:.2px;text-align:center;min-height:36px;display:flex;align-items:center;justify-content:center}
+.main-content{padding:75px 10px 140px}
+.logo-container{width:65vw;height:auto;aspect-ratio:1;max-height:32vh;margin-bottom:12px;flex-shrink:0}
+.genre-text{font-size:9px;letter-spacing:.5px;line-height:1.4;max-width:98%;margin:8px 0}
+.player-container{display:none}
+.bottom-container{bottom:0;flex-direction:column;gap:0;padding:15px 10px 20px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.95) 25%,var(--c-black) 50%);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.social-links{flex-direction:row;gap:10px;justify-content:center;margin-bottom:12px}
+.social-icon{font-size:14px;min-width:38px;min-height:38px;display:flex;align-items:center;justify-content:center}
+.footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 8px;width:100%;max-width:300px;text-align:center;margin-bottom:0}
+.footer-link{font-size:8px;min-height:28px;display:flex;align-items:center;justify-content:center;padding:4px 2px}
+.copyright-section{display:none}
+.loading-bar{height:2px}
+.glitch-overlay{opacity:.25}
+.streaming-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+.vhs-modal-content{padding:15px 12px}
+.press-file-link{padding:10px 8px;font-size:11px}
+}
+@media (max-width:375px){
+.nav-button{font-size:7px;padding:4px 2px}
+.logo-container{width:60vw;max-height:28vh}
+.genre-text{font-size:8px}
+.social-icon{font-size:13px}
+.social-links{gap:8px}
+.footer-link{font-size:7px}
+.footer-links{gap:5px 6px}
+.streaming-grid{gap:6px}
+.streaming-btn{padding:10px 6px}
+.streaming-icon{font-size:26px}
+.streaming-name{font-size:8px}
+}
+@media (max-width:320px){
+.main-nav{gap:4px}
+.nav-button{font-size:6px;padding:3px 2px;min-height:32px}
+.logo-container{width:55vw;max-height:25vh}
+.genre-text{font-size:7px;letter-spacing:.3px}
+.social-links{gap:6px}
+.social-icon{font-size:12px;min-width:32px;min-height:32px}
+.footer-link{font-size:6px;min-height:24px}
+.footer-links{gap:4px 5px;max-width:260px}
+.vhs-modal-content{padding:12px 10px}
+}
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
+.japanese-text{display:none}
+.main-nav{top:12px;width:92%;gap:8px;display:grid;grid-template-columns:repeat(3,1fr)}
+.nav-button{font-size:10px;padding:7px 8px;text-align:center}
+.main-content{padding:100px 15px 170px}
+.logo-container{width:50vw;height:auto;aspect-ratio:1;max-height:35vh;margin-bottom:15px}
+.genre-text{font-size:10px;max-width:90%;margin:10px 0}
+.player-container{margin:12px 0 0;width:85%;max-width:450px}
+.bottom-container{bottom:0;flex-direction:column;padding:20px 20px 25px;gap:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.9) 25%,var(--c-black) 50%)}
+.social-links{flex-direction:row;gap:14px;justify-content:center;margin-bottom:15px}
+.social-icon{font-size:15px}
+.footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 14px;text-align:center;width:100%;max-width:400px;margin-bottom:0}
+.footer-link{font-size:10px}
+.copyright-section{display:none}
+.streaming-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+}
+@media (min-width:769px) and (max-width:1024px){
+.main-nav{gap:16px}
+.nav-button{font-size:14px;padding:7px 14px}
+.logo-container{width:min(55vw,450px);height:min(42vh,350px)}
+.japanese-text{font-size:20px}
+.bottom-container{bottom:25px;flex-direction:row;justify-content:space-between;padding:0 35px}
+.social-links{gap:18px;order:1}
+.social-icon{font-size:18px}
+.footer-links{display:flex;flex-wrap:wrap;gap:12px 20px;order:2;justify-content:flex-start}
+.footer-link{font-size:13px}
+.copyright-section{display:none}
+}
+@media (max-height:500px) and (orientation:landscape){
+.japanese-text{display:none}
+.main-nav{top:5px;gap:4px;padding:4px;width:96%}
+.nav-button{font-size:8px;padding:3px 5px}
+.main-content{padding:40px 12px 85px;min-height:100vh;min-height:100dvh}
+.logo-container{width:min(22vh,150px);height:min(20vh,120px);margin-bottom:6px}
+.genre-text{font-size:7px;margin:6px 0}
+.player-container{margin:8px 0;width:75%;max-width:350px}
+.bottom-container{bottom:0;flex-direction:row;flex-wrap:wrap;padding:8px 12px;gap:6px;justify-content:space-around;background:linear-gradient(180deg,transparent,rgba(0,0,0,.95) 40%,var(--c-black) 70%)}
+.social-links{gap:8px;order:1}
+.social-icon{font-size:12px}
+.footer-links{gap:5px;order:3;width:100%;justify-content:center;flex-direction:row;flex-wrap:wrap;display:flex}
+.footer-link{font-size:7px}
+.copyright-section{order:2;font-size:7px}
+.powered-by{font-size:8px}
+.streaming-grid{grid-template-columns:repeat(4,1fr);gap:8px}
+.vhs-modal-content{max-height:calc(100vh - 20px)}
+}
+@media (hover:none) and (pointer:coarse){
+.nav-button{min-height:40px;display:flex;align-items:center;justify-content:center}
+.social-icon{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+.footer-link{min-height:36px;display:flex;align-items:center;justify-content:center}
+.nav-button:hover,.social-icon:hover,.footer-link:hover,.copyright-text:hover{animation:none}
+.glitch-flash,.glitch-line{display:none}
+.streaming-btn{min-height:60px}
+.press-file-link{min-height:48px}
+}
+@media (min-width:1920px){
+.main-nav{max-width:1200px}
+.logo-container{width:min(50vw,650px);height:min(45vh,450px)}
+.genre-text{font-size:17px}
+.bottom-container{padding:0 55px}
+}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT5X6BHQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<canvas id="vhs-noise" aria-hidden="true"></canvas>
+<div id="glitch-container" class="glitch-overlay"></div>
+<div class="japanese-text japanese-text-left" aria-hidden="true">より多くの愛</div>
+<div class="japanese-text japanese-text-right" aria-hidden="true">より多くの愛</div>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="#" class="nav-button" id="aboutBtn">ABOUT</a>
+<a href="#" class="nav-button" id="musicBtn">MUSIC</a>
+<a href="https://man1k.bandcamp.com/merch" class="nav-button" rel="noopener" target="_blank">SHOP</a>
+<a href="/lives" class="nav-button">LIVES</a>
+<a href="#" class="nav-button" id="pressBtn">PRESS</a>
+</nav>
+<div class="loading-bar" id="loadingBar" role="progressbar" aria-hidden="true"></div>
+<main class="main-content">
+<div class="logo-container" id="logo-container" oncontextmenu="return false"></div>
+<p class="genre-text">UNDERGRØUND WITCH-HØUSE 4-EVER</p>
+<div class="player-container">
+<iframe title="MAN1K - Covetous Remix on Bandcamp" loading="lazy" style="border:0;width:100%;height:42px" src="https://bandcamp.com/EmbeddedPlayer/track=3529826497/size=small/bgcol=000000/linkcol=ff0000/transparent=true/" allow="autoplay"></iframe>
+</div>
+</main>
+<footer class="bottom-container">
+<div class="social-links" aria-label="Social media links">
+<a href="https://instagram.com/http.man1k" class="social-icon" aria-label="Instagram" rel="noopener" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/maniiik666/" class="social-icon" aria-label="Facebook" rel="noopener" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+<a href="https://x.com/_man1k_" class="social-icon" aria-label="X (Twitter)" rel="noopener" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+<a href="https://youtube.com/@maniiik666" class="social-icon" aria-label="YouTube" rel="noopener" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+<a href="https://discord.gg/vxuQKE6p7F" class="social-icon" aria-label="Discord" rel="noopener" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a>
+</div>
+<nav class="footer-links" aria-label="Footer navigation">
+<a href="/services" class="footer-link">SERVICES</a>
+<a href="https://www.discogs.com/artist/12948189-MAN1K" class="footer-link" rel="noopener" target="_blank">DISCOGRAPHY</a>
+<a href="https://www.facebook.com/maniiik666/photos" class="footer-link" rel="noopener" target="_blank">GALLERY</a>
+<a href="mailto:maniiik666@gmail.com" class="footer-link">CONTACT</a>
+<a href="/legal" class="footer-link">LEGAL</a>
+</nav>
+<div class="copyright-section">
+<span class="copyright-text">COPYRIGHT © 2026 MAN1K</span>
+<div class="powered-by">POWERED BY HUMAN TEARS</div>
+</div>
+</footer>
+<div id="aboutModal" class="vhs-modal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+<div class="vhs-modal-content">
+<button class="vhs-modal-close" id="closeAbout" aria-label="Close modal">&times;</button>
+<h2 class="vhs-modal-title" id="aboutModalTitle">About MAN1K</h2>
+<div class="modal-body">
+<p class="vhs-modal-text">MAN1K emerged from Khmelnytskyi, Ukraine in February 2023, crafting witch house as sonic ritual rather than entertainment. Each track is a portal - heavy reverb, pitched vocals, industrial shadows that demand you feel rather than listen. This is music that refuses compromise, that engages the full spectrum of human darkness and beauty simultaneously. Shaped by Ukrainian underground culture and years immersed in Japan, now based in Europe, MAN1K channels these cross-cultural currents into sound that evokes dissociation, melancholy, ritualistic tension.</p>
+<p class="vhs-modal-text">From bedroom to stage, from solo artist to scene architect. The NIGHTSHADE TOUR transformed intimate venues into ceremonial spaces. CHERN Tokyo bridged continents and underground communities. DeadRay explores new territories with vocalist Lakomi. As administrator of #UWHR (Ukrainian Witch House Movement), MAN1K rebuilds infrastructure connecting Ukrainian, Japanese, Russian, and European scenes. "My reality and my path" - authenticity over calculation, ritual over performance, transformation over consumption.</p>
+</div>
+<div class="vhs-modal-footer">
+<a href="https://drive.google.com/file/d/1GqeQRQgQ8HpYOrSoZ0bLSCSdKasyB52S/view?usp=sharing" class="vhs-modal-footer-link" target="_blank" rel="noopener">More info in EPK →</a>
+</div>
+</div>
+</div>
+<div id="musicModal" class="vhs-modal" role="dialog" aria-modal="true" aria-labelledby="musicModalTitle">
+<div class="vhs-modal-content">
+<button class="vhs-modal-close" id="closeMusic" aria-label="Close modal">&times;</button>
+<h2 class="vhs-modal-title" id="musicModalTitle">Listen Now</h2>
+<div class="modal-body">
+<div class="streaming-grid">
+<a href="https://open.spotify.com/artist/0FbB6jHB15oV8qzmaproQx" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on Spotify">
+<div class="streaming-icon"><i class="fab fa-spotify" aria-hidden="true"></i></div>
+<div class="streaming-name">Spotify</div>
+</a>
+<a href="https://music.apple.com/us/artist/man1k/1671994239" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on Apple Music">
+<div class="streaming-icon"><i class="fab fa-apple" aria-hidden="true"></i></div>
+<div class="streaming-name">Apple Music</div>
+</a>
+<a href="https://music.youtube.com/channel/UCVvBHfJVPHYa8lD0J9PBnXg" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on YouTube Music">
+<div class="streaming-icon"><i class="fab fa-youtube" aria-hidden="true"></i></div>
+<div class="streaming-name">YouTube Music</div>
+</a>
+<a href="https://www.deezer.com/en/artist/187594967" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on Deezer">
+<div class="streaming-icon"><i class="fab fa-deezer" aria-hidden="true"></i></div>
+<div class="streaming-name">Deezer</div>
+</a>
+<a href="https://music.amazon.com/artists/B0BYN1YLF9/man1k" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on Amazon Music">
+<div class="streaming-icon"><i class="fab fa-amazon" aria-hidden="true"></i></div>
+<div class="streaming-name">Amazon</div>
+</a>
+<a href="https://tidal.com/browse/artist/38081648" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on TIDAL">
+<div class="streaming-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+<div class="streaming-name">TIDAL</div>
+</a>
+<a href="https://soundcloud.com/mytischi" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on SoundCloud">
+<div class="streaming-icon"><i class="fab fa-soundcloud" aria-hidden="true"></i></div>
+<div class="streaming-name">SoundCloud</div>
+</a>
+<a href="https://man1k.bandcamp.com" target="_blank" rel="noopener" class="streaming-btn" aria-label="Listen on Bandcamp">
+<div class="streaming-icon"><i class="fab fa-bandcamp" aria-hidden="true"></i></div>
+<div class="streaming-name">Bandcamp</div>
+</a>
+</div>
+</div>
+<div class="vhs-modal-footer">
+<a href="https://drive.google.com/file/d/1GqeQRQgQ8HpYOrSoZ0bLSCSdKasyB52S/view?usp=sharing" class="vhs-modal-footer-link" target="_blank" rel="noopener">More info in EPK →</a>
+</div>
+</div>
+</div>
+<div id="pressModal" class="vhs-modal press-modal" role="dialog" aria-modal="true" aria-labelledby="pressModalTitle">
+<div class="vhs-modal-content">
+<button class="vhs-modal-close" id="closePress" aria-label="Close modal">&times;</button>
+<h2 class="vhs-modal-title" id="pressModalTitle">> PRESS_DIRECTORY_ACCESS</h2>
+<div class="modal-body">
+<ul class="press-file-list">
+<li><a href="https://drive.google.com/file/d/1GqeQRQgQ8HpYOrSoZ0bLSCSdKasyB52S/view?usp=sharing" class="press-file-link" target="_blank" rel="noopener"><span><span class="prefix">[LINK]</span> ELECTRONIC_PRESS_KIT</span></a></li>
+<li><a href="https://drive.google.com/file/d/1-EqOXLqhIWmyIzmBAidmOoWNLcAXsjvO/view?usp=sharing" class="press-file-link" target="_blank" rel="noopener"><span><span class="prefix">[LINK]</span> ONE_SHEET</span></a></li>
+<li><a href="https://drive.google.com/drive/folders/1ovAX9Caqy0KcyTIVXMW4BzIHbUyHMUqN?usp=sharing" class="press-file-link" target="_blank" rel="noopener"><span><span class="prefix">[LINK]</span> LOGOS_SET</span></a></li>
+<li><a href="https://drive.google.com/drive/folders/18iYbfeLEul2TYpyPz20G7jf11DF-aV1f?usp=sharing" class="press-file-link" target="_blank" rel="noopener"><span><span class="prefix">[LINK]</span> PRESS_PICTURES</span></a></li>
+</ul>
+<div class="press-status-bar">
+<span>STATUS: ARCHIVE_READY</span>
+<span><span class="blink">_</span></span>
+</div>
+</div>
+</div>
+</div>
+<script>
+(()=>{
+'use strict';
+const _MK='MAN1K';
+const _VER='26.2';
+const _AUTH='Yaroslav Boruk';
+if(typeof window._mk_init!=='undefined'){console.warn('⚠️ Duplicate initialization blocked');return}
+window._mk_init=true;
+if(location.protocol!=='https:'&&location.protocol!=='file:'&&!['localhost','127.0.0.1'].includes(location.hostname)){
+location.replace('https:'+location.href.substring(location.protocol.length));
+return;
+}
+const $=s=>document.getElementById(s);
+const logoContainer=$('logo-container');
+const glitchContainer=$('glitch-container');
+const loadingBar=$('loadingBar');
+const noiseCanvas=$('vhs-noise');
+const aboutBtn=$('aboutBtn');
+const aboutModal=$('aboutModal');
+const closeAbout=$('closeAbout');
+const musicBtn=$('musicBtn');
+const musicModal=$('musicModal');
+const closeMusic=$('closeMusic');
+const pressBtn=$('pressBtn');
+const pressModal=$('pressModal');
+const closePress=$('closePress');
+const LOGO_URL='https://i.ibb.co/TQFm3Cs/IMG-1156.png';
+let animationId=0;
+let lastTime=0;
+const minInterval=16.67;
+let isPageVisible=true;
+let glitchInterval=null;
+let noiseCtx=null;
+let noiseWidth=0;
+let noiseHeight=0;
+let noiseFrame=0;
+const initVHSNoise=()=>{
+if(!noiseCanvas)return;
+noiseCtx=noiseCanvas.getContext('2d',{willReadFrequently:true,alpha:false});
+const resize=()=>{
+const dpr=Math.min(window.devicePixelRatio||1,1);
+noiseWidth=noiseCanvas.width=Math.floor(window.innerWidth*dpr*.25);
+noiseHeight=noiseCanvas.height=Math.floor(window.innerHeight*dpr*.25);
+noiseCanvas.style.width='100vw';
+noiseCanvas.style.height='100vh';
+};
+resize();
+window.addEventListener('resize',resize,{passive:true});
+const renderNoise=()=>{
+if(!isPageVisible){noiseFrame=requestAnimationFrame(renderNoise);return}
+const imageData=noiseCtx.createImageData(noiseWidth,noiseHeight);
+const data=imageData.data;
+const time=performance.now()*.001;
+for(let i=0;i<data.length;i+=4){
+const noise=Math.random()*35;
+data[i]=data[i+1]=data[i+2]=noise;
+data[i+3]=255;
+}
+noiseCtx.putImageData(imageData,0,0);
+noiseFrame=requestAnimationFrame(renderNoise);
+};
+renderNoise();
+};
+const createGlitchLine=()=>{
+if(!isPageVisible)return;
+const line=document.createElement('div');
+line.className='glitch-line';
+line.style.top=`${Math.random()*100}%`;
+line.style.setProperty('--glitch-color',Math.random()>.5?'#0f0':'#06f');
+glitchContainer.appendChild(line);
+setTimeout(()=>line.remove(),100);
+};
+const createFlash=()=>{
+if(!isPageVisible)return;
+const flash=document.createElement('div');
+flash.className='glitch-flash';
+document.body.appendChild(flash);
+setTimeout(()=>flash.remove(),150);
+};
+const createBackgroundOverlay=()=>{
+const overlay=document.createElement('div');
+overlay.style.cssText=`position:fixed;inset:0;background:repeating-linear-gradient(0deg,rgba(0,255,0,.12),rgba(0,255,0,0) 1px,rgba(0,102,255,.12) 2px,rgba(0,102,255,0) 3px);pointer-events:none;z-index:1;opacity:.85;mix-blend-mode:screen;animation:backgroundGlitch 16ms infinite;will-change:transform`;
+const style=document.createElement('style');
+style.textContent='@keyframes backgroundGlitch{0%{transform:translateY(0)}25%{transform:translateY(2px) scaleY(1.02)}50%{transform:translateY(-1px) scaleY(.98)}75%{transform:translateY(1px) scaleY(1.01)}to{transform:translateY(0)}}';
+document.head.appendChild(style);
+document.body.appendChild(overlay);
+glitchInterval=setInterval(()=>{
+if(Math.random()<.35&&isPageVisible){
+overlay.style.opacity='1';
+setTimeout(()=>overlay.style.opacity='.85',50);
+}
+},100);
+};
+const createRGBLayers=()=>{
+const colors=['#f00','#0f0','#00f'];
+const fragment=document.createDocumentFragment();
+const style=document.createElement('style');
+style.textContent=`@keyframes rgbGlitch0{from{transform:translate(-3px,-1px)}to{transform:translate(-1px,1px)}}@keyframes rgbGlitch1{from{transform:translate(3px,1px)}to{transform:translate(1px,-1px)}}@keyframes rgbGlitch2{from{transform:translateY(2px)}to{transform:translateY(-2px)}}`;
+document.head.appendChild(style);
+colors.forEach((_,i)=>{
+const layer=document.createElement('div');
+layer.style.cssText=`position:absolute;inset:0;background:url('${LOGO_URL}') no-repeat center/contain;mix-blend-mode:screen;opacity:.4;filter:brightness(2);animation:rgbGlitch${i} 32ms infinite alternate;will-change:transform;-webkit-user-drag:none;pointer-events:none`;
+fragment.appendChild(layer);
+});
+logoContainer.appendChild(fragment);
+};
+const initLogo=()=>{
+const img=document.createElement('img');
+img.src=LOGO_URL;
+img.alt='MAN1K Logo';
+img.draggable=false;
+img.style.cssText='width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 20px rgba(255,0,0,.5));-webkit-user-drag:none;pointer-events:none';
+img.decoding='async';
+img.oncontextmenu=()=>false;
+logoContainer.appendChild(img);
+createRGBLayers();
+};
+const animate=(currentTime)=>{
+if(currentTime-lastTime>=minInterval&&isPageVisible){
+if(Math.random()<.2)createGlitchLine();
+if(Math.random()<.1)createFlash();
+lastTime=currentTime;
+}
+animationId=requestAnimationFrame(animate);
+};
+let progress=0;
+let progressInterval=null;
+const startProgress=()=>{
+loadingBar.classList.add('active');
+progress=0;
+loadingBar.style.width='0';
+progressInterval=setInterval(()=>{
+if(progress<70)progress+=Math.random()*10;
+else if(progress<90)progress+=Math.random()*3;
+else if(progress<95)progress+=.5;
+loadingBar.style.width=Math.min(progress,95)+'%';
+if(progress>=95)clearInterval(progressInterval);
+},100);
+};
+const completeProgress=()=>{
+clearInterval(progressInterval);
+loadingBar.style.width='100%';
+setTimeout(()=>{
+loadingBar.classList.remove('active');
+setTimeout(()=>loadingBar.style.width='0',300);
+},200);
+};
+const openModal=(modal)=>{
+modal.style.display='flex';
+modal.classList.remove('closing');
+requestAnimationFrame(()=>modal.classList.add('active'));
+document.body.style.overflow='hidden';
+modal.querySelector('.vhs-modal-close')?.focus();
+};
+const closeModalFn=(modal)=>{
+modal.classList.add('closing');
+modal.classList.remove('active');
+setTimeout(()=>{
+modal.style.display='none';
+modal.classList.remove('closing');
+document.body.style.overflow='';
+},300);
+};
+const handleEscape=(e)=>{
+if(e.key==='Escape'){
+if(aboutModal.classList.contains('active'))closeModalFn(aboutModal);
+if(musicModal.classList.contains('active'))closeModalFn(musicModal);
+if(pressModal.classList.contains('active'))closeModalFn(pressModal);
+}
+};
+const handleLinkClick=(e)=>{
+const link=e.target.closest('a');
+if(!link||link.target==='_blank')return;
+if(link.hostname&&link.hostname!==location.hostname)return;
+if(link.getAttribute('href')?.startsWith('#'))return;
+if(link.getAttribute('href')?.startsWith('mailto:'))return;
+startProgress();
+};
+aboutBtn?.addEventListener('click',e=>{e.preventDefault();openModal(aboutModal)});
+closeAbout?.addEventListener('click',()=>closeModalFn(aboutModal));
+aboutModal?.addEventListener('click',e=>{if(e.target===aboutModal)closeModalFn(aboutModal)});
+musicBtn?.addEventListener('click',e=>{e.preventDefault();openModal(musicModal)});
+closeMusic?.addEventListener('click',()=>closeModalFn(musicModal));
+musicModal?.addEventListener('click',e=>{if(e.target===musicModal)closeModalFn(musicModal)});
+pressBtn?.addEventListener('click',e=>{e.preventDefault();openModal(pressModal)});
+closePress?.addEventListener('click',()=>closeModalFn(pressModal));
+pressModal?.addEventListener('click',e=>{if(e.target===pressModal)closeModalFn(pressModal)});
+document.addEventListener('keydown',handleEscape);
+document.addEventListener('click',handleLinkClick);
+document.addEventListener('visibilitychange',()=>{
+isPageVisible=!document.hidden;
+if(document.hidden){
+cancelAnimationFrame(animationId);
+}else{
+requestAnimationFrame(animate);
+}
+});
+window.addEventListener('load',completeProgress);
+window.addEventListener('pageshow',e=>{if(e.persisted)completeProgress()});
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+logoContainer.style.visibility=entry.isIntersecting?'visible':'hidden';
+});
+},{threshold:0});
+observer.observe(logoContainer);
+document.addEventListener('contextmenu',e=>{
+if(e.target.closest('.logo-container')||e.target.closest('#logo-container')){
+e.preventDefault();
+return false;
+}
+});
+document.addEventListener('keydown',e=>{
+if(e.ctrlKey&&(e.key==='s'||e.key==='S')){
+e.preventDefault();
+}
+});
+const preloadImg=new Image();
+preloadImg.src=LOGO_URL;
+preloadImg.onload=()=>{
+initVHSNoise();
+createBackgroundOverlay();
+initLogo();
+requestAnimationFrame(animate);
+};
+window.addEventListener('beforeunload',()=>{
+clearInterval(glitchInterval);
+cancelAnimationFrame(animationId);
+cancelAnimationFrame(noiseFrame);
+});
+Object.defineProperty(window,'_MAN1K_PROTECTED',{value:true,writable:false,configurable:false});
+console.log(`%c⛧ ${_MK} v${_VER} ⛧\n%c© 2026 ${_AUTH}. All rights reserved.\nUnauthorized use prohibited.`,'color:#ff0000;font-size:16px;font-weight:bold','color:#888;font-size:10px');
+})();
+</script>
+<script src="/js/global.js" defer></script>
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+</html>
