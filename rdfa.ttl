@@ -1,0 +1,181 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix mo:    <http://purl.org/ontology/mo/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix wdentity: <http://www.wikidata.org/entity/> .
+@prefix mbz:   <https://musicbrainz.org/artist/> .
+@prefix isni:  <https://isni.org/isni/> .
+@prefix man1k: <https://man1k.xyz/#> .
+
+# ─── Artist ────────────────────────────────────────────────────────────────
+
+man1k:artist
+    a schema:MusicGroup, schema:Person, mo:MusicArtist, foaf:Person ;
+
+    schema:name            "MAN1K" ;
+    schema:legalName       "Yaroslav Boruk" ;
+    schema:alternateName   "M∆N⸸K", "man1k", "maniiik666" ;
+    schema:gender          "Male" ;
+    schema:nationality     "Ukrainian" ;
+    schema:knowsLanguage   "uk", "ru", "en", "ja" ;
+
+    schema:birthPlace      man1k:place_khmelnytskyi ;
+    schema:homeLocation    man1k:place_europe ;
+
+    schema:url             <https://man1k.xyz> ;
+    schema:sameAs
+        <https://www.wikidata.org/wiki/Q138478677> ,
+        <https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8> ,
+        <https://isni.org/isni/0000000511016662> ,
+        <https://open.spotify.com/artist/00BGlsWxiZMD8zDoQCRMlK> ,
+        <https://music.apple.com/artist/man1k/1683315869> ,
+        <https://www.discogs.com/artist/12948189> ,
+        <https://www.bandsintown.com/a/15526549> ,
+        <https://ra.co/dj/man1k> ,
+        <https://music.fandom.com/wiki/MAN1K> ,
+        <https://instagram.com/http.man1k> ,
+        <https://x.com/_man1k_> ,
+        <https://man1k.bandcamp.com> ,
+        <https://soundcloud.com/maniiik666> ,
+        <https://youtube.com/@maniiik666> ,
+        <https://www.last.fm/music/MAN1K> ,
+        <https://rateyourmusic.com/artist/man1k> ,
+        <https://www.albumoftheyear.org/artist/250572-man1k> ,
+        <https://freemusicarchive.org/music/man1k> ,
+        <https://www.reverbnation.com/maniiik666> ,
+        <https://discord.gg/vxuQKE6p7F> ;
+
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "ISNI" ;
+        schema:value "0000 0005 1101 6662"
+    ] ;
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "IPI" ;
+        schema:value "01219097059"
+    ] ;
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "Wikidata" ;
+        schema:value "Q138478677"
+    ] ;
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "MusicBrainz ID" ;
+        schema:value "025ae12e-e2f8-4d82-8106-953df3f184e8"
+    ] ;
+
+    mo:genre               man1k:genre_witchhouse ;
+    schema:genre           "Witch House", "Dark Electronic", "Darkwave", "Industrial", "Noise" ;
+
+    schema:description     "Ukrainian Witch House producer, DJ, and performer. Active since 2023. Known for dark productions blending horror textures and occult aesthetics." ;
+
+    schema:foundingDate    "2023-02"^^xsd:gYearMonth ;
+    schema:activeStart     "2023-02-01"^^xsd:date ;
+
+    schema:member          man1k:role_deadray ;
+    schema:memberOf        man1k:group_deadray ;
+
+    schema:contactPoint    [
+        a schema:ContactPoint ;
+        schema:contactType "booking" ;
+        schema:email       "void@man1k.xyz"
+    ] ;
+
+    schema:hasCredential   [
+        a schema:EducationalOccupationalCredential ;
+        schema:name        "Sound Engineering Certification" ;
+        schema:credentialCategory "Professional Certificate" ;
+        schema:recognizedBy [ schema:name "Farwater Records" ]
+    ] ;
+
+    foaf:name              "MAN1K" ;
+    foaf:isPrimaryTopicOf  <https://man1k.xyz/> ;
+    foaf:account           [ foaf:accountServiceHomepage <https://instagram.com> ; foaf:accountName "http.man1k" ] ;
+    foaf:account           [ foaf:accountServiceHomepage <https://x.com> ; foaf:accountName "_man1k_" ] ;
+    schema:subjectOf       <https://man1k.xyz/feed.xml> ;
+
+    owl:sameAs             wdEntity:Q138478677 ;
+    owl:sameAs             mbz:025ae12e-e2f8-4d82-8106-953df3f184e8 ;
+
+    dct:subject            "Witch House music", "Ukrainian underground electronic music" ;
+    dct:created            "2023-02-01"^^xsd:date ;
+    dct:modified           "2026-03-08"^^xsd:date .
+
+# ─── Places ────────────────────────────────────────────────────────────────
+
+man1k:place_khmelnytskyi
+    a schema:Place ;
+    schema:name          "Khmelnytskyi" ;
+    schema:addressCountry "UA" ;
+    schema:geo           [
+        a schema:GeoCoordinates ;
+        schema:latitude  "49.4229"^^xsd:decimal ;
+        schema:longitude "26.9871"^^xsd:decimal
+    ] .
+
+man1k:place_japan
+    a schema:Place ;
+    schema:name          "Kumamoto, Japan" ;
+    schema:addressCountry "JP" .
+
+man1k:place_europe
+    a schema:Place ;
+    schema:name          "Europe" .
+
+# ─── Genre ─────────────────────────────────────────────────────────────────
+
+man1k:genre_witchhouse
+    a mo:Genre ;
+    rdfs:label         "Witch House" ;
+    schema:description "Electronic music genre combining lo-fi hip-hop beats, shoegaze textures, chopped/screwed vocals, and occult aesthetics. Emerged circa 2009–2011." ;
+    schema:sameAs      <https://www.wikidata.org/wiki/Q1247719> .
+
+# ─── Collective ────────────────────────────────────────────────────────────
+
+man1k:group_deadray
+    a schema:MusicGroup ;
+    schema:name        "DeadRay" ;
+    schema:description "Unholy duo with vocalist Lakomi" .
+
+man1k:role_deadray
+    a schema:Role ;
+    schema:roleName    "Producer" ;
+    schema:memberOf    man1k:group_deadray .
+
+# ─── Website & Dataset ─────────────────────────────────────────────────────
+
+<https://man1k.xyz/>
+    a schema:WebSite ;
+    schema:name        "MAN1K" ;
+    schema:url         <https://man1k.xyz/> ;
+    schema:subjectOf   <https://man1k.xyz/feed.xml> ;
+    schema:author      man1k:artist ;
+    schema:about       man1k:artist .
+
+<https://man1k.xyz/artist.json>
+    a schema:DataFeed, dct:Dataset ;
+    dct:title          "MAN1K Artist Data" ;
+    dct:format         "application/ld+json" ;
+    dct:publisher      man1k:artist ;
+    dct:modified       "2026-03-01"^^xsd:date ;
+    dct:subject        man1k:artist ;
+    schema:about       man1k:artist .
+
+# ─── Feeds ─────────────────────────────────────────────────────────────────
+
+<https://man1k.xyz/feed.xml>
+    a schema:DataFeed, mo:PublishedScore ;
+    dct:title          "MAN1K — Latest Releases" ;
+    dct:format         "application/rss+xml" ;
+    dct:publisher      man1k:artist ;
+    dct:subject        man1k:artist ;
+    schema:about       man1k:artist ;
+    schema:url         <https://man1k.xyz/feed.xml> ;
+    schema:sameAs      <https://feeds.soundcloud.com/users/soundcloud:users:1212020779/sounds.rss> ;
+    rdfs:seeAlso       <https://soundcloud.com/maniiik666> .

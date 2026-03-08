@@ -1,0 +1,23 @@
+/* TEAM */
+Artist & Developer: Yaroslav Boruk (MAN1K)
+Contact: void@man1k.xyz
+From: Ukraine
+ISNI: 0000 0005 1101 6662
+IPI: 01219097059
+
+/* SITE */
+Last update: 2026-03-08
+Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
+Language: English
+Charset: UTF-8
+
+Stack: HTML, CSS, JavaScript
+Service Worker: Yes (sw.js)
+PWA: Yes (site.webmanifest)
+Accessibility: WCAG 2.1 AA target
+Performance: Vanilla JS, no frameworks
+
+/* ACKNOWLEDGEMENTS */
+Typefaces: Google Fonts, CDN Fonts
+Hosting: GitHub Pages
+Domain: Nic.ua

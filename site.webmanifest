@@ -1,0 +1,129 @@
+{
+  "name": "MAN1K — Øfficial Web",
+  "short_name": "MAN1K",
+  "description": "Witch House music producer & DJ from Ukraine. Dark electronic, experimental sounds.",
+  "lang": "en",
+  "dir": "ltr",
+
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+
+  "background_color": "#000000",
+  "theme_color": "#000000",
+
+  "categories": ["music", "entertainment"],
+  "keywords": ["witch house", "dark electronic", "MAN1K", "underground music", "experimental"],
+
+  "icons": [
+    { "src": "/icons/favicon.ico", "sizes": "48x48", "type": "image/x-icon" },
+    { "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-384.png", "sizes": "384x384", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/icons/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "MAN1K — Desktop"
+    },
+    {
+      "src": "/icons/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "MAN1K — Mobile"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Music",
+      "short_name": "Music",
+      "description": "Releases & discography",
+      "url": "/music",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Gallery",
+      "short_name": "Gallery",
+      "description": "Live performances & event photos",
+      "url": "/gallery",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Live Shows",
+      "short_name": "Lives",
+      "description": "Upcoming events & shows",
+      "url": "/lives",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Press page",
+      "short_name": "Press",
+      "description": "EPK, one sheet, press contact",
+      "url": "/press",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Merch",
+      "short_name": "Merch",
+      "description": "Official merchandise",
+      "url": "/merch",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "About MAN1K",
+      "url": "/about",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Services & booking inquiries",
+      "url": "/services",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Subscribe",
+      "short_name": "Subscribe",
+      "description": "Subscribe for updates",
+      "url": "/subscribe",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Links",
+      "short_name": "Links",
+      "description": "All MAN1K links in one place",
+      "url": "/tap",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Void Signal",
+      "short_name": "Game",
+      "description": "Void Signal game",
+      "url": "/game/index.html",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ],
+
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://man1k.xyz/site.webmanifest"
+    }
+  ],
+  "prefer_related_applications": false
+}
