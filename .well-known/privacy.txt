@@ -1,0 +1,305 @@
+# Privacy Policy — man1k.xyz
+# Machine-readable format
+# Human-readable version: https://man1k.xyz/legal/privacy
+# Last-Updated: 2026-03-06
+# Site-Version: build 26.3 / JS v2.0 / SW v1.2 / Polyfills v1.0
+# Format: plain text, UTF-8
+
+Contact: void@man1k.xyz
+Owner: Yaroslav Boruk (MAN1K)
+Domain: man1k.xyz
+Language: en
+
+Policy-URL: https://man1k.xyz/legal/privacy
+Related: https://man1k.xyz/.well-known/dnt-policy.txt
+Related: https://man1k.xyz/.well-known/gpc.json
+Related: https://man1k.xyz/.well-known/privacy.txt
+Related: https://man1k.xyz/.well-known/copyright.txt
+Related: https://man1k.xyz/.well-known/security.txt
+Related: https://man1k.xyz/.well-known/security-policy.txt
+Related: https://man1k.xyz/.well-known/ai.txt
+Related: https://man1k.xyz/legal/cookies
+Related: https://man1k.xyz/legal/terms
+Related: https://man1k.xyz/legal/copyright
+Related: https://man1k.xyz/llms.txt
+Related: https://man1k.xyz/artist.json
+
+# -----------------------------------------------
+# SUMMARY
+# -----------------------------------------------
+
+No-First-Party-Cookies: true
+No-User-Accounts: true
+No-Personal-Data-Collected-By-Site: true
+DNT-Respected: true
+GPC-Respected: true
+GDPR-Compliant: true
+Analytics-Suppressed-When-DNT-Active: true
+
+# -----------------------------------------------
+# SIMPLE ANALYTICS
+# -----------------------------------------------
+
+SimpleAnalytics-Active: true
+SimpleAnalytics-Method: noscript-pixel (no JavaScript)
+SimpleAnalytics-Cookies: none
+SimpleAnalytics-Fingerprinting: false
+SimpleAnalytics-PersonalData: false
+SimpleAnalytics-DNT-Respected: true
+SimpleAnalytics-GPC-Respected: true
+SimpleAnalytics-GDPR-Consent-Required: false
+SimpleAnalytics-Pages: / (homepage) /music
+
+# -----------------------------------------------
+# ANALYTICS
+# -----------------------------------------------
+
+Analytics-Provider: Google Analytics 4
+Analytics-Measurement-ID: G-5M1G8HHZW4
+Analytics-Processor: Google Ireland Limited
+Analytics-Config-Anonymize-IP: true
+Analytics-Config-Ad-Personalization: false
+Analytics-Config-Restricted-Data-Processing: true
+Analytics-Config-Cookie-Flags: SameSite=Lax;Secure
+Analytics-Config-Cookie-Expires: 15552000
+Analytics-DataSharing-Google-Products: enabled (aggregated, de-identified)
+Analytics-DataSharing-Modeling-Insights: enabled (aggregated, de-identified)
+Analytics-DataSharing-Technical-Support: enabled
+Analytics-DataSharing-Recommendations: enabled
+Analytics-Active-When: DNT not set AND GPC not set AND not localhost
+Analytics-Suppressed-When: navigator.doNotTrack === "1" OR navigator.globalPrivacyControl === true OR localhost/127.0.0.1/*.local
+Analytics-Opt-Out: https://tools.google.com/dlpage/gaoptout
+Data-Retention-Google-Analytics: 14 months
+
+# -----------------------------------------------
+# SERVICE WORKER & CACHING
+# -----------------------------------------------
+
+Service-Worker: /sw.js
+Service-Worker-Scope: /
+Cache-Main: mk-v4
+Cache-Game: mk-game-v3
+Cache-Gallery: mk-gallery-v2
+Cached-Pages: / /about /music /lives /gallery /services /merch /subscribe /press /legal /tap /vv17ch0uz3
+Cached-Assets: /global.js /polyfills.js /img/logo.svg /icons/favicon.ico /icons/apple-touch-icon.png fonts
+SW-Bypass-Paths: /sw.js /site.webmanifest /_cf /cdn-cgi /portal666
+SW-Bypass-Hosts: googletagmanager.com google-analytics.com simpleanalyticscdn.com queue.simpleanalyticscdn.com scripts.simpleanalyticscdn.com
+SW-Background-Sync: sync event (tag: cache-refresh) — refreshes precached pages when connectivity restores
+SW-Periodic-Sync: periodicsync event (tag: cache-update) — periodically refreshes first 10 precached URLs in background (browser-permitting)
+SW-Bypass-Paths: /sw.js /site.webmanifest /_cf /cdn-cgi /portal666 /LICENSE /404.html /.well-known/
+SW-Bypass-Ext: .json .txt .xml .pdf .md .ttl
+SW-External-Cache-Hosts: fonts.cdnfonts.com
+Bot-Bypass: true (User-Agent regex — see global.js and sw.js; patterns differ slightly between files)
+Personal-Data-In-Cache: false
+
+# -----------------------------------------------
+# LOCAL STORAGE
+# -----------------------------------------------
+
+# Visit counter (homepage only)
+LocalStorage-Key: _m1k_v1
+LocalStorage-Purpose: Aesthetic visit counter — incremented on each homepage load. Used exclusively to alter a decorative text element after 3+ visits. Contains only an integer count. Not transmitted externally. Not suppressed by DNT (purely cosmetic, no tracking purpose).
+LocalStorage-Data: Integer (visit count)
+LocalStorage-Personal-Data: false
+
+# Rate limiter state (all pages)
+LocalStorage-Key: mk_r
+LocalStorage-Purpose: Client-side rate limiter — stores current window event count. Persists across page reloads.
+LocalStorage-Data: JSON object {w: window_id, c: count}
+LocalStorage-Personal-Data: false
+
+LocalStorage-Key: mk_b
+LocalStorage-Purpose: Rate limiter block state — stores block expiry timestamp when hard limit is exceeded. Persists across page reloads.
+LocalStorage-Data: JSON object {u: unix_timestamp}
+LocalStorage-Personal-Data: false
+
+# Game high score fallback (/game/ only)
+LocalStorage-Key: vxb
+LocalStorage-Purpose: Fallback storage for game high score when IndexedDB is unavailable. Used only on /game/. Contains a single integer (score). Not transmitted externally.
+LocalStorage-Data: Integer (best score)
+LocalStorage-Personal-Data: false
+
+# -----------------------------------------------
+# PRECONNECT & DNS-PREFETCH
+# -----------------------------------------------
+
+# global.js automatically injects the following resource hints on all pages:
+Preconnect: fonts.cdnfonts.com (all pages, crossorigin)
+Preconnect: cdnjs.cloudflare.com (all pages, crossorigin)
+DNS-Prefetch: bandcamp.com (all pages)
+DNS-Prefetch: soundcloud.com (all pages)
+DNS-Prefetch: open.spotify.com (all pages)
+DNS-Prefetch: ytimg.com (all pages)
+# Widgets module additionally adds dns-prefetch for: bandsintown.com, ggpht.com
+# These hints inform the browser to resolve DNS early; no data is transmitted to these domains unless the user navigates to a page that embeds their content.
+
+# -----------------------------------------------
+# THIRD-PARTY SERVICES
+# -----------------------------------------------
+
+# Bandsintown
+Service: Bandsintown
+Page: /lives
+Purpose: Live events widget
+Loading: Async script (loads immediately on page load)
+Privacy-Policy: https://corp.bandsintown.com/privacy
+
+# Bandcamp
+Service: Bandcamp
+Page: / (homepage)
+Purpose: Embedded music player (track iframe, loads on page load)
+Loading: On page load (not lazy)
+Privacy-Policy: https://bandcamp.com/privacy
+
+# SoundCloud
+Service: SoundCloud
+Page: /portal666 /game/
+Purpose: Embedded music player
+Loading-portal666: Iframe loads after user gesture (click-to-start overlay); not on page load
+Loading-game: Iframe loaded with auto_play=false; playback starts only on explicit PLAY action
+Privacy-Policy: https://soundcloud.com/pages/privacy
+
+# Spring / Creator-Spring
+Service: Spring (creator-spring.com)
+Page: /merch
+Purpose: Embedded merch store widget
+Loading: Browser-native loading="lazy" (may load before scroll)
+Privacy-Policy: https://www.creator-spring.com/privacy-policy
+
+# Buttondown
+Service: Buttondown
+Page: /subscribe
+Purpose: Email newsletter subscription
+Loading: No iframe — HTTP POST on explicit form submit only
+Data-Collected: Email address (on opt-in only)
+Referrer-Disclosure: The subscribe form uses referrerpolicy="unsafe-url", meaning the full page URL (including path) is sent to Buttondown as a Referrer header on form submission
+Unsubscribe: Via link in each newsletter email
+Privacy-Policy: https://buttondown.com/legal/privacy
+
+# ImgBB
+Service: ImgBB (i.ibb.co)
+Page: /gallery
+Purpose: External gallery photo hosting
+Loading: First 3 images load immediately (eager); remaining images use lazy loading. All cached by Service Worker mk-gallery-v2
+Privacy-Policy: https://ibb.co/page/privacy_policy
+
+# Font Awesome (cdnjs.cloudflare.com)
+Service: Font Awesome via Cloudflare CDN (cdnjs.cloudflare.com)
+Page: / (homepage) /music
+Purpose: Icon font (social and platform icons)
+Loading: Stylesheet loaded on page load
+Privacy-Policy: https://www.cloudflare.com/privacypolicy/
+
+# GitHub Pages
+Service: GitHub Pages (Microsoft Corporation)
+Page: all
+Purpose: Static site hosting — all site files are served from GitHub Pages infrastructure
+Privacy-Policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+# Cloudflare
+Service: Cloudflare
+Page: all
+Purpose: CDN/proxy for all traffic
+Privacy-Policy: https://www.cloudflare.com/privacypolicy/
+
+# Simple Analytics
+Service: Simple Analytics
+Page: / (homepage) /tap
+Purpose: Privacy-first, cookie-free analytics via noscript pixel — no JavaScript, no cookies, no fingerprinting, no personal data collection. Respects DNT and GPC signals.
+Status: Active
+Privacy-Policy: https://simpleanalytics.com/privacy
+
+# CDN Fonts
+Service: cdnfonts.com
+Page: all
+Purpose: VCR OSD Mono typeface
+Loading: preconnect on page load
+Privacy-Policy: https://cdnfonts.com
+
+# Google Fonts
+Service: Google Fonts
+Page: /game/
+Purpose: DotGothic16 typeface
+Privacy-Policy: https://policies.google.com/privacy
+
+# -----------------------------------------------
+# GDPR
+# -----------------------------------------------
+
+GDPR-Status: Compliant
+GDPR-Regulation: EU 2016/679
+Applies-To: EU and EEA residents
+Data-Controller: Yaroslav Boruk (MAN1K) — void@man1k.xyz
+Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), Buttondown LLC (newsletter), Cloudflare Inc. (CDN/proxy), Microsoft Corporation / GitHub Pages (static hosting), nic.ua (domain registrar)
+Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
+Legal-Basis-Newsletter: Explicit consent (opt-in)
+Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)
+Rights-Contact: void@man1k.xyz
+
+# -----------------------------------------------
+# DNT / GPC IMPLEMENTATION
+# -----------------------------------------------
+
+# Full implementation verifiable in /global.js
+DNT-Header-Respected: true
+GPC-Signal-Respected: true
+Implementation-File: /global.js
+DNT-Check: navigator.doNotTrack === "1"
+GPC-Check: navigator.globalPrivacyControl === true
+Effect-When-Active: GTM not loaded; no dataLayer; no cookies; no page_view events; no network requests to googletagmanager.com
+
+# -----------------------------------------------
+# /portal666 DISCLOSURE
+# -----------------------------------------------
+
+Hidden-Page: /portal666
+Access: Direct URL or keyboard sequence m-a-n-1-k
+Service-Worker-Handling: BYPASS (not intercepted or cached by SW)
+Contains-Hidden-Embed: SoundCloud player (not visible in page UI)
+SoundCloud-Loading: After user gesture only (click-to-start overlay); NOT on page load
+Visual-Effects: WebGL fragment shader (procedural fog with cursor-reactive physics), Canvas 2D particle system (rune glyphs with orbital motion and cursor attraction/repulsion), Canvas VHS glitch layer, CSS scanlines and noise overlays
+Cursor-Physics: Smoothed cursor position with inertia; velocity-aware fog distortion (pressure bubble, wake trail, vortex); particle attraction on mouse press, repulsion on hover
+DNT-Respected-On-Page: false (SoundCloud cannot be controlled by man1k.xyz once loaded)
+Avoidance: Block third-party cookies; use content blocker for soundcloud.com; avoid /portal666
+
+# -----------------------------------------------
+# /game/ DISCLOSURE (VOID SIGNAL)
+# -----------------------------------------------
+
+Game-Page: /game/
+Game-Title: VOID SIGNAL — VHS Arcade
+SoundCloud-Loading: Iframe loaded with auto_play=false; playback controlled programmatically via SC Widget API; music starts only on explicit PLAY action
+WebAudio-API: Used for procedural sound effects (oscillator-based SFX: shoot, hit, die, boss, combo, dash, shield, etc.) — no audio files loaded
+IndexedDB-Database: vxd (version 1)
+IndexedDB-Store: s (keyPath: id)
+IndexedDB-Data: Single record {id: "b", v: <best_score>} — stores highest game score. Fallback: localStorage key "vxb"
+IndexedDB-Personal-Data: false
+Vibration-API: Used on mobile touch controls for brief haptic feedback (5ms pulse on button press)
+VisualViewport-API: Used to resize game container to match visual viewport height on mobile (keyboard/toolbar safe area)
+Game-Canvas: Full-screen Canvas 2D rendering with VHS post-processing overlays
+Game-Mechanics: Wave-based space shooter with 7 enemy types, 3-phase boss fights, 4 weapon types, item drops (power, life, score, shield, weapon), combo/streak scoring, dash with invincibility frames
+
+# -----------------------------------------------
+# ERROR TRACKING
+# -----------------------------------------------
+
+Error-Tracking: window.onerror + unhandledrejection
+Data-Collected: error message (max 200 chars), filename, line, col, page path, JS version, timestamp, stack trace (max 500 chars)
+Transmitted-To: Google Analytics 4 (same GA4 instance, only when active)
+Transmitted-When: DNT not set AND GPC not set
+
+# -----------------------------------------------
+# REFERRER POLICY
+# -----------------------------------------------
+
+Referrer-Policy: strict-origin-when-cross-origin
+Effect: Full URL sent same-origin only; cross-origin receives https://man1k.xyz only; no referrer on HTTPS-to-HTTP downgrade
+Exception: /subscribe — the Buttondown newsletter form uses referrerpolicy="unsafe-url", overriding the global policy for that specific form submission. This means the full page URL (including /subscribe path) is sent to Buttondown as the Referrer header.
+
+# -----------------------------------------------
+# CONTACT
+# -----------------------------------------------
+
+Contact: void@man1k.xyz
+Subject-Prefix: Privacy — man1k.xyz
+Response-Time: best effort

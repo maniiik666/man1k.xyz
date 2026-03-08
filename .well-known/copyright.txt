@@ -1,0 +1,58 @@
+# MAN1K.XYZ — COPYRIGHT NOTICE
+# Machine-readable copyright declaration
+# Location: https://man1k.xyz/.well-known/copyright.txt
+
+Owner: Yaroslav Boruk (MAN1K)
+Contact: void@man1k.xyz
+Year: 2026
+Domain: https://man1k.xyz
+Repository: https://github.com/maniiik666/man1k.xyz
+
+Rights: All Rights Reserved
+License: Proprietary — https://man1k.xyz/LICENSE
+Logo-License: Proprietary — see logos.zip via https://man1k.xyz/press
+
+# WHAT IS COVERED
+# All source code, markup, scripts, styles, configuration files,
+# visual assets, written content, and associated documentation
+# published at man1k.xyz or in the associated repository.
+
+Permissions-Policy: https://man1k.xyz/LICENSE
+DNT-Policy: https://man1k.xyz/.well-known/dnt-policy.txt
+Privacy-Policy: https://man1k.xyz/.well-known/privacy.txt
+Privacy-HTML: https://man1k.xyz/legal/privacy
+Cookies-HTML: https://man1k.xyz/legal/cookies
+Terms-HTML: https://man1k.xyz/legal/terms
+GPC: https://man1k.xyz/.well-known/gpc.json
+Security: https://man1k.xyz/.well-known/security.txt
+Security-Policy: https://man1k.xyz/.well-known/security-policy.txt
+AI Access Policy: https://man1k.xyz/.well-known/ai.txt
+
+# QUICK REFERENCE
+#
+# ALLOWED without permission:
+#   - Personal and educational use
+#   - Editorial and journalistic coverage
+#   - AI / ML model training on public content
+#   - Sharing links to man1k.xyz
+#
+# REQUIRES written permission:
+#   - Commercial use of any kind
+#   - Public redistribution of code or assets
+#   - Derivative works for public or commercial deployment
+#   - Brand or name usage for promotional or commercial purposes
+#
+# LOGO ASSETS (logos.zip via /press):
+#   - Subject to separate Logo Usage License
+#   - Violations prosecuted — ignorance is not a defense
+#
+# Enforcement services active.
+# Violations of this copyright are monitored and will be pursued
+# to the fullest extent permitted by applicable law.
+
+Registered-With: Copyrighted.com
+Registration-URL: https://app.copyrighted.com/website/7GKHsnYUTYadbZ7k/
+DMCA-Compliance: https://www.dmca.com/compliance/man1k.xyz
+DMCA-Contact: void@man1k.xyz (Attn: Legal Department)
+
+Last-Updated: 2026-03-08

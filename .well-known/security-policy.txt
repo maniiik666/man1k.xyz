@@ -1,0 +1,72 @@
+                    MAN1K.XYZ — SECURITY POLICY
+                    ============================
+                    Effective Date: March 2026
+                    Operator: Yaroslav Boruk (MAN1K)
+                    Contact: void@man1k.xyz
+                    Domain: https://man1k.xyz
+
+
+OVERVIEW
+--------
+man1k.xyz is a static personal website for an independent music artist.
+There are no user accounts, no login system, no payment processing,
+and no server-side application logic. The site is served as static HTML
+via CDN with a client-side Service Worker for caching.
+
+
+REPORTING A VULNERABILITY
+--------------------------
+If you discover a security vulnerability on man1k.xyz, please report it
+responsibly via email:
+
+  void@man1k.xyz
+
+We will acknowledge receipt within 72 hours and aim to resolve confirmed
+issues within 60 days. We ask that you do not publicly disclose findings
+until the issue has been resolved or 30 days have passed, whichever
+comes first.
+
+
+IN SCOPE
+--------
+  - XSS / content injection in any page
+  - Service Worker cache poisoning (/sw.js)
+  - Open redirect vulnerabilities
+  - Sensitive data exposure via JS or JSON endpoints
+  - Subdomain takeover or DNS misconfiguration
+  - Content Security Policy bypass
+  - Game engine state manipulation via browser console (IndexedDB/localStorage)
+
+
+OUT OF SCOPE
+------------
+  - Third-party embeds (Bandsintown, SoundCloud, Bandcamp, Spotify)
+  - Social media accounts associated with MAN1K
+  - Denial of service or volumetric attacks
+  - Issues requiring physical access to infrastructure
+  - Automated scanner findings without manual validation
+
+
+SAFE HARBOUR
+------------
+We will not pursue legal action against researchers who:
+  - Act in good faith and follow responsible disclosure
+  - Do not access, modify, or delete data beyond what is necessary
+  - Do not disrupt site availability or user experience
+  - Report findings privately before public disclosure
+
+
+RELATED POLICY DOCUMENTS
+--------------------------
+  Privacy Policy:   https://man1k.xyz/legal/privacy
+  Cookie Policy:    https://man1k.xyz/legal/cookies
+  Terms of Use:     https://man1k.xyz/legal/terms
+  Copyright Notice: https://man1k.xyz/legal/copyright
+  DNT Policy:       https://man1k.xyz/.well-known/dnt-policy.txt
+  Privacy (txt):    https://man1k.xyz/.well-known/privacy.txt
+  Copyright (txt):  https://man1k.xyz/.well-known/copyright.txt
+  GPC Declaration:  https://man1k.xyz/.well-known/gpc.json
+  Security Contact: https://man1k.xyz/.well-known/security.txt
+  AI Access Policy: https://man1k.xyz/.well-known/ai.txt
+  Site Authors:     https://man1k.xyz/humans.txt
+  Permissions-Policy: https://man1k.xyz/LICENSE

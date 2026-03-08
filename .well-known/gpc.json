@@ -1,0 +1,7 @@
+{
+  "gpc": true,
+  "lastUpdate": "2026-03-01",
+  "version": 1,
+
+  "comment": "man1k.xyz respects the Global Privacy Control signal. When GPC is detected (navigator.globalPrivacyControl === true), all analytics and tracking scripts (Google Tag Manager / GTM-NT5X6BHQ) are suppressed. No cookies are set, no page_view events are fired, and no data is transmitted to third-party analytics providers. This behavior is implemented client-side in /global.js and is equivalent to honoring a DNT: 1 header."
+}

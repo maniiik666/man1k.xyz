@@ -1,0 +1,515 @@
+                    MAN1K.XYZ — DO NOT TRACK POLICY
+                    ================================
+                    Effective Date: March 2026
+                    Site Version: build 26.3 / JS v2.0 / SW v1.2 / Polyfills v1.0
+                    Operator: Yaroslav Boruk (MAN1K)
+                    Contact: void@man1k.xyz
+                    Domain: https://man1k.xyz
+
+
+OVERVIEW
+--------
+This Do Not Track (DNT) Policy describes how man1k.xyz handles the DNT
+signal transmitted by your browser, what data is collected, how third-party
+services are used, and what choices are available to you as a visitor.
+
+This policy is machine-readable and human-readable and applies to all pages
+served under the man1k.xyz domain, including but not limited to:
+
+  /            — Homepage
+  /music       — Discography & streaming
+  /lives       — Events & tour dates
+  /gallery     — Photo gallery
+  /services    — Artist services & booking info
+  /merch       — Merchandise
+  /subscribe   — Mailing list
+  /press       — Press kit & media
+  /legal       — Legal documents
+  /tap         — Contact / booking
+  /portal666   — Hidden easter egg page (see Section 9)
+
+
+1. DO NOT TRACK SIGNAL COMPLIANCE
+----------------------------------
+man1k.xyz FULLY RESPECTS the DNT signal as defined in the W3C Tracking
+Preference Expression (DNT) specification.
+
+Implementation details (verifiable in /global.js):
+
+  - If navigator.doNotTrack === "1" is detected, Google Analytics 4 (GA4)
+    is NOT loaded. The GA module returns a no-operation stub immediately.
+
+  - If navigator.globalPrivacyControl === true (GPC) is detected, the same
+    no-operation path is taken. GPC is treated as equivalent to DNT.
+
+  - Analytics are also suppressed entirely on localhost / 127.0.0.1 /
+    *.local environments regardless of DNT status.
+
+In DNT/GPC mode:
+  * No GA4 script is fetched from googletagmanager.com
+  * No dataLayer is initialized
+  * No cookies are set by this site's analytics code
+  * No event tracking occurs
+  * No page_view events are fired
+
+
+2. ANALYTICS — GOOGLE ANALYTICS 4
+-----------------------------------
+Measurement ID: G-5M1G8HHZW4
+
+When DNT/GPC is NOT active, Google Analytics 4 is loaded with the
+following privacy-preserving configuration:
+
+  anonymize_ip:                     true
+  allow_ad_personalization_signals: false
+  restricted_data_processing:       true
+  cookie_flags:                     SameSite=Lax; Secure
+  cookie_expires:                   15,552,000 seconds (~180 days)
+  send_page_view:                   false (fired manually on init only)
+
+GA4 is blocked for bots and crawlers (detected via user-agent).
+GA4 script is served from the googletagmanager.com domain (bypassed by
+the Service Worker — it is never cached by man1k.xyz's own cache).
+
+Account-level data sharing settings (configured in GA dashboard):
+  - Google products & services:          enabled (aggregated, de-identified)
+  - Modeling contributions & insights:   enabled (aggregated, de-identified)
+  - Technical support:                   enabled
+  - Recommendations for your business:   enabled
+
+Data processor: Google Ireland Limited, Gordon House, Barrow Street,
+Dublin 4, Ireland.
+Google Privacy Policy: https://policies.google.com/privacy
+
+
+3. ANALYTICS — SIMPLE ANALYTICS
+---------------------------------
+Simple Analytics is active on homepage and /tap via a noscript pixel.
+No JavaScript is executed. No cookies are set. No fingerprinting.
+No personal data is collected or transmitted.
+
+Simple Analytics respects DNT and GPC signals:
+  - If navigator.doNotTrack === "1" → no data transmitted
+  - If navigator.globalPrivacyControl === true → no data transmitted
+
+No GDPR consent is required as no personal data is processed.
+
+Data processor: Simple Analytics BV, Keizersgracht 482-1,
+1017 EG Amsterdam, Netherlands.
+Simple Analytics Privacy Policy: https://simpleanalytics.com/privacy
+
+
+4. ERROR TRACKING
+------------------
+JavaScript errors are captured via window.onerror and
+window.addEventListener("unhandledrejection") in /global.js.
+
+Data collected per error event:
+  - Error message (truncated to 200 characters)
+  - Source filename (basename only, no full path)
+  - Line number and column number
+  - Current page pathname
+  - Site version string
+  - Unix timestamp
+  - Stack trace (truncated to 500 characters, if available)
+
+Error events are forwarded to Google Analytics 4 (GA.e) only when GA4
+is active (i.e., when DNT/GPC is NOT set). No errors are transmitted
+when DNT is respected.
+
+
+5. SERVICE WORKER & CACHING
+-----------------------------
+man1k.xyz uses a Service Worker (/sw.js, Cache name: mk-v4) for
+offline support and performance. The following data is cached locally
+in your browser:
+
+  Pages:   /, /about, /music, /lives, /gallery, /services, /merch,
+           /subscribe, /press, /legal, /tap, /vv17ch0uz3
+  Assets:  /global.js, /polyfills.js, /img/logo.svg, icons, fonts
+  Game:    /game/, /game/index.html, /game/engine.js, /game/effects.js (mk-game-v3)
+  Gallery: i.ibb.co images cached on first load (mk-gallery-v2)
+
+The Service Worker does NOT intercept or transmit any personal data.
+Cached content is stored solely on your device and is never sent to
+third-party servers by the Service Worker itself.
+
+Cache strategy by resource type:
+  - Navigation pages:   Network-first, cache fallback
+  - Immutable assets:   Cache-first, network fallback
+  - JS/CSS scripts:     Network-first, cache fallback
+  - External resources: Cache-first, network fallback
+  - Game assets:        Cache-first, network fallback
+  - Gallery images:     Cache-first with background revalidation (mk-gallery-v2)
+
+Cache is automatically cleared when a new Service Worker version
+activates. Old cache keys (anything other than mk-v4, mk-game-v3,
+and mk-gallery-v2) are deleted on activation.
+
+Bots and crawlers (detected via User-Agent) bypass the Service Worker
+entirely and receive direct network responses.
+
+The Service Worker also bypasses requests to specific hosts (BYPASS_HOSTS):
+googletagmanager.com, google-analytics.com, simpleanalyticscdn.com,
+queue.simpleanalyticscdn.com, and scripts.simpleanalyticscdn.com.
+These are never intercepted or cached.
+
+Background sync: The SW registers for the 'cache-refresh' sync event,
+which refreshes precached pages when network connectivity restores.
+Periodic sync: The SW registers for the 'cache-update' periodicsync
+event, which periodically refreshes the first 10 precached URLs in
+the background (subject to browser permission).
+
+
+5.1 LOCAL STORAGE
+------------------
+The following localStorage keys are used on man1k.xyz:
+
+  _m1k_v1 (homepage only)
+    Purpose: Aesthetic visit counter. Incremented on each homepage load.
+    Used exclusively to alter a decorative text element after 3+ visits.
+    Contains only an integer. Not transmitted externally.
+    Not suppressed by DNT — purely cosmetic, no tracking purpose.
+
+  mk_r (all pages)
+    Purpose: Client-side rate limiter window state.
+    Contains a JSON object {w: window_id, c: count}.
+    Persists across page reloads. Not transmitted externally.
+
+  mk_b (all pages)
+    Purpose: Rate limiter block state — stores block expiry timestamp
+    when the hard event limit is exceeded.
+    Contains a JSON object {u: unix_timestamp}.
+    Persists across page reloads. Not transmitted externally.
+
+  vxb (/game/ only)
+    Purpose: Fallback storage for game high score when IndexedDB is
+    unavailable. Contains a single integer. Not transmitted externally.
+
+
+6. THIRD-PARTY EMBEDDED SERVICES
+----------------------------------
+The following third-party services may be embedded on specific pages.
+Each operates under its own privacy policy. man1k.xyz does not control
+the tracking behavior of these embeds.
+
+6.1 Bandsintown Widget (/lives)
+  Provider: Bandsintown, Inc.
+  Purpose:  Displaying upcoming live events and tour dates.
+  Artist ID: id_15526549
+  The widget loads from widgetv3.bandsintown.com and may set cookies
+  or collect usage data per Bandsintown's own privacy policy.
+  Loading:  Async script — loads immediately on page load (not deferred by IntersectionObserver).
+  Policy: https://corp.bandsintown.com/privacy
+
+6.2 Bandcamp (/ homepage)
+  Provider: Bandcamp LLC
+  Purpose:  Embedded track player on the homepage (/).
+  An iframe embed from bandcamp.com is loaded on page load — not lazy.
+  Bandcamp may set cookies and collect listening data.
+  Note: On /music, Bandcamp appears as an external link only — no iframe,
+  no third-party connection is initiated by man1k.xyz from that page.
+  Policy: https://bandcamp.com/privacy
+
+6.3 SoundCloud (/portal666, /game/)
+  Provider: SoundCloud Global Limited & Co. KG
+  Purpose:  Embedded music players.
+  /portal666 — hidden iframe player, loads after user gesture (click-to-start
+               overlay); NOT on page load. Not visible in page UI (see Section 9).
+  /game/     — background witch house mix, loaded with auto_play=false;
+               playback starts only on explicit PLAY action via SC Widget API.
+  SoundCloud may set cookies and collect listening data regardless of DNT
+  preference, as man1k.xyz cannot control SoundCloud's tracking within
+  their embedded player.
+  Note: On /music, SoundCloud appears as an external link only — no iframe,
+  no third-party connection is initiated by man1k.xyz from that page.
+  Policy: https://soundcloud.com/pages/privacy
+
+6.4 Spring / Creator-Spring (/merch)
+  Provider: Amaze Software, Inc. (creator-spring.com)
+  Purpose:  Embedded merch store widget displaying apparel and products.
+  The widget loads via iframe from embed.creator-spring.com on page open
+  using the browser-native loading="lazy" attribute. It is NOT deferred
+  via IntersectionObserver — the browser may initiate the connection
+  before the user scrolls. The widget may set cookies and collect usage
+  data per Spring's own privacy policy.
+  Policy: https://www.creator-spring.com/privacy-policy
+
+6.5 Buttondown (/subscribe)
+  Provider: Buttondown, LLC
+  Purpose:  Email newsletter subscription form. Submissions are sent via
+  HTTP POST to buttondown.com/api/emails/embed-subscribe/man1k.
+  Buttondown receives the email address entered and processes it
+  according to their own privacy policy. No iframe is loaded; the
+  form posts only on explicit user submission.
+  Referrer note: The form uses referrerpolicy="unsafe-url", meaning the full
+  /subscribe URL is sent to Buttondown as the Referrer header on submission.
+  Policy: https://buttondown.com/legal/privacy
+
+6.6 ImgBB / i.ibb.co (/gallery)
+  Provider: ImgBB (ibb.co)
+  Purpose:  External hosting for gallery photos. First 3 images load
+  immediately (eager); remaining images use lazy loading. All images
+  are cached locally by the Service Worker (mk-gallery-v2) after first load.
+
+6.7 Font Awesome via Cloudflare CDN (/, /music)
+  Provider: Cloudflare, Inc. (cdnjs.cloudflare.com)
+  Purpose:  Icon font (social icons and platform icons) on the homepage
+  and /music page. Served as a CSS stylesheet from cdnjs.cloudflare.com
+  on page load.
+  Policy: https://www.cloudflare.com/privacypolicy/
+
+6.8 Cloudflare CDN (all pages)
+  Provider: Cloudflare, Inc.
+  Purpose:  CDN and reverse proxy for all site traffic. All HTTP requests
+  to man1k.xyz pass through Cloudflare's network.
+  Policy: https://www.cloudflare.com/privacypolicy/
+
+6.9 GitHub Pages (all pages)
+  Provider: Microsoft Corporation (GitHub, Inc.)
+  Purpose:  Static site hosting. All site files are served from GitHub
+  Pages infrastructure. GitHub may log IP addresses and request metadata
+  per their privacy policy.
+  Policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+6.10 CDN Fonts (cdnfonts.com)
+  Provider: cdnfonts.com
+  Purpose:  Serving VCR OSD Mono typeface used across all pages (including /game/).
+  A preconnect is established on page load.
+
+6.11 Google Fonts (fonts.googleapis.com)
+  Purpose:  Serving DotGothic16 typeface on /game/ page.
+  A preconnect is established on page load.
+  Policy: https://policies.google.com/privacy
+
+6.12 Simple Analytics (all pages)
+  Provider: Simple Analytics B.V.
+  Purpose:  Privacy-first, cookie-free analytics via noscript pixel.
+  Does not use cookies, does not fingerprint users, and does not collect
+  personal data. Respects DNT and GPC signals: when either is active,
+  no data is transmitted. No GDPR consent required.
+  Status:   ACTIVE on homepage and /tap.
+  Policy: https://simpleanalytics.com/privacy
+
+Note on loading strategies: The Bandcamp iframe on / loads on page load (not lazy).
+The SoundCloud iframe on /portal666 loads after user gesture (click-to-start overlay).
+The SoundCloud iframe on /game/ is loaded with auto_play=false; playback starts on PLAY.
+The Bandsintown widget on /lives uses an async script that loads immediately on page load.
+The Spring merch widget on /merch uses browser-native loading="lazy" and may load before scroll.
+The Buttondown form on /subscribe makes no network request until explicit submit.
+Gallery images on /gallery: first 3 load immediately, remaining lazy.
+Spotify, Bandcamp (/music), and SoundCloud (/music) are external links only —
+no iframes, no third-party connections initiated from those link elements.
+
+
+7. COOKIES
+-----------
+man1k.xyz itself does NOT set any first-party cookies for tracking.
+
+First-party cookies that MAY be set:
+
+  None by default.
+
+Third-party cookies (set by embeds, active only when embeds load):
+
+  - Google Analytics 4: _ga, _gid, _gat (when DNT is NOT active)
+  - Bandcamp (/ homepage): per Bandcamp's own policy
+  - SoundCloud (/portal666, /game/): per SoundCloud's own policy
+  - Bandsintown (/lives): per Bandsintown's own policy
+  - Spring (/merch): per Creator-Spring's own policy
+
+When DNT/GPC is active, GA4 is not loaded and no Google cookies
+are set by this website. Note that Bandcamp, SoundCloud, Bandsintown,
+and Spring embeds load independently of DNT and may set their own
+cookies regardless of DNT status.
+
+
+8. REFERRER POLICY
+-------------------
+All pages declare:
+
+  Referrer-Policy: strict-origin-when-cross-origin
+
+This means your full URL (including path and query string) is sent
+as the Referrer only to same-origin requests. Cross-origin requests
+receive only the origin (https://man1k.xyz) without path or query.
+No referrer is sent when downgrading from HTTPS to HTTP.
+
+Exception: The Buttondown newsletter form on /subscribe uses
+referrerpolicy="unsafe-url", overriding the global policy for that
+specific form submission. The full /subscribe URL is sent to
+Buttondown as the Referrer header.
+
+
+8.1 PRECONNECT & DNS-PREFETCH
+-------------------------------
+global.js automatically injects the following resource hints on all pages:
+
+  Preconnect:   fonts.cdnfonts.com, cdnjs.cloudflare.com (crossorigin)
+  DNS-Prefetch: bandcamp.com, soundcloud.com, open.spotify.com, ytimg.com
+
+The Widgets module additionally adds dns-prefetch for bandsintown.com
+and ggpht.com. These hints cause early DNS resolution only — no data
+is transmitted to these domains unless the user navigates to a page
+that embeds their content.
+
+
+9. /portal666 — HIDDEN PAGE DISCLOSURE
+----------------------------------------
+The hidden easter egg page is accessible via:
+
+  a) Direct URL navigation to https://man1k.xyz/portal666
+  b) Konami-style keyboard sequence: m → a → n → 1 → k
+     (typed anywhere on the site, triggers a glitch animation
+      and redirects automatically to /portal666)
+
+Service Worker note: /portal666 is listed in the BYPASS array in
+sw.js — meaning the Service Worker does NOT intercept requests to
+this path; it is served directly from the network on every visit.
+The actual page served at this URL is NOT cached by the site's own
+Service Worker. (The internal route /vv17ch0uz3 is cached in PRECACHE
+as part of standard offline support.)
+
+This page is intentionally NOT indexed by search engines
+(robots meta: noindex, nofollow).
+
+IMPORTANT: /portal666 contains a hidden SoundCloud embedded player
+that is not visible in the standard page UI. The player iframe is NOT
+loaded on page load — it loads only after the user clicks the
+"ENTER THE PORTAL" overlay (user gesture required for browser autoplay
+policy compliance). Once loaded, the player may establish a connection
+to SoundCloud's servers (w.soundcloud.com or api.soundcloud.com),
+potentially allowing SoundCloud to set cookies and log your visit
+regardless of your DNT preference, as man1k.xyz cannot control
+SoundCloud's tracking behavior within their embedded player.
+
+The page also uses:
+  - WebGL: Full-screen fragment shader rendering procedural fog with
+    cursor-reactive physics (pressure bubble, velocity wake, vortex)
+  - Canvas 2D: Rune glyph particle system with orbital motion and
+    cursor attraction/repulsion; VHS glitch effects; noise generation
+  - CSS overlays: Scanlines, chroma shift, vignette, corner burn
+
+If you wish to avoid this, you should:
+  - Block third-party cookies in your browser
+  - Use a content blocker that filters soundcloud.com requests
+  - Avoid navigating to /portal666 directly or via the key sequence
+
+
+9.1 /game/ — VOID SIGNAL DISCLOSURE
+--------------------------------------
+The browser-based game "VOID SIGNAL" is accessible at /game/.
+
+  SoundCloud: Iframe loaded with auto_play=false. Music playback
+  starts only on explicit PLAY action via SC Widget API — NOT on
+  page load. SoundCloud may set cookies when the player is activated.
+
+  WebAudio API: Used for all game sound effects. Procedural audio
+  generated in real time via OscillatorNode (square, sawtooth, sine,
+  triangle waveforms) — no external audio files are loaded. Sounds
+  include: shoot, hit, die, boss, combo, dash, shield, level up,
+  pickup, warn, and pause effects.
+
+  IndexedDB: Database "vxd" (version 1) with object store "s"
+  (keyPath: "id"). Stores a single record: {id: "b", v: <best_score>}.
+  Used to persist the player's highest game score locally.
+  Fallback: localStorage key "vxb" (integer) if IndexedDB is unavailable.
+  No personal data is stored; only a numeric score value.
+
+  Vibration API: navigator.vibrate(5) called on mobile touch control
+  button presses for brief haptic feedback (5ms pulse).
+
+  visualViewport API: Used to resize the game container to match the
+  visual viewport height on mobile, accounting for on-screen keyboards
+  and browser toolbar changes.
+
+  Canvas: Full-screen Canvas 2D rendering at device pixel ratio (max 2x)
+  with VHS post-processing overlays (scanlines, grain, chroma shift,
+  vignette, CRT flicker).
+
+
+10. BOT & CRAWLER HANDLING
+----------------------------
+Automated user agents are identified as bots using User-Agent regex
+patterns in global.js and sw.js (patterns differ slightly between files).
+For detected bots:
+  - Service Worker is bypassed entirely
+  - Prefetch link hints are not injected
+  - GTM/Analytics tracking does not fire
+  - Easter egg console messages are suppressed
+
+This ensures that search engine crawlers receive clean, unmodified
+responses without analytics interference.
+
+
+11. RATE LIMITING
+------------------
+Client-side rate limiting is implemented to detect abusive interaction:
+
+  Soft limit: 200 events per 60-second window (warning threshold)
+  Hard limit: 500 events per 60-second window (interaction blocked)
+
+Monitored event types: click, keydown, wheel, touchstart.
+Rate limiter state is stored in localStorage (keys mk_r and mk_b)
+and persists across page reloads. No data from rate-limit checks
+is transmitted externally.
+
+
+12. DATA RETENTION
+-------------------
+man1k.xyz does not operate its own database or user accounts. No
+personal data is stored on man1k.xyz servers.
+
+For third-party services, retention is governed by their own policies:
+  - Google Analytics: 14 months (default)
+  - SoundCloud, Bandsintown, Bandcamp, Spotify: per their own policies
+
+
+13. YOUR RIGHTS
+----------------
+Depending on your jurisdiction, you may have the right to:
+
+  - Access personal data held about you by third-party processors
+  - Request deletion of your data from third-party processors
+  - Opt out of analytics tracking (set DNT=1 in your browser or
+    enable Global Privacy Control)
+  - Block third-party cookies via browser settings
+
+To exercise rights regarding Google Analytics data:
+  https://tools.google.com/dlpage/gaoptout
+
+To exercise rights regarding SoundCloud data:
+  https://soundcloud.com/pages/privacy
+
+For any direct inquiries regarding this policy:
+  void@man1k.xyz
+
+
+14. POLICY UPDATES
+-------------------
+This policy may be updated to reflect changes in the site's technical
+implementation. The build version and effective date at the top of
+this document indicate the current revision.
+
+Machine-readable site information is available at:
+  https://man1k.xyz/llms.txt                         — LLM-readable site summary
+  https://man1k.xyz/artist.json                      — Structured artist data
+  https://man1k.xyz/LICENSE                          — Permissions-Policy
+  https://man1k.xyz/humans.txt                       — Human authors
+  https://man1k.xyz/.well-known/dnt-policy.txt       — This document
+  https://man1k.xyz/.well-known/privacy.txt          — Machine-readable privacy policy
+  https://man1k.xyz/.well-known/copyright.txt        — Machine-readable copyright notice
+  https://man1k.xyz/.well-known/security.txt         — Security contact (RFC 9116)
+  https://man1k.xyz/.well-known/security-policy.txt  — Vulnerability disclosure policy
+  https://man1k.xyz/.well-known/gpc.json             — Global Privacy Control declaration
+  https://man1k.xyz/.well-known/ai.txt               — AI Access Policy
+
+Human-readable legal documents:
+  https://man1k.xyz/legal/privacy   — Privacy Policy
+  https://man1k.xyz/legal/cookies   — Cookie Policy
+  https://man1k.xyz/legal/terms     — Terms of Use
+  https://man1k.xyz/legal/copyright — Copyright Notice
+
+---
+© 2026 Yaroslav Boruk (MAN1K). This policy document is provided for
+informational and legal compliance purposes.
