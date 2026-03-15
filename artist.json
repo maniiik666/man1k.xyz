@@ -145,8 +145,8 @@
     "headline": "Ukrainian Witch House producer, DJ, and sound engineer",
     "tagline": "Dark productions. Occult aesthetics. Underground culture.",
     "oneLiner": "MAN1K is a Ukrainian Witch House producer blending dark rhythms, horror textures, and occult aesthetics since 2023.",
-    "short": "MAN1K is a Ukrainian Witch House producer and DJ active since 2023. Known for dark productions blending dark rhythms, horror textures and occult aesthetics. Based in Spain, previously active in Japan's underground scene.",
-    "medium": "MAN1K (Yaroslav Boruk) is a Ukrainian Witch House producer, DJ, and certified sound engineer active since February 2023. Emerging from Khmelnytskyi, Ukraine, he quickly established himself in the international underground electronic music scene. After spending three years in Japan organizing and performing at events in Osaka and Tokyo, he relocated to Spain where he continues to push the boundaries of dark electronic music. His work has been featured on Amazing Radio, placed in 50+ playlists on Spotify, and performed at venues across two continents.",
+    "short": "MAN1K is a Ukrainian Witch House producer and DJ active since 2023. Known for dark productions blending dark rhythms, horror textures and occult aesthetics. Based in Europe, previously active in Japan's underground scene.",
+    "medium": "MAN1K (Yaroslav Boruk) is a Ukrainian Witch House producer, DJ, and certified sound engineer active since February 2023. Emerging from Khmelnytskyi, Ukraine, he quickly established himself in the international underground electronic music scene. After spending three years in Japan organizing and performing at events in Osaka and Tokyo, he relocated to Europe where he continues to push the boundaries of dark electronic music. His work has been featured on Amazing Radio, placed in 50+ playlists on Spotify, and performed at venues across two continents.",
     "long": "MAN1K (Yaroslav Boruk) emerged from Khmelnytskyi, Ukraine in February 2023, initially working with ambient and experimental sounds before evolving into authentic Witch House. Based in Japan from 2022 to 2025, he organized and performed at international underground events across Osaka and Tokyo — including the TETRØ TERRØR party at Socore Factory and CHERN at HVEN — before relocating to Europe. His work has received airplay on Amazing Radio, and has been placed in 50+ playlists on Spotify. He performed at SAMHAIN FEST in Madrid and completed the NIGHTSHADE TOUR across Ukraine. Operating as a fully independent artist, MAN1K represents the new wave of Ukrainian underground electronic music on the global stage.",
     "timeline": [
       {
@@ -419,7 +419,7 @@
 
   "booking": {
     "available": true,
-    "types": ["DJ set", "live set", "B2B", "sound design", "workshop"],
+    "types": ["DJ set", "live set", "B2B", "sound design"],
     "setDurations": ["30 min", "45 min", "60 min", "90 min", "120 min", "150 min"],
     "regions": ["Europe", "UK", "USA", "Ukraine", "Japan", "worldwide"],
     "fees": {
