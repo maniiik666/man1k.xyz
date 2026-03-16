@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-03-06
+# Last-Updated: 2026-03-17
 # Site-Version: build 26.3 / JS v2.0 / SW v1.2 / Polyfills v1.0
 # Format: plain text, UTF-8
 
@@ -77,7 +77,7 @@ Data-Retention-Google-Analytics: 14 months
 
 Service-Worker: /sw.js
 Service-Worker-Scope: /
-Cache-Main: mk-v4
+Cache-Main: mk-v5
 Cache-Game: mk-game-v3
 Cache-Gallery: mk-gallery-v2
 Cached-Pages: / /about /music /lives /gallery /services /merch /subscribe /press /legal /tap /vv17ch0uz3
