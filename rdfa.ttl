@@ -47,7 +47,8 @@ man1k:artist
         <https://www.albumoftheyear.org/artist/250572-man1k> ,
         <https://freemusicarchive.org/music/man1k> ,
         <https://www.reverbnation.com/maniiik666> ,
-        <https://discord.gg/vxuQKE6p7F> ;
+        <https://discord.gg/vxuQKE6p7F> ,
+        <http://viaf.org/viaf/23170582395193561649> ;
 
     schema:identifier      [
         a schema:PropertyValue ;
@@ -68,6 +69,11 @@ man1k:artist
         a schema:PropertyValue ;
         schema:name  "MusicBrainz ID" ;
         schema:value "025ae12e-e2f8-4d82-8106-953df3f184e8"
+    ] ;
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "VIAF ID" ;
+        schema:value "23170582395193561649"
     ] ;
 
     mo:genre               man1k:genre_witchhouse ;
@@ -105,7 +111,7 @@ man1k:artist
 
     dct:subject            "Witch House music", "Ukrainian underground electronic music" ;
     dct:created            "2023-02-01"^^xsd:date ;
-    dct:modified           "2026-03-08"^^xsd:date .
+    dct:modified           "2026-03-19"^^xsd:date .
 
 # ─── Places ────────────────────────────────────────────────────────────────
 
