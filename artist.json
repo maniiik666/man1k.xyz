@@ -26,7 +26,7 @@
 
   "meta": {
     "version": "1.1",
-    "updated": "2026-03-15",
+    "updated": "2026-03-19",
     "language": "en",
     "availableLanguage": ["uk", "ru", "ja"],
     "generator": "manual",
@@ -51,6 +51,7 @@
     "isni": "0000 0005 1101 6662",
     "ipi": "01219097059",
     "mbid": "025ae12e-e2f8-4d82-8106-953df3f184e8",
+    "viaf": "23170582395193561649",
     "pronouns": "he/him",
     "birthPlace": {
       "@type": "Place",
@@ -414,7 +415,8 @@
     "https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8",
     "https://music.fandom.com/wiki/MAN1K",
     "https://www.bandsintown.com/a/15526549",
-    "https://www.songkick.com/artists/10298615"
+    "https://www.songkick.com/artists/10298615",
+    "http://viaf.org/viaf/23170582395193561649"
   ],
 
   "booking": {
@@ -714,7 +716,8 @@
       "https://www.bandsintown.com/a/15526549",
       "https://www.songkick.com/artists/10298615",
       "https://huggingface.co/datasets/MAN1K/MAN1K-artist-data",
-      "https://man1k.xyz/feed.xml"
+      "https://man1k.xyz/feed.xml",
+      "http://viaf.org/viaf/23170582395193561649"
     ]
   },
   "pressKit": {
