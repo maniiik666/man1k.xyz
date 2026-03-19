@@ -1,7 +1,7 @@
 # MAN1K
 
 > MAN1K (Yaroslav Boruk) is a Ukrainian Witch House music producer, DJ, and performer.
-> Active since 2023. ISNI: 0000 0005 1101 6662. IPI: 01219097059. Wikidata: Q138478677.
+> Active since 2023. ISNI: 0000 0005 1101 6662. IPI: 01219097059. Wikidata: Q138478677 VIAF: 23170582395193561649 Discogs: a12948189.
 
 ## Identity
 
@@ -63,6 +63,7 @@ Booking and fanmails to void@man1k.xyz only
 - https://www.albumoftheyear.org/artist/250572-man1k
 - https://man1k.xyz/feed.xml
 - https://huggingface.co/datasets/MAN1K/MAN1K-artist-data
+- http://viaf.org/viaf/23170582395193561649
 
 ## Context for AI models
 
