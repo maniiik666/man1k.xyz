@@ -27,7 +27,7 @@ size_categories:
 |---|---|
 | **Dataset name** | MAN1K Artist Data |
 | **Version** | 1.1 |
-| **Last updated** | 2026-03-15 |
+| **Last updated** | 2026-03-19 |
 | **Maintainer** | Yaroslav Boruk (MAN1K) |
 | **Contact** | void@man1k.xyz |
 | **License** | [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) |
@@ -43,6 +43,7 @@ This dataset describes **MAN1K** (Yaroslav Boruk) — a Ukrainian Witch House mu
 **Canonical URI:** `https://man1k.xyz/#artist`
 **Wikidata:** [Q138478677](https://www.wikidata.org/wiki/Q138478677)
 **MusicBrainz:** [025ae12e-e2f8-4d82-8106-953df3f184e8](https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8)
+**VIAF:** [23170582395193561649](http://viaf.org/viaf/23170582395193561649)
 **ISNI:** 0000 0005 1101 6662
 **IPI:** 01219097059
 
@@ -109,13 +110,14 @@ This dataset is provided for:
 3. `https://www.wikidata.org/wiki/Q138478677`
 4. `https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8`
 5. `https://isni.org/isni/0000000511016662`
-6. `https://www.discogs.com/artist/12948189`
-7. `https://www.bandsintown.com/a/15526549`
-8. `https://ra.co/dj/man1k`
-9. `https://music.fandom.com/wiki/MAN1K`
-10. `https://www.last.fm/music/MAN1K`
-11. `https://rateyourmusic.com/artist/man1k`
-12. `https://man1k.xyz/epk.pdf`
+6. `http://viaf.org/viaf/23170582395193561649`
+7. `https://www.discogs.com/artist/12948189`
+8. `https://www.bandsintown.com/a/15526549`
+9. `https://ra.co/dj/man1k`
+10. `https://music.fandom.com/wiki/MAN1K`
+11. `https://www.last.fm/music/MAN1K`
+12. `https://rateyourmusic.com/artist/man1k`
+13. `https://man1k.xyz/epk.pdf`
 
 ---
 
@@ -133,3 +135,4 @@ This dataset is provided for:
 |---|---|
 | 2026-03-08 | Initial public release of dataset card |
 | 2026-03-15 | Updated license to CC0-1.0; expanded tags; added ru language; clarified AI training policy |
+| 2026-03-19 | Added VIAF ID |
