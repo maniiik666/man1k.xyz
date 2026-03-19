@@ -4,9 +4,10 @@ Contact: void@man1k.xyz
 From: Ukraine
 ISNI: 0000 0005 1101 6662
 IPI: 01219097059
+VIAF: 23170582395193561649
 
 /* SITE */
-Last update: 2026-03-08
+Last update: 2026-03-19
 Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
 Language: English
 Charset: UTF-8
