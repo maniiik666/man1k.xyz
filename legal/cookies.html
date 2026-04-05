@@ -163,6 +163,23 @@ body{background:#000;color:var(--w);font-family:var(--f);height:100dvh;width:100
       <p class="tx"><strong>Conditional</strong> means these cookies are only set when DNT is not active and GPC is not detected. All Google cookies are configured with <code>SameSite=Lax; Secure</code> flags and IP anonymisation enabled. Ad personalisation signals are disabled.</p>
     </div>
     <div class="sec">
+      <div class="sec-head"><span class="sec-num">03.1 //</span><h2 class="sec-title">TikTok Pixel Cookies</h2></div>
+      <p class="tx">When DNT and GPC are <strong>not</strong> active, the TikTok Pixel (<code>D7958NBC77U5V754BC6G</code>) is loaded on all pages and may set the following cookies:</p>
+      <table class="cookie-table" aria-label="TikTok Pixel cookies">
+        <thead><tr><th>Cookie</th><th>Purpose</th><th>Expiry</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>_ttp</td><td>Tracks conversions and ad performance across TikTok campaigns</td><td>13 months</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
+          <tr><td>_tt_enable_cookie</td><td>Indicates cookie consent state for TikTok</td><td>13 months</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
+          <tr><td>tt_pixel_session_index</td><td>Session-level pixel event deduplication</td><td>Session</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
+          <tr><td>tt_sessionId</td><td>Session identifier for event attribution</td><td>Session</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
+        </tbody>
+      </table>
+      <p class="tx"><strong>Advanced Matching (AAM) is enabled:</strong> if you have previously submitted personal data on this site (e.g. newsletter signup), TikTok Pixel may collect that data (email, name, phone number, address) in SHA-256 hashed form to improve audience match rates.</p>
+      <p class="tx"><strong>Expanded Data Sharing is enabled:</strong> TikTok Pixel additionally collects page content metadata, visitor interaction signals (clicks, button interactions, time on page), and performance metrics (page load speed). This data is used to improve ad delivery and campaign performance.</p>
+      <p class="tx"><strong>First-party cookies are enabled:</strong> TikTok may set first-party cookies from the man1k.xyz domain to improve cross-session measurement accuracy.</p>
+      <p class="tx">Data controller: TikTok Technology Limited. <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener">TikTok Privacy Policy →</a></p>
+    </div>
+    <div class="sec">
       <div class="sec-head"><span class="sec-num">04 //</span><h2 class="sec-title">Simple Analytics — No Cookies</h2></div>
       <p class="tx">Simple Analytics is active on all pages via a <code>&lt;noscript&gt;</code> pixel — no JavaScript is executed. It does <strong>not set any cookies</strong>, does not use fingerprinting, and does not collect personal data of any kind. It records only aggregated, non-identifiable statistics (page views, referrer origin, browser category, country). Simple Analytics respects DNT and GPC signals: when either is active, no data is transmitted. No consent is required under ePrivacy or GDPR.</p>
       <p class="tx">Data processor: Simple Analytics BV, Keizersgracht 482-1, 1017 EG Amsterdam, Netherlands. <a href="https://simpleanalytics.com/privacy" target="_blank" rel="noopener">Privacy policy →</a></p>
@@ -181,14 +198,15 @@ body{background:#000;color:var(--w);font-family:var(--f);height:100dvh;width:100
           <tr><td>ImgBB (i.ibb.co)</td><td>/gallery</td><td>First 3 images eager, rest lazy; cached by Service Worker</td><td><span class="badge-third">3RD PARTY</span></td></tr>
           <tr><td>Font Awesome (cdnjs)</td><td>/, /music</td><td>Stylesheet — loads on page load</td><td><span class="badge-third">3RD PARTY</span></td></tr>
           <tr><td>Cloudflare CDN</td><td>All pages</td><td>CDN proxy — all traffic passes through</td><td><span class="badge-third">3RD PARTY</span></td></tr>
-          <tr><td>Simple Analytics</td><td>/, /tap</td><td>noscript pixel — no JS, no cookies, respects DNT/GPC</td><td><span class="badge-none">COOKIE-FREE</span></td></tr>
+          <tr><td>TikTok Pixel</td><td>All pages</td><td>Inline script — loads on page load; suppressed when DNT/GPC active</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
+          <tr><td>Google Tag Manager</td><td>All pages</td><td>Async script — loads on page load; suppressed when DNT/GPC active; used to deploy TikTok Pixel</td><td><span class="badge-cond">CONDITIONAL</span></td></tr>
         </tbody>
       </table>
       <p class="tx">man1k.xyz has no control over cookies set by these third-party services. Note: <strong>Spotify, Bandcamp (/music), SoundCloud (/music)</strong> appear only as external links on the /music page — no iframes are embedded there, and no third-party connection is made unless the user navigates away. Refer to each service's own cookie policy for details.</p>
     </div>
     <div class="sec">
       <div class="sec-head"><span class="sec-num">06 //</span><h2 class="sec-title">Service Worker Storage</h2></div>
-      <p class="tx">man1k.xyz uses browser <strong>Cache Storage API</strong> (not cookies) via a Service Worker to cache pages and assets for offline use and performance. Three separate caches are used: <code>mk-v5</code> (pages and assets), <code>mk-game-v3</code> (game files), and <code>mk-gallery-v2</code> (gallery images from i.ibb.co). All cached content is stored exclusively on your device and contains only public static site files — no personal data is included. Cache Storage is distinct from cookies and localStorage; it cannot be used for tracking or cross-origin data sharing. You can clear it at any time via your browser's developer tools ("Application" → "Cache Storage") or by clearing all site data for man1k.xyz.</p>
+      <p class="tx">man1k.xyz uses browser <strong>Cache Storage API</strong> (not cookies) via a Service Worker to cache pages and assets for offline use and performance. Three separate caches are used: <code>mk-v6</code> (pages and assets), <code>mk-game-v3</code> (game files), and <code>mk-gallery-v2</code> (gallery images from i.ibb.co). All cached content is stored exclusively on your device and contains only public static site files — no personal data is included. Cache Storage is distinct from cookies and localStorage; it cannot be used for tracking or cross-origin data sharing. You can clear it at any time via your browser's developer tools ("Application" → "Cache Storage") or by clearing all site data for man1k.xyz.</p>
       <p class="tx">External resources are not cached except fonts.cdnfonts.com (VCR OSD Mono font) and i.ibb.co gallery images — both cached for offline support and performance only.</p>
     </div>
     <div class="sec">
@@ -217,6 +235,7 @@ body{background:#000;color:var(--w);font-family:var(--f);height:100dvh;width:100
         <li><strong>Enable GPC:</strong> Install a GPC-compatible extension (e.g. Privacy Badger, Brave browser) — treated identically to DNT, no GTM loaded</li>
         <li><strong>Block third-party cookies:</strong> Configure your browser to block all third-party cookies — prevents embed cookies from SoundCloud, Spring, Bandsintown, and other services from loading</li>
         <li><strong>Use a content blocker:</strong> uBlock Origin, Privacy Badger, or similar tools can selectively block specific domains (e.g. soundcloud.com, googletagmanager.com)</li>
+        <li><strong>TikTok Pixel opt-out:</strong> Enable DNT or GPC in your browser — TikTok Pixel will be suppressed entirely. Or adjust ad preferences at <a href="https://www.tiktok.com/legal/privacy-policy" target="_blank" rel="noopener">tiktok.com/legal/privacy-policy</a></li>
         <li><strong>Google Analytics opt-out:</strong> <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a> — browser extension that prevents all GA data collection</li>
         <li><strong>Clear cookies:</strong> Delete existing cookies at any time via your browser's privacy or site settings — has no adverse effect on site functionality as no functional cookies are used</li>
         <li><strong>Simple Analytics:</strong> No opt-out required — no cookies or personal data are collected regardless of your settings</li>
