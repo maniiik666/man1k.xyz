@@ -1,8 +1,8 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-03-17
-# Site-Version: build 26.3 / JS v2.0 / SW v1.2 / Polyfills v1.0
+# Last-Updated: 2026-04-05
+# Site-Version: build 26.3 / JS v2.1 / SW v1.2 / Polyfills v1.0
 # Format: plain text, UTF-8
 
 Contact: void@man1k.xyz
@@ -72,12 +72,29 @@ Analytics-Opt-Out: https://tools.google.com/dlpage/gaoptout
 Data-Retention-Google-Analytics: 14 months
 
 # -----------------------------------------------
+# TIKTOK PIXEL
+# -----------------------------------------------
+
+TikTok-Pixel-ID: D7958NBC77U5V754BC6G
+TikTok-Processor: TikTok Technology Limited
+TikTok-Purpose: Advertising audience building, ad performance measurement, retargeting, Lookalike Audience creation
+TikTok-Active-When: DNT not set AND GPC not set AND not localhost AND not bot
+TikTok-Suppressed-When: navigator.doNotTrack === "1" OR navigator.globalPrivacyControl === true OR localhost/127.0.0.1/*.local
+TikTok-AAM-Enabled: true (SHA-256 hashed email, name, phone, address — only if previously submitted on site)
+TikTok-Expanded-Data-Sharing: true (page metadata, click interactions, time on page, page load speed)
+TikTok-First-Party-Cookies: true
+TikTok-Cookies: _ttp (13 months), _tt_enable_cookie (13 months), tt_pixel_session_index (session), tt_sessionId (session)
+TikTok-Legal-Basis: Legitimate interest — Art. 6(1)(f) GDPR
+TikTok-Opt-Out: https://www.tiktok.com/legal/privacy-policy
+TikTok-Privacy-Policy: https://www.tiktok.com/legal/privacy-policy
+
+# -----------------------------------------------
 # SERVICE WORKER & CACHING
 # -----------------------------------------------
 
 Service-Worker: /sw.js
 Service-Worker-Scope: /
-Cache-Main: mk-v5
+Cache-Main: mk-v6
 Cache-Game: mk-game-v3
 Cache-Gallery: mk-gallery-v2
 Cached-Pages: / /about /music /lives /gallery /services /merch /subscribe /press /legal /tap /vv17ch0uz3
@@ -230,7 +247,7 @@ GDPR-Status: Compliant
 GDPR-Regulation: EU 2016/679
 Applies-To: EU and EEA residents
 Data-Controller: Yaroslav Boruk (MAN1K) — void@man1k.xyz
-Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), Buttondown LLC (newsletter), Cloudflare Inc. (CDN/proxy), Microsoft Corporation / GitHub Pages (static hosting), nic.ua (domain registrar)
+Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Cloudflare Inc. (CDN/proxy), Microsoft Corporation / GitHub Pages (static hosting), nic.ua (domain registrar)
 Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
 Legal-Basis-Newsletter: Explicit consent (opt-in)
 Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)
@@ -246,7 +263,7 @@ GPC-Signal-Respected: true
 Implementation-File: /global.js
 DNT-Check: navigator.doNotTrack === "1"
 GPC-Check: navigator.globalPrivacyControl === true
-Effect-When-Active: GTM not loaded; no dataLayer; no cookies; no page_view events; no network requests to googletagmanager.com
+Effect-When-Active: GTM not loaded; no dataLayer; no cookies; no page_view events; no network requests to googletagmanager.com or analytics.tiktok.com; TikTok Pixel not initialised
 
 # -----------------------------------------------
 # /portal666 DISCLOSURE

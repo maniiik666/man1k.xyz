@@ -1,7 +1,7 @@
                     MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
-                    Effective Date: March 2026
-                    Site Version: build 26.3 / JS v2.0 / SW v1.2 / Polyfills v1.0
+                    Effective Date: April 2026
+                    Site Version: build 26.3 / JS v2.1 / SW v1.2 / Polyfills v1.0
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: void@man1k.xyz
                     Domain: https://man1k.xyz
@@ -51,6 +51,7 @@ In DNT/GPC mode:
   * No cookies are set by this site's analytics code
   * No event tracking occurs
   * No page_view events are fired
+  * TikTok Pixel is not initialised; no requests to analytics.tiktok.com
 
 
 2. ANALYTICS — GOOGLE ANALYTICS 4
@@ -98,8 +99,33 @@ Data processor: Simple Analytics BV, Keizersgracht 482-1,
 1017 EG Amsterdam, Netherlands.
 Simple Analytics Privacy Policy: https://simpleanalytics.com/privacy
 
+4. ADVERTISING PIXEL — TIKTOK
+-------------------------------
+Pixel ID: D7958NBC77U5V754BC6G
+Provider: TikTok Technology Limited
 
-4. ERROR TRACKING
+When DNT/GPC is NOT active, the TikTok Pixel is loaded on all pages
+with the following configuration:
+
+  Advanced Matching (AAM):      enabled
+    — hashed email, name, phone, address (SHA-256)
+    — only if previously submitted on this site
+  Expanded Data Sharing:        enabled
+    — page metadata, click interactions, time on page, load speed
+  First-party cookies:          enabled
+  Cookies set: _ttp (13mo), _tt_enable_cookie (13mo),
+               tt_pixel_session_index (session), tt_sessionId (session)
+
+When DNT/GPC IS active:
+  * TikTok Pixel script is not fetched
+  * No cookies are set
+  * No data is transmitted to analytics.tiktok.com
+
+Legal basis: Legitimate interest — Art. 6(1)(f) GDPR
+Opt-out: https://www.tiktok.com/legal/privacy-policy
+TikTok Privacy Policy: https://www.tiktok.com/legal/privacy-policy
+
+5. ERROR TRACKING
 ------------------
 JavaScript errors are captured via window.onerror and
 window.addEventListener("unhandledrejection") in /global.js.
@@ -118,9 +144,9 @@ is active (i.e., when DNT/GPC is NOT set). No errors are transmitted
 when DNT is respected.
 
 
-5. SERVICE WORKER & CACHING
+6. SERVICE WORKER & CACHING
 -----------------------------
-man1k.xyz uses a Service Worker (/sw.js, Cache name: mk-v5) for
+man1k.xyz uses a Service Worker (/sw.js, Cache name: 6) for
 offline support and performance. The following data is cached locally
 in your browser:
 
@@ -143,7 +169,7 @@ Cache strategy by resource type:
   - Gallery images:     Cache-first with background revalidation (mk-gallery-v2)
 
 Cache is automatically cleared when a new Service Worker version
-activates. Old cache keys (anything other than mk-v5, mk-game-v3,
+activates. Old cache keys (anything other than mk-v6, mk-game-v3,
 and mk-gallery-v2) are deleted on activation.
 
 Bots and crawlers (detected via User-Agent) bypass the Service Worker
@@ -161,7 +187,7 @@ event, which periodically refreshes the first 10 precached URLs in
 the background (subject to browser permission).
 
 
-5.1 LOCAL STORAGE
+6.1 LOCAL STORAGE
 ------------------
 The following localStorage keys are used on man1k.xyz:
 
@@ -187,13 +213,13 @@ The following localStorage keys are used on man1k.xyz:
     unavailable. Contains a single integer. Not transmitted externally.
 
 
-6. THIRD-PARTY EMBEDDED SERVICES
+7. THIRD-PARTY EMBEDDED SERVICES
 ----------------------------------
 The following third-party services may be embedded on specific pages.
 Each operates under its own privacy policy. man1k.xyz does not control
 the tracking behavior of these embeds.
 
-6.1 Bandsintown Widget (/lives)
+7.1 Bandsintown Widget (/lives)
   Provider: Bandsintown, Inc.
   Purpose:  Displaying upcoming live events and tour dates.
   Artist ID: id_15526549
@@ -202,7 +228,7 @@ the tracking behavior of these embeds.
   Loading:  Async script — loads immediately on page load (not deferred by IntersectionObserver).
   Policy: https://corp.bandsintown.com/privacy
 
-6.2 Bandcamp (/ homepage)
+7.2 Bandcamp (/ homepage)
   Provider: Bandcamp LLC
   Purpose:  Embedded track player on the homepage (/).
   An iframe embed from bandcamp.com is loaded on page load — not lazy.
@@ -211,7 +237,7 @@ the tracking behavior of these embeds.
   no third-party connection is initiated by man1k.xyz from that page.
   Policy: https://bandcamp.com/privacy
 
-6.3 SoundCloud (/portal666, /game/)
+7.3 SoundCloud (/portal666, /game/)
   Provider: SoundCloud Global Limited & Co. KG
   Purpose:  Embedded music players.
   /portal666 — hidden iframe player, loads after user gesture (click-to-start
@@ -225,7 +251,7 @@ the tracking behavior of these embeds.
   no third-party connection is initiated by man1k.xyz from that page.
   Policy: https://soundcloud.com/pages/privacy
 
-6.4 Spring / Creator-Spring (/merch)
+7.4 Spring / Creator-Spring (/merch)
   Provider: Amaze Software, Inc. (creator-spring.com)
   Purpose:  Embedded merch store widget displaying apparel and products.
   The widget loads via iframe from embed.creator-spring.com on page open
@@ -235,7 +261,7 @@ the tracking behavior of these embeds.
   data per Spring's own privacy policy.
   Policy: https://www.creator-spring.com/privacy-policy
 
-6.5 Buttondown (/subscribe)
+7.5 Buttondown (/subscribe)
   Provider: Buttondown, LLC
   Purpose:  Email newsletter subscription form. Submissions are sent via
   HTTP POST to buttondown.com/api/emails/embed-subscribe/man1k.
@@ -246,43 +272,43 @@ the tracking behavior of these embeds.
   /subscribe URL is sent to Buttondown as the Referrer header on submission.
   Policy: https://buttondown.com/legal/privacy
 
-6.6 ImgBB / i.ibb.co (/gallery)
+7.6 ImgBB / i.ibb.co (/gallery)
   Provider: ImgBB (ibb.co)
   Purpose:  External hosting for gallery photos. First 3 images load
   immediately (eager); remaining images use lazy loading. All images
   are cached locally by the Service Worker (mk-gallery-v2) after first load.
 
-6.7 Font Awesome via Cloudflare CDN (/, /music)
+7.7 Font Awesome via Cloudflare CDN (/, /music)
   Provider: Cloudflare, Inc. (cdnjs.cloudflare.com)
   Purpose:  Icon font (social icons and platform icons) on the homepage
   and /music page. Served as a CSS stylesheet from cdnjs.cloudflare.com
   on page load.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-6.8 Cloudflare CDN (all pages)
+7.8 Cloudflare CDN (all pages)
   Provider: Cloudflare, Inc.
   Purpose:  CDN and reverse proxy for all site traffic. All HTTP requests
   to man1k.xyz pass through Cloudflare's network.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-6.9 GitHub Pages (all pages)
+7.9 GitHub Pages (all pages)
   Provider: Microsoft Corporation (GitHub, Inc.)
   Purpose:  Static site hosting. All site files are served from GitHub
   Pages infrastructure. GitHub may log IP addresses and request metadata
   per their privacy policy.
   Policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
 
-6.10 CDN Fonts (cdnfonts.com)
+7.10 CDN Fonts (cdnfonts.com)
   Provider: cdnfonts.com
   Purpose:  Serving VCR OSD Mono typeface used across all pages (including /game/).
   A preconnect is established on page load.
 
-6.11 Google Fonts (fonts.googleapis.com)
+7.11 Google Fonts (fonts.googleapis.com)
   Purpose:  Serving DotGothic16 typeface on /game/ page.
   A preconnect is established on page load.
   Policy: https://policies.google.com/privacy
 
-6.12 Simple Analytics (all pages)
+7.12 Simple Analytics (all pages)
   Provider: Simple Analytics B.V.
   Purpose:  Privacy-first, cookie-free analytics via noscript pixel.
   Does not use cookies, does not fingerprint users, and does not collect
@@ -302,7 +328,7 @@ Spotify, Bandcamp (/music), and SoundCloud (/music) are external links only —
 no iframes, no third-party connections initiated from those link elements.
 
 
-7. COOKIES
+8. COOKIES
 -----------
 man1k.xyz itself does NOT set any first-party cookies for tracking.
 
@@ -318,13 +344,14 @@ Third-party cookies (set by embeds, active only when embeds load):
   - Bandsintown (/lives): per Bandsintown's own policy
   - Spring (/merch): per Creator-Spring's own policy
 
-When DNT/GPC is active, GA4 is not loaded and no Google cookies
-are set by this website. Note that Bandcamp, SoundCloud, Bandsintown,
-and Spring embeds load independently of DNT and may set their own
+When DNT/GPC is active, GA4 is not loaded, TikTok Pixel is not
+initialised, and no analytics or advertising cookies are set by
+this website. Note that Bandcamp, SoundCloud, Bandsintown, and
+Spring embeds load independently of DNT and may set their own
 cookies regardless of DNT status.
 
 
-8. REFERRER POLICY
+9. REFERRER POLICY
 -------------------
 All pages declare:
 
@@ -341,7 +368,7 @@ specific form submission. The full /subscribe URL is sent to
 Buttondown as the Referrer header.
 
 
-8.1 PRECONNECT & DNS-PREFETCH
+9.1 PRECONNECT & DNS-PREFETCH
 -------------------------------
 global.js automatically injects the following resource hints on all pages:
 
@@ -354,7 +381,7 @@ is transmitted to these domains unless the user navigates to a page
 that embeds their content.
 
 
-9. /portal666 — HIDDEN PAGE DISCLOSURE
+10. /portal666 — HIDDEN PAGE DISCLOSURE
 ----------------------------------------
 The hidden easter egg page is accessible via:
 
@@ -396,7 +423,7 @@ If you wish to avoid this, you should:
   - Avoid navigating to /portal666 directly or via the key sequence
 
 
-9.1 /game/ — VOID SIGNAL DISCLOSURE
+10.1 /game/ — VOID SIGNAL DISCLOSURE
 --------------------------------------
 The browser-based game "VOID SIGNAL" is accessible at /game/.
 
@@ -428,7 +455,7 @@ The browser-based game "VOID SIGNAL" is accessible at /game/.
   vignette, CRT flicker).
 
 
-10. BOT & CRAWLER HANDLING
+11. BOT & CRAWLER HANDLING
 ----------------------------
 Automated user agents are identified as bots using User-Agent regex
 patterns in global.js and sw.js (patterns differ slightly between files).
@@ -442,7 +469,7 @@ This ensures that search engine crawlers receive clean, unmodified
 responses without analytics interference.
 
 
-11. RATE LIMITING
+12. RATE LIMITING
 ------------------
 Client-side rate limiting is implemented to detect abusive interaction:
 
@@ -455,17 +482,18 @@ and persists across page reloads. No data from rate-limit checks
 is transmitted externally.
 
 
-12. DATA RETENTION
+13. DATA RETENTION
 -------------------
 man1k.xyz does not operate its own database or user accounts. No
 personal data is stored on man1k.xyz servers.
 
 For third-party services, retention is governed by their own policies:
   - Google Analytics: 14 months (default)
+  - TikTok Pixel: 13 months (_ttp cookie); session cookies expire on browser close
   - SoundCloud, Bandsintown, Bandcamp, Spotify: per their own policies
 
 
-13. YOUR RIGHTS
+14. YOUR RIGHTS
 ----------------
 Depending on your jurisdiction, you may have the right to:
 
@@ -478,6 +506,9 @@ Depending on your jurisdiction, you may have the right to:
 To exercise rights regarding Google Analytics data:
   https://tools.google.com/dlpage/gaoptout
 
+To exercise rights regarding TikTok Pixel data:
+  https://www.tiktok.com/legal/privacy-policy
+
 To exercise rights regarding SoundCloud data:
   https://soundcloud.com/pages/privacy
 
@@ -485,7 +516,7 @@ For any direct inquiries regarding this policy:
   void@man1k.xyz
 
 
-14. POLICY UPDATES
+15. POLICY UPDATES
 -------------------
 This policy may be updated to reflect changes in the site's technical
 implementation. The build version and effective date at the top of
