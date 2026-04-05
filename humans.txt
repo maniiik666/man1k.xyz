@@ -7,7 +7,7 @@ IPI: 01219097059
 VIAF: 23170582395193561649
 
 /* SITE */
-Last update: 2026-03-19
+Last update: 2026-04-05
 Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
 Language: English
 Charset: UTF-8

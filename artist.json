@@ -25,8 +25,8 @@
   },
 
   "meta": {
-    "version": "1.1",
-    "updated": "2026-03-19",
+    "version": "1.2",
+    "updated": "2026-04-05",
     "language": "en",
     "availableLanguage": ["uk", "ru", "ja"],
     "generator": "manual",
@@ -52,6 +52,7 @@
     "ipi": "01219097059",
     "mbid": "025ae12e-e2f8-4d82-8106-953df3f184e8",
     "viaf": "23170582395193561649",
+    "loc": "no2026031735",
     "pronouns": "he/him",
     "birthPlace": {
       "@type": "Place",
@@ -717,7 +718,8 @@
       "https://www.songkick.com/artists/10298615",
       "https://huggingface.co/datasets/MAN1K/MAN1K-artist-data",
       "https://man1k.xyz/feed.xml",
-      "http://viaf.org/viaf/23170582395193561649"
+      "http://viaf.org/viaf/23170582395193561649",
+      "https://id.loc.gov/authorities/names/no2026031735.html"
     ]
   },
   "pressKit": {

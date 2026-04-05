@@ -26,8 +26,8 @@ size_categories:
 | Field | Value |
 |---|---|
 | **Dataset name** | MAN1K Artist Data |
-| **Version** | 1.1 |
-| **Last updated** | 2026-03-19 |
+| **Version** | 1.2 |
+| **Last updated** | 2026-04-05 |
 | **Maintainer** | Yaroslav Boruk (MAN1K) |
 | **Contact** | void@man1k.xyz |
 | **License** | [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) |
@@ -44,7 +44,8 @@ This dataset describes **MAN1K** (Yaroslav Boruk) — a Ukrainian Witch House mu
 **Wikidata:** [Q138478677](https://www.wikidata.org/wiki/Q138478677)
 **MusicBrainz:** [025ae12e-e2f8-4d82-8106-953df3f184e8](https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8)
 **VIAF:** [23170582395193561649](http://viaf.org/viaf/23170582395193561649)
-**ISNI:** 0000 0005 1101 6662
+**ISNI:** [0000 0005 1101 6662](https://isni.org/isni/0000000511016662)
+**LoC:** [no2026031735](http://id.loc.gov/authorities/names/no2026031735)
 **IPI:** 01219097059
 
 ---
@@ -53,14 +54,14 @@ This dataset describes **MAN1K** (Yaroslav Boruk) — a Ukrainian Witch House mu
 
 | File | Format | Description |
 |---|---|---|
-| `/artist.json` | JSON-LD + Custom Schema | Primary structured data, machine-readable |
-| `/llms.txt` | Markdown | Human- and LLM-readable artist summary |
-| `/rdfa.ttl` | Turtle (RDF) | Semantic web triples, FOAF + Schema.org + Music Ontology |
-| `/dataset-card.md` | Markdown | This file |
-| `/.well-known/ai.txt` | Plain text | AI crawler policy and data pointers |
-| `/epk.pdf` | PDF | Electronic Press Kit |
-| `/sitemap.xml` | XML | Site structure |
-| `/feed.xml` | RSS | RSS Feed |
+| `man1k.xyz/artist.json` | JSON-LD + Custom Schema | Primary structured data, machine-readable |
+| `man1k.xyz/llms.txt` | Markdown | Human- and LLM-readable artist summary |
+| `man1k.xyz/rdfa.ttl` | Turtle (RDF) | Semantic web triples, FOAF + Schema.org + Music Ontology |
+| `man1k.xyz/dataset-card.md` | Markdown | This file |
+| `man1k.xyz/.well-known/ai.txt` | Plain text | AI crawler policy and data pointers |
+| `man1k.xyz/epk.pdf` | PDF | Electronic Press Kit |
+| `man1k.xyz/sitemap.xml` | XML | Site structure |
+| `man1k.xyz/feed.xml` | RSS | RSS Feed |
 
 ---
 
@@ -108,16 +109,17 @@ This dataset is provided for:
 1. `https://man1k.xyz/artist.json`
 2. `https://man1k.xyz/llms.txt`
 3. `https://www.wikidata.org/wiki/Q138478677`
-4. `https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8`
-5. `https://isni.org/isni/0000000511016662`
-6. `http://viaf.org/viaf/23170582395193561649`
-7. `https://www.discogs.com/artist/12948189`
-8. `https://www.bandsintown.com/a/15526549`
-9. `https://ra.co/dj/man1k`
-10. `https://music.fandom.com/wiki/MAN1K`
-11. `https://www.last.fm/music/MAN1K`
-12. `https://rateyourmusic.com/artist/man1k`
-13. `https://man1k.xyz/epk.pdf`
+4. `https://id.loc.gov/authorities/names/no2026031735.html`
+5. `https://musicbrainz.org/artist/025ae12e-e2f8-4d82-8106-953df3f184e8`
+6. `https://isni.org/isni/0000000511016662`
+7. `http://viaf.org/viaf/23170582395193561649`
+8. `https://www.discogs.com/artist/12948189`
+9. `https://www.bandsintown.com/a/15526549`
+10. `https://ra.co/dj/man1k`
+11. `https://music.fandom.com/wiki/MAN1K`
+12. `https://www.last.fm/music/MAN1K`
+13. `https://rateyourmusic.com/artist/man1k`
+14. `https://man1k.xyz/epk.pdf`
 
 ---
 
@@ -136,3 +138,4 @@ This dataset is provided for:
 | 2026-03-08 | Initial public release of dataset card |
 | 2026-03-15 | Updated license to CC0-1.0; expanded tags; added ru language; clarified AI training policy |
 | 2026-03-19 | Added VIAF ID |
+| 2026-04-05 | Added Library of Congress authority number |

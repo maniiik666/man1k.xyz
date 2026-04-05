@@ -48,6 +48,7 @@ man1k:artist
         <https://freemusicarchive.org/music/man1k> ,
         <https://www.reverbnation.com/maniiik666> ,
         <https://discord.gg/vxuQKE6p7F> ,
+        <http://id.loc.gov/authorities/names/no2026031735> ,
         <http://viaf.org/viaf/23170582395193561649> ;
 
     schema:identifier      [
@@ -111,7 +112,7 @@ man1k:artist
 
     dct:subject            "Witch House music", "Ukrainian underground electronic music" ;
     dct:created            "2023-02-01"^^xsd:date ;
-    dct:modified           "2026-03-19"^^xsd:date .
+    dct:modified           "2026-04-05"^^xsd:date .
 
 # ─── Places ────────────────────────────────────────────────────────────────
 
@@ -169,7 +170,7 @@ man1k:role_deadray
     dct:title          "MAN1K Artist Data" ;
     dct:format         "application/ld+json" ;
     dct:publisher      man1k:artist ;
-    dct:modified       "2026-03-01"^^xsd:date ;
+    dct:modified       "2026-04-05"^^xsd:date ;
     dct:subject        man1k:artist ;
     schema:about       man1k:artist .
 
