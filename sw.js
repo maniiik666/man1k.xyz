@@ -1,6 +1,6 @@
 /*! MAN1K SW v1.2 | © 2026 Yaroslav Boruk */
 'use strict';
-var CACHE='mk-v5';
+var CACHE='mk-v6';
 var GAME_CACHE='mk-game-v3';
 var GALLERY_CACHE='mk-gallery-v2';
 var CACHE_VERSION=4;
