@@ -10,3 +10,18 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Website published!!!!
+
+## [1.1.0] — 2026-04-09
+## build 26.4
+
+### Added
+- Merch shop launched at shop.man1k.xyz (Fourthwall)
+
+### Changed
+- /merch page replaced with redirect to shop.man1k.xyz
+- Documentation updated to reflect new shop integration (Spring widget removed)
+- Minor copy and SEO optimizations across several pages
+
+### Fixed
+- Skeleton image removed from VOID SIGNAL game
+- Minor bug fixes
