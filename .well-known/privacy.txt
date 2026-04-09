@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-04-05
+# Last-Updated: 2026-04-08
 # Site-Version: build 26.3 / JS v2.1 / SW v1.2 / Polyfills v1.0
 # Format: plain text, UTF-8
 
@@ -175,13 +175,6 @@ Purpose: Embedded music player
 Loading-portal666: Iframe loads after user gesture (click-to-start overlay); not on page load
 Loading-game: Iframe loaded with auto_play=false; playback starts only on explicit PLAY action
 Privacy-Policy: https://soundcloud.com/pages/privacy
-
-# Spring / Creator-Spring
-Service: Spring (creator-spring.com)
-Page: /merch
-Purpose: Embedded merch store widget
-Loading: Browser-native loading="lazy" (may load before scroll)
-Privacy-Policy: https://www.creator-spring.com/privacy-policy
 
 # Buttondown
 Service: Buttondown

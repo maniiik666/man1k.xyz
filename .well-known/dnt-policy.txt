@@ -251,17 +251,7 @@ the tracking behavior of these embeds.
   no third-party connection is initiated by man1k.xyz from that page.
   Policy: https://soundcloud.com/pages/privacy
 
-7.4 Spring / Creator-Spring (/merch)
-  Provider: Amaze Software, Inc. (creator-spring.com)
-  Purpose:  Embedded merch store widget displaying apparel and products.
-  The widget loads via iframe from embed.creator-spring.com on page open
-  using the browser-native loading="lazy" attribute. It is NOT deferred
-  via IntersectionObserver — the browser may initiate the connection
-  before the user scrolls. The widget may set cookies and collect usage
-  data per Spring's own privacy policy.
-  Policy: https://www.creator-spring.com/privacy-policy
-
-7.5 Buttondown (/subscribe)
+7.4 Buttondown (/subscribe)
   Provider: Buttondown, LLC
   Purpose:  Email newsletter subscription form. Submissions are sent via
   HTTP POST to buttondown.com/api/emails/embed-subscribe/man1k.
@@ -272,43 +262,43 @@ the tracking behavior of these embeds.
   /subscribe URL is sent to Buttondown as the Referrer header on submission.
   Policy: https://buttondown.com/legal/privacy
 
-7.6 ImgBB / i.ibb.co (/gallery)
+7.5 ImgBB / i.ibb.co (/gallery)
   Provider: ImgBB (ibb.co)
   Purpose:  External hosting for gallery photos. First 3 images load
   immediately (eager); remaining images use lazy loading. All images
   are cached locally by the Service Worker (mk-gallery-v2) after first load.
 
-7.7 Font Awesome via Cloudflare CDN (/, /music)
+7.6 Font Awesome via Cloudflare CDN (/, /music)
   Provider: Cloudflare, Inc. (cdnjs.cloudflare.com)
   Purpose:  Icon font (social icons and platform icons) on the homepage
   and /music page. Served as a CSS stylesheet from cdnjs.cloudflare.com
   on page load.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-7.8 Cloudflare CDN (all pages)
+7.7 Cloudflare CDN (all pages)
   Provider: Cloudflare, Inc.
   Purpose:  CDN and reverse proxy for all site traffic. All HTTP requests
   to man1k.xyz pass through Cloudflare's network.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-7.9 GitHub Pages (all pages)
+7.8 GitHub Pages (all pages)
   Provider: Microsoft Corporation (GitHub, Inc.)
   Purpose:  Static site hosting. All site files are served from GitHub
   Pages infrastructure. GitHub may log IP addresses and request metadata
   per their privacy policy.
   Policy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
 
-7.10 CDN Fonts (cdnfonts.com)
+7.9 CDN Fonts (cdnfonts.com)
   Provider: cdnfonts.com
   Purpose:  Serving VCR OSD Mono typeface used across all pages (including /game/).
   A preconnect is established on page load.
 
-7.11 Google Fonts (fonts.googleapis.com)
+7.10 Google Fonts (fonts.googleapis.com)
   Purpose:  Serving DotGothic16 typeface on /game/ page.
   A preconnect is established on page load.
   Policy: https://policies.google.com/privacy
 
-7.12 Simple Analytics (all pages)
+7.11 Simple Analytics (all pages)
   Provider: Simple Analytics B.V.
   Purpose:  Privacy-first, cookie-free analytics via noscript pixel.
   Does not use cookies, does not fingerprint users, and does not collect
@@ -321,7 +311,6 @@ Note on loading strategies: The Bandcamp iframe on / loads on page load (not laz
 The SoundCloud iframe on /portal666 loads after user gesture (click-to-start overlay).
 The SoundCloud iframe on /game/ is loaded with auto_play=false; playback starts on PLAY.
 The Bandsintown widget on /lives uses an async script that loads immediately on page load.
-The Spring merch widget on /merch uses browser-native loading="lazy" and may load before scroll.
 The Buttondown form on /subscribe makes no network request until explicit submit.
 Gallery images on /gallery: first 3 load immediately, remaining lazy.
 Spotify, Bandcamp (/music), and SoundCloud (/music) are external links only —
@@ -342,12 +331,11 @@ Third-party cookies (set by embeds, active only when embeds load):
   - Bandcamp (/ homepage): per Bandcamp's own policy
   - SoundCloud (/portal666, /game/): per SoundCloud's own policy
   - Bandsintown (/lives): per Bandsintown's own policy
-  - Spring (/merch): per Creator-Spring's own policy
 
 When DNT/GPC is active, GA4 is not loaded, TikTok Pixel is not
 initialised, and no analytics or advertising cookies are set by
-this website. Note that Bandcamp, SoundCloud, Bandsintown, and
-Spring embeds load independently of DNT and may set their own
+this website. Note that Bandcamp, SoundCloud, and Bandsintown
+embeds load independently of DNT and may set their own
 cookies regardless of DNT status.
 
 
