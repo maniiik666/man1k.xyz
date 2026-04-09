@@ -198,7 +198,7 @@ body{background:#000;color:var(--w);font-family:var(--f);height:100dvh;width:100
       <div class="sec-head"><span class="sec-num">05 //</span><h2 class="sec-title">Service Worker & Caching</h2></div>
       <p class="tx">man1k.xyz uses a Service Worker (<code>/sw.js</code>) for offline support and performance. The following content is cached locally in your browser — this data is stored solely on your device and is never transmitted to any third-party server by the Service Worker itself:</p>
       <ul class="list">
-        <li><strong>Pages:</strong> /, /about, /music, /lives, /gallery, /services, /subscribe, /press, /legal, /tap, /vv17ch0uz3 <span style="font-size:.85em;color:rgba(90,90,90,.9)">(cache: mk-v6)</span></li>
+        <li><strong>Pages:</strong> /, /about, /music, /lives, /gallery, /services, /subscribe, /press, /contact, /legal, /tap, /vv17ch0uz3 <span style="font-size:.85em;color:rgba(90,90,90,.9)">(cache: mk-v6)</span></li>
         <li><strong>Assets:</strong> /global.js, /polyfills.js, logos, icons, fonts</li>
         <li><strong>Game:</strong> /game/ and associated engine files <span style="font-size:.85em;color:rgba(90,90,90,.9)">(cache: mk-game-v3)</span></li>
         <li><strong>Gallery images:</strong> Cached after first load from i.ibb.co with background revalidation <span style="font-size:.85em;color:rgba(90,90,90,.9)">(cache: mk-gallery-v2)</span></li>
@@ -355,6 +355,15 @@ body{background:#000;color:var(--w);font-family:var(--f);height:100dvh;width:100
       <div class="sec-head"><span class="sec-num">11 //</span><h2 class="sec-title">Referrer Policy</h2></div>
       <p class="tx">All pages declare <code>Referrer-Policy: strict-origin-when-cross-origin</code>. Your full URL is sent as the Referrer only to same-origin requests. Cross-origin requests receive only the origin (<code>https://man1k.xyz</code>) without path or query. No referrer is sent when downgrading from HTTPS to HTTP.</p>
       <p class="tx"><strong>Exception:</strong> The Buttondown newsletter form on <code>/subscribe</code> uses <code>referrerpolicy="unsafe-url"</code>, overriding the global policy for that form submission. The full page URL (including the <code>/subscribe</code> path) is sent to Buttondown as the Referrer header.</p>
+    </div>
+  <div class="sec">
+      <div class="sec-head"><span class="sec-num">12 //</span><h2 class="sec-title">Merch Store — Separate Privacy Policy</h2></div>
+      <p class="tx">The merch store at <a href="https://shop.man1k.xyz" target="_blank" rel="noopener">shop.man1k.xyz</a> operates as a separate service powered by Fourthwall and is governed by its own privacy policy. man1k.xyz is not responsible for data collected by the store. Relevant store documents:</p>
+      <ul class="list">
+        <li><a href="https://shop.man1k.xyz/pages/privacy-policy" target="_blank" rel="noopener">Store Privacy Policy →</a></li>
+        <li><a href="https://shop.man1k.xyz/pages/terms-of-service" target="_blank" rel="noopener">Store Terms of Service →</a></li>
+        <li><a href="https://shop.man1k.xyz/pages/returns-faq" target="_blank" rel="noopener">Returns & Refunds Policy →</a></li>
+      </ul>
     </div>
   <div style="display:flex;justify-content:center;padding:clamp(16px,3vw,24px) 0 clamp(10px,2vw,16px)">
       <a href="https://dashboard.simpleanalytics.com/?utm_source=man1k.xyz&utm_content=badge&affiliate=tufaq-kat" referrerpolicy="origin" target="_blank" rel="noopener noreferrer">
