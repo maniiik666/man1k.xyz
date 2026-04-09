@@ -1,7 +1,7 @@
                     MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
                     Effective Date: April 2026
-                    Site Version: build 26.3 / JS v2.1 / SW v1.2 / Polyfills v1.0
+                    Site Version: build 26.4 / JS v2.1 / SW v1.2 / Polyfills v1.0
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: void@man1k.xyz
                     Domain: https://man1k.xyz
@@ -25,7 +25,8 @@ served under the man1k.xyz domain, including but not limited to:
   /subscribe   — Mailing list
   /press       — Press kit & media
   /legal       — Legal documents
-  /tap         — Contact / booking
+  /contact     — Representatives contacts
+  /tap         — Linkhub
   /portal666   — Hidden easter egg page (see Section 9)
 
 
@@ -151,7 +152,7 @@ offline support and performance. The following data is cached locally
 in your browser:
 
   Pages:   /, /about, /music, /lives, /gallery, /services, /merch,
-           /subscribe, /press, /legal, /tap, /vv17ch0uz3
+           /subscribe, /press, /legal, /contact, /tap, /vv17ch0uz3
   Assets:  /global.js, /polyfills.js, /img/logo.svg, icons, fonts
   Game:    /game/, /game/index.html, /game/engine.js, /game/effects.js (mk-game-v3)
   Gallery: i.ibb.co images cached on first load (mk-gallery-v2)
