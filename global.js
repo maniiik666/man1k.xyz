@@ -355,6 +355,7 @@ var BFCache=(function(){
   });
   return{}
 })();
+Perf.criticalCSS();
 var init=function(){
   D.documentElement.classList.remove('no-js');
   D.documentElement.classList.add('js');
@@ -363,7 +364,6 @@ var init=function(){
   SSR.noscriptCSS();
   SSR.scraperMeta();
   Perf.preconnect();
-  Perf.criticalCSS();
   Perf.lazyImg();
   Widgets.init();
   SSR.enhance();
