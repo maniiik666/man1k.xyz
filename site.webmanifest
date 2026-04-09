@@ -76,13 +76,6 @@
       "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
     },
     {
-      "name": "Merch",
-      "short_name": "Merch",
-      "description": "Official merchandise",
-      "url": "/merch",
-      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
-    },
-    {
       "name": "About",
       "short_name": "About",
       "description": "About MAN1K",

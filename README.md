@@ -17,7 +17,6 @@ Service Worker for offline support and asset caching. VHS/glitch aesthetics, cus
 /lives      → tour dates (Bandsintown)
 /gallery    → photos (ImgBB)
 /services   → booking & services
-/merch      → merch store (Spring)
 /subscribe  → newsletter (Buttondown)
 /press      → EPK & press materials
 /vv17ch0uz3 → genre info

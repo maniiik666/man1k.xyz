@@ -11,7 +11,6 @@ var PRECACHE=[
   '/lives',
   '/gallery',
   '/services',
-  '/merch',
   '/subscribe',
   '/press',
   '/legal',

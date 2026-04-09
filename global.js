@@ -171,9 +171,10 @@ var Cache=(function(){
         })
       })
     }).catch(function(){});
-    N.serviceWorker.addEventListener('controllerchange',function(){
-      if(!W.__MK_RELOAD__&&W.__MK_HAD_CTRL__){W.__MK_RELOAD__=1;W.location.reload()}
-    });
+    W.__MK_HAD_CTRL__ = !!N.serviceWorker.controller;
+    N.serviceWorker.addEventListener('controllerchange', function(){
+  if(!W.__MK_RELOAD__ && W.__MK_HAD_CTRL__){W.__MK_RELOAD__=1;W.location.reload()}
+});
     W.__MK_HAD_CTRL__=!!N.serviceWorker.controller;
   };
   return{reg:regSW}

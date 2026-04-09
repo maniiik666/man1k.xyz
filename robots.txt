@@ -5,7 +5,6 @@ Allow: /legal
 Allow: /services
 Allow: /subscribe
 Allow: /gallery
-Allow: /merch
 Allow: /about
 Allow: /music
 Allow: /press
@@ -36,7 +35,6 @@ Allow: /legal
 Allow: /services
 Allow: /subscribe
 Allow: /gallery
-Allow: /merch
 Allow: /about
 Allow: /music
 Allow: /press
