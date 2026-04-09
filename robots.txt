@@ -12,6 +12,7 @@ Allow: /vv17ch0uz3
 Allow: /epk.pdf
 Allow: /onesheet.pdf
 Allow: /tap
+Allow: /contact
 Allow: /game/
 Allow: /*.json$
 Allow: /*.txt$
@@ -39,6 +40,7 @@ Allow: /about
 Allow: /music
 Allow: /press
 Allow: /vv17ch0uz3
+Allow: /contact
 Allow: /epk.pdf
 Allow: /onesheet.pdf
 Allow: /*.json$
@@ -110,6 +112,9 @@ User-agent: ProRataInc
 User-agent: Terracotta Bot
 User-agent: Discordbot
 Allow: /
+Allow: /contact
+Allow: /about
+Allow: /press
 Disallow: /portal666
 Disallow: /game/
 Disallow: /icons/

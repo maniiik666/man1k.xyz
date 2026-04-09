@@ -8,7 +8,7 @@
   <!-- HOME -->
   <url>
     <loc>https://man1k.xyz/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -80,7 +80,15 @@
     <!-- LINKS -->
   <url>
     <loc>https://man1k.xyz/tap</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- CONTACT -->
+  <url>
+    <loc>https://man1k.xyz/contact</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -88,7 +96,7 @@
   <!-- LEGAL -->
   <url>
     <loc>https://man1k.xyz/legal</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

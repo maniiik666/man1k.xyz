@@ -15,6 +15,7 @@ var PRECACHE=[
   '/press',
   '/legal',
   '/tap',
+  '/contact',
   '/vv17ch0uz3',
   '/global.js',
   '/polyfills.js',

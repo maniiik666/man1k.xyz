@@ -104,6 +104,13 @@
       "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
     },
     {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contact MAN1K for all inquiries",
+      "url": "/contact",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
       "name": "Void Signal",
       "short_name": "Game",
       "description": "Void Signal game",

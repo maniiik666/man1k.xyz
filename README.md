@@ -21,6 +21,7 @@ Service Worker for offline support and asset caching. VHS/glitch aesthetics, cus
 /press      → EPK & press materials
 /vv17ch0uz3 → genre info
 /legal      → legal documents
+/contact    → representatives contacts
 /game/      → mini-game easter egg
 /portal666  → hidden page
 ```
