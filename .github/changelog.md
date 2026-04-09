@@ -16,6 +16,7 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Merch shop launched at shop.man1k.xyz (Fourthwall)
+- /contact page
 
 ### Changed
 - /merch page replaced with redirect to shop.man1k.xyz
