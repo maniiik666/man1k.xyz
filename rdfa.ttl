@@ -76,6 +76,11 @@ man1k:artist
         schema:name  "VIAF ID" ;
         schema:value "23170582395193561649"
     ] ;
+    schema:identifier      [
+        a schema:PropertyValue ;
+        schema:name  "LCNACO" ;
+        schema:value "no2026031735"
+    ] ;
 
     mo:genre               man1k:genre_witchhouse ;
     schema:genre           "Witch House", "Dark Electronic", "Darkwave", "Industrial", "Noise" ;
@@ -112,7 +117,7 @@ man1k:artist
 
     dct:subject            "Witch House music", "Ukrainian underground electronic music" ;
     dct:created            "2023-02-01"^^xsd:date ;
-    dct:modified           "2026-04-05"^^xsd:date .
+    dct:modified           "2026-04-10"^^xsd:date .
 
 # ─── Places ────────────────────────────────────────────────────────────────
 
@@ -170,7 +175,7 @@ man1k:role_deadray
     dct:title          "MAN1K Artist Data" ;
     dct:format         "application/ld+json" ;
     dct:publisher      man1k:artist ;
-    dct:modified       "2026-04-05"^^xsd:date ;
+    dct:modified       "2026-04-10"^^xsd:date ;
     dct:subject        man1k:artist ;
     schema:about       man1k:artist .
 
@@ -186,3 +191,25 @@ man1k:role_deadray
     schema:url         <https://man1k.xyz/feed.xml> ;
     schema:sameAs      <https://feeds.soundcloud.com/users/soundcloud:users:1212020779/sounds.rss> ;
     rdfs:seeAlso       <https://soundcloud.com/maniiik666> .
+
+<https://man1k.xyz/events-feed.xml>
+    a schema:DataFeed ;
+    dct:title          "MAN1K — Upcoming Shows" ;
+    dct:format         "application/rss+xml" ;
+    dct:publisher      man1k:artist ;
+    dct:subject        man1k:artist ;
+    schema:about       man1k:artist ;
+    schema:url         <https://man1k.xyz/events-feed.xml> ;
+    schema:sameAs      <https://rest.bandsintown.com/artists/id_15526549/events?app_id=js_org.telegram.messenger.provider> ;
+    rdfs:seeAlso       <https://bandsintown.com/a/15526549> .
+
+<https://man1k.xyz/shop-feed.xml>
+    a schema:DataFeed, schema:ItemList ;
+    dct:title          "MAN1K — Merch & Shop" ;
+    dct:format         "application/rss+xml" ;
+    dct:publisher      man1k:artist ;
+    dct:subject        man1k:artist ;
+    schema:about       man1k:artist ;
+    schema:url         <https://man1k.xyz/shop-feed.xml> ;
+    schema:sameAs      <https://shop.man1k.xyz> ;
+    rdfs:seeAlso       <https://shop.man1k.xyz> .
