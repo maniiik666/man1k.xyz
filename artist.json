@@ -26,7 +26,7 @@
 
   "meta": {
     "version": "1.2",
-    "updated": "2026-04-05",
+    "updated": "2026-04-10",
     "language": "en",
     "availableLanguage": ["uk", "ru", "ja"],
     "generator": "manual",
@@ -35,7 +35,11 @@
       "json": "https://man1k.xyz/artist.json",
       "epk": "https://man1k.xyz/epk.pdf",
       "sitemap": "https://man1k.xyz/sitemap.xml",
-      "rss": "https://man1k.xyz/feed.xml"
+      "rss": [
+      "https://man1k.xyz/feed.xml",
+      "https://man1k.xyz/events-feed.xml",
+      "https://man1k.xyz/shop-feed.xml"
+      ]
 
     }
   },
