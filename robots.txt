@@ -115,6 +115,9 @@ Allow: /
 Allow: /contact
 Allow: /about
 Allow: /press
+Allow: /feed.xml
+Allow: /events-feed.xml
+Allow: /shop-feed.xml
 Disallow: /portal666
 Disallow: /game/
 Disallow: /icons/
@@ -141,6 +144,9 @@ Allow: /legal/
 Allow: /icons/
 Allow: /game/
 Allow: /img/
+Allow: /feed.xml
+Allow: /events-feed.xml
+Allow: /shop-feed.xml
 Allow: /*.js$
 Disallow: /
 
