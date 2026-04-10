@@ -62,6 +62,8 @@ Booking and fanmails to void@man1k.xyz only
 - https://rateyourmusic.com/artist/man1k
 - https://www.albumoftheyear.org/artist/250572-man1k
 - https://man1k.xyz/feed.xml
+- https://man1k.xyz/events-feed.xml
+- https://man1k.xyz/shop-feed.xml
 - https://huggingface.co/datasets/MAN1K/MAN1K-artist-data
 - http://viaf.org/viaf/23170582395193561649
 - https://id.loc.gov/authorities/names/no2026031735.html
