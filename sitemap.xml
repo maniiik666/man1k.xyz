@@ -125,5 +125,20 @@
   <priority>0.5</priority>
   </url>
 
+    <!-- PRESS ASSETS — MERCH RSS FEED -->
+  <url>
+  <loc>https://man1k.xyz/shop-feed.xml</loc>
+  <lastmod>2026-04-10</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+  </url>
+
+    <!-- PRESS ASSETS — EVENTS RSS FEED -->
+  <url>
+  <loc>https://man1k.xyz/events-feed.xml</loc>
+  <lastmod>2026-04-10</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+  </url>
 
 </urlset>
