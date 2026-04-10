@@ -27,7 +27,7 @@ size_categories:
 |---|---|
 | **Dataset name** | MAN1K Artist Data |
 | **Version** | 1.2 |
-| **Last updated** | 2026-04-05 |
+| **Last updated** | 2026-04-10 |
 | **Maintainer** | Yaroslav Boruk (MAN1K) |
 | **Contact** | void@man1k.xyz |
 | **License** | [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) |
@@ -62,6 +62,8 @@ This dataset describes **MAN1K** (Yaroslav Boruk) — a Ukrainian Witch House mu
 | `man1k.xyz/epk.pdf` | PDF | Electronic Press Kit |
 | `man1k.xyz/sitemap.xml` | XML | Site structure |
 | `man1k.xyz/feed.xml` | RSS | RSS Feed |
+| `man1k.xyz/events-feed.xml` | RSS | Live shows and upcoming events feed |
+| `man1k.xyz/shop-feed.xml` | RSS | Merch and products feed |
 
 ---
 
