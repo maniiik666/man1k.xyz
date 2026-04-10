@@ -141,3 +141,4 @@ This dataset is provided for:
 | 2026-03-15 | Updated license to CC0-1.0; expanded tags; added ru language; clarified AI training policy |
 | 2026-03-19 | Added VIAF ID |
 | 2026-04-05 | Added Library of Congress authority number |
+| 2026-04-10 | Added new RSS feeds |
