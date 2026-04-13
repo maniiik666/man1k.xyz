@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://analytics.tiktok.com https://www.tiktok.com https://w.soundcloud.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-src https://w.soundcloud.com https://soundcloud.com; connect-src 'self' https://analytics.tiktok.com https://www.tiktok.com https://api.soundcloud.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://man1k.xyz; script-src 'self' 'unsafe-inline' https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://w.soundcloud.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-src https://w.soundcloud.com https://soundcloud.com; connect-src 'self' https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://api.soundcloud.com https://*.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -369,11 +369,14 @@ else if(scRetry<20){scRetry++;setTimeout(scPlay,500)}
 function scPlayDirect(){
 scRetry=0;
 if(scWidget&&scReady&&!musicMuted){try{scWidget.play();scPlaying=true}catch(e){setTimeout(scPlay,300)}}
+else if(!scReady&&scRetry<20){scRetry++;setTimeout(scPlayDirect,500)}
 else{scPlay()}
 }
 function scFirstInteract(){
-if(scFirstGesture)return;scFirstGesture=true;
-try{if(scWidget){scWidget.play();if(st!=="play")setTimeout(function(){if(st!=="play")scWidget.pause()},100)}}catch(e){}
+if(scFirstGesture)return;
+if(!scReady){setTimeout(scFirstInteract,300);return}
+scFirstGesture=true;
+try{if(scWidget){scWidget.play();if(st!=="play")setTimeout(function(){if(st!=="play")scWidget.pause()},200)}}catch(e){}
 }
 function scMute(m){musicMuted=m;try{if(scWidget&&scReady){scWidget.setVolume(m?0:38);if(m){scWidget.pause();scPlaying=false}else if(st==="play"){scWidget.play();scPlaying=true}}}catch(e){}}
 function scPause(p){try{if(scWidget&&scReady){if(p){scWidget.pause();scPlaying=false}else if(!musicMuted){scWidget.play();scPlaying=true}}}catch(e){}}
