@@ -321,7 +321,7 @@ function loadBest(cb){try{var r=indexedDB.open("vxd",1);r.onupgradeneeded=functi
 function bindKeys(){window.addEventListener("keydown",function(e){keys[e.code]=true;if(e.code==="Space")e.preventDefault();if(e.code==="CapsLock"){keys={}}});window.addEventListener("keyup",function(e){keys[e.code]=false});window.addEventListener("blur",function(){keys={}});document.addEventListener("visibilitychange",function(){if(document.hidden)keys={}})}
 function bindTouch(L,R,F){function ts(el,k){if(!el)return;el.addEventListener("touchstart",function(e){e.preventDefault();touch[k]=1},{passive:false});el.addEventListener("touchend",function(e){e.preventDefault();touch[k]=0},{passive:false});el.addEventListener("touchcancel",function(){touch[k]=0})}ts(L,"l");ts(R,"r");ts(F,"f")}
 return{
-init:function(c,opts){cvs=c;ctx=cvs.getContext("2d",{alpha:false});opts=opts||{};initPools();resize();window.addEventListener("resize",resize);
+init:function(c,opts){cvs=c;ctx=cvs.getContext("2d",{alpha:false});opts=opts||{};initPools();resize();
 var _gestureEvents=["touchstart","mousedown","keydown","pointerdown"];
 function _onGesture(){unlockAudio();for(var _i=0;_i<_gestureEvents.length;_i++)document.removeEventListener(_gestureEvents[_i],_onGesture,{once:true,passive:true})}
 for(var _i=0;_i<_gestureEvents.length;_i++)document.addEventListener(_gestureEvents[_i],_onGesture,{once:true,passive:true});

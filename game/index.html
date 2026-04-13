@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://w.soundcloud.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-src https://w.soundcloud.com https://soundcloud.com; connect-src 'self' https://api.soundcloud.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://analytics.tiktok.com https://www.tiktok.com https://w.soundcloud.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; frame-src https://w.soundcloud.com https://soundcloud.com; connect-src 'self' https://analytics.tiktok.com https://www.tiktok.com https://api.soundcloud.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -11,6 +11,8 @@
 <script>
 (function(){var s=document.createElement("script");s.src="/polyfills.js";s.onerror=function(){};document.head.appendChild(s)})();
 </script>
+<meta name="ai:entity:agent" content="https://man1k.xyz/llms.txt">
+<meta name="ai:data:schema" content="https://man1k.xyz/artist.json">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Yaroslav Boruk (MAN1K)">
 <meta name="copyright" content="© 2026 Yaroslav Boruk (MAN1K). All rights reserved.">
@@ -66,17 +68,17 @@ body{display:flex;align-items:center;justify-content:center}
 #root.live{opacity:1}
 #cw{position:absolute;inset:0;z-index:1}
 #gc{width:100%;height:100%;display:block}
-#scanlines{position:absolute;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0px,rgba(0,0,0,.22) 1px,transparent 1px,transparent 3px);opacity:.5;mix-blend-mode:multiply}
-#crt-rgb{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg,rgba(255,0,0,.08) 0px,rgba(0,255,0,.04) 1px,rgba(0,0,255,.07) 2px,transparent 3px);background-size:3px 100%;opacity:.4;mix-blend-mode:screen}
-#vignette{position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.85) 100%)}
-#dimmer{position:absolute;inset:0;z-index:5;pointer-events:none;background:rgba(0,0,0,.08);mix-blend-mode:multiply}
-#vhs-filter{position:absolute;inset:0;z-index:22;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0px,transparent 2px,rgba(0,0,0,.08) 2px,rgba(0,0,0,.08) 3px);mix-blend-mode:multiply}
-#vhs-grain{position:absolute;inset:0;z-index:7;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:192px 192px;image-rendering:pixelated;opacity:.22;mix-blend-mode:overlay;animation:grainShift .25s steps(1) infinite}
+#scanlines{position:absolute;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0px,rgba(0,0,0,.22) 1px,transparent 1px,transparent 3px);opacity:.5;mix-blend-mode:multiply;contain:paint}
+#crt-rgb{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg,rgba(255,0,0,.08) 0px,rgba(0,255,0,.04) 1px,rgba(0,0,255,.07) 2px,transparent 3px);background-size:3px 100%;opacity:.4;mix-blend-mode:screen;contain:paint}
+#vignette{position:absolute;inset:0;z-index:4;pointer-events:none;background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.85) 100%);contain:paint;will-change:transform;transform:translateZ(0)}
+#dimmer{position:absolute;inset:0;z-index:5;pointer-events:none;background:rgba(0,0,0,.08);mix-blend-mode:multiply;contain:paint}
+#vhs-filter{position:absolute;inset:0;z-index:22;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0px,transparent 2px,rgba(0,0,0,.08) 2px,rgba(0,0,0,.08) 3px);mix-blend-mode:multiply;contain:paint}
+#vhs-grain{position:absolute;inset:0;z-index:7;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:192px 192px;image-rendering:pixelated;opacity:.22;mix-blend-mode:overlay;animation:grainShift .25s steps(1) infinite;contain:paint;will-change:background-position}
 @keyframes grainShift{0%{background-position:0 0}25%{background-position:-48px 12px}50%{background-position:24px -18px}75%{background-position:-16px 32px}100%{background-position:0 0}}
-#vhs-bleed{position:absolute;inset:0;z-index:23;pointer-events:none;background:linear-gradient(180deg,transparent 0%,rgba(255,0,0,.025) 20%,transparent 45%,rgba(0,0,255,.02) 70%,rgba(255,0,0,.015) 85%,transparent 100%);mix-blend-mode:screen;animation:vhsBleed 3s ease-in-out infinite alternate}
+#vhs-bleed{position:absolute;inset:0;z-index:23;pointer-events:none;background:linear-gradient(180deg,transparent 0%,rgba(255,0,0,.025) 20%,transparent 45%,rgba(0,0,255,.02) 70%,rgba(255,0,0,.015) 85%,transparent 100%);mix-blend-mode:screen;animation:vhsBleed 3s ease-in-out infinite alternate;contain:paint}
 @keyframes vhsBleed{0%{opacity:.3;transform:translateY(0)}100%{opacity:.6;transform:translateY(-2px)}}
-#tearline{position:absolute;left:0;right:0;height:2px;z-index:6;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,30,30,.12),rgba(0,180,0,.04),transparent);animation:tear 3.5s linear infinite}
-@keyframes tear{0%{top:-2px}100%{top:100%}}
+#tearline{position:absolute;top:0;left:0;right:0;height:2px;z-index:6;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,30,30,.12),rgba(0,180,0,.04),transparent);animation:tear 3.5s linear infinite;contain:strict;will-change:transform}
+@keyframes tear{0%{transform:translate3d(0, -2px, 0)}100%{transform:translate3d(0, 100vh, 0)}}
 @keyframes drift{0%{transform:translateY(0)}50%{transform:translateY(-3px)}100%{transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:.6}50%{opacity:.9}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
@@ -87,14 +89,14 @@ body{display:flex;align-items:center;justify-content:center}
 @keyframes strobePulse{0%{opacity:0}4%{opacity:.04}8%{opacity:0}52%{opacity:0}54%{opacity:.02}56%{opacity:0}100%{opacity:0}}
 @keyframes crtFlicker{0%,100%{opacity:1}90%{opacity:.97}94%{opacity:.93}96%{opacity:.99}}
 @keyframes menuLineGlow{0%,100%{opacity:.2;width:40%}50%{opacity:.5;width:60%}}
-#strobe{position:absolute;inset:0;z-index:13;pointer-events:none;background:#ff2233;opacity:0;animation:strobePulse 5s ease-in-out infinite;mix-blend-mode:screen}
-#crt-flicker{position:absolute;inset:0;z-index:24;pointer-events:none;animation:crtFlicker 3s steps(1) infinite;background:transparent}
-#smiley{position:absolute;z-index:12;pointer-events:none;top:5%;left:3%;opacity:.06;width:clamp(40px,8vw,70px);height:clamp(40px,8vw,70px);border:1.5px solid rgba(255,50,50,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:clamp(11px,2vw,18px);color:rgba(255,50,50,.35);animation:drift 7s ease-in-out infinite;flex-direction:column;line-height:.7}
-#cross-overlay{position:absolute;z-index:12;pointer-events:none;opacity:.4;top:12%;left:7%;font-size:clamp(36px,9vw,80px);color:#ff3333;animation:drift 9s ease-in-out infinite}
-#globe-overlay{position:absolute;z-index:12;pointer-events:none;opacity:.2;top:7%;right:4%;width:clamp(55px,12vw,105px);height:clamp(55px,12vw,105px);border:1.5px solid rgba(255,50,50,.18);border-radius:50%;animation:globeSpin 18s linear infinite}
+#strobe{position:absolute;inset:0;z-index:13;pointer-events:none;background:#ff2233;opacity:0;animation:strobePulse 5s ease-in-out infinite;mix-blend-mode:screen;contain:strict;will-change:opacity}
+#crt-flicker{position:absolute;inset:0;z-index:24;pointer-events:none;animation:crtFlicker 3s steps(1) infinite;background:transparent;contain:strict;will-change:opacity}
+#smiley{position:absolute;z-index:12;pointer-events:none;top:5%;left:3%;opacity:.06;width:clamp(40px,8vw,70px);height:clamp(40px,8vw,70px);border:1.5px solid rgba(255,50,50,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:clamp(11px,2vw,18px);color:rgba(255,50,50,.35);animation:drift 7s ease-in-out infinite;flex-direction:column;line-height:.7;contain:layout paint;will-change:transform}
+#cross-overlay{position:absolute;z-index:12;pointer-events:none;opacity:.4;top:12%;left:7%;font-size:clamp(36px,9vw,80px);color:#ff3333;animation:drift 9s ease-in-out infinite;contain:strict;will-change:transform}
+#globe-overlay{position:absolute;z-index:12;pointer-events:none;opacity:.2;top:7%;right:4%;width:clamp(55px,12vw,105px);height:clamp(55px,12vw,105px);border:1.5px solid rgba(255,50,50,.18);border-radius:50%;animation:globeSpin 18s linear infinite;contain:strict;will-change:transform}
 #globe-overlay::after{content:'';position:absolute;inset:15% 0;background:repeating-linear-gradient(0deg,transparent 0px,transparent 6px,rgba(255,50,50,.06) 7px,transparent 8px)}
-#ticker{position:absolute;bottom:3%;left:50%;transform:translateX(-50%);z-index:14;pointer-events:none;font-size:clamp(6px,.9vw,8px);color:rgba(255,60,60,.15);letter-spacing:.1em;border:1px solid rgba(255,50,50,.08);padding:2px 10px;white-space:nowrap;overflow:hidden;max-width:60%}
-#ticker span{display:inline-block;animation:tickerScroll 20s linear infinite}
+#ticker{position:absolute;bottom:3%;left:50%;transform:translateX(-50%);z-index:14;pointer-events:none;font-size:clamp(6px,.9vw,8px);color:rgba(255,60,60,.15);letter-spacing:.1em;border:1px solid rgba(255,50,50,.08);padding:2px 10px;white-space:nowrap;overflow:hidden;max-width:60%;contain:paint}
+#ticker span{display:inline-block;animation:tickerScroll 20s linear infinite;will-change:transform}
 #audio-badge{position:absolute;top:3px;right:92px;z-index:26;font-size:clamp(6px,.8vw,8px);color:rgba(255,90,90,.2);letter-spacing:.1em;pointer-events:none;animation:audioFlash 3s ease-in-out infinite}
 .overlay{position:absolute;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;contain:layout paint}
 .overlay[hidden]{display:none!important}
@@ -164,7 +166,7 @@ body{display:flex;align-items:center;justify-content:center}
 #mobile-warn h3{font-size:.75rem;letter-spacing:.12em}
 #mobile-warn p{font-size:.48rem;color:#aa4444;max-width:280px;line-height:1.6}
 #mobile-warn .btn{width:140px;margin-top:8px}
-#sc-frame{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;pointer-events:none;z-index:-100}
+#sc-frame{position:absolute;left:-9999px;top:-9999px;width:300px;height:100px;overflow:hidden;pointer-events:none;z-index:-100}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -321,7 +323,7 @@ body{display:flex;align-items:center;justify-content:center}
 </div>
 </div>
 </div>
-<iframe id="sc-frame" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2050040288&amp;auto_play=false&amp;color=%23ff2222&amp;buying=false&amp;sharing=false&amp;download=false&amp;show_artwork=false&amp;show_playcount=false&amp;show_user=false&amp;single_active=false"></iframe>
+<iframe id="sc-frame" style="position:absolute;left:-9999px;top:-9999px;width:300px;height:100px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2050040288&amp;auto_play=false&amp;color=%23ff2222&amp;buying=false&amp;sharing=false&amp;download=false&amp;show_artwork=false&amp;show_playcount=false&amp;show_user=false&amp;single_active=false"></iframe>
 <script src="https://w.soundcloud.com/player/api.js"></script>
 <script src="engine.js"></script>
 <script src="effects.js"></script>
@@ -371,7 +373,7 @@ else{scPlay()}
 }
 function scFirstInteract(){
 if(scFirstGesture)return;scFirstGesture=true;
-// Removed play→pause unlock trick: it raced with scPlayDirect and silenced music on first play
+try{if(scWidget){scWidget.play();if(st!=="play")setTimeout(function(){if(st!=="play")scWidget.pause()},100)}}catch(e){}
 }
 function scMute(m){musicMuted=m;try{if(scWidget&&scReady){scWidget.setVolume(m?0:38);if(m){scWidget.pause();scPlaying=false}else if(st==="play"){scWidget.play();scPlaying=true}}}catch(e){}}
 function scPause(p){try{if(scWidget&&scReady){if(p){scWidget.pause();scPlaying=false}else if(!musicMuted){scWidget.play();scPlaying=true}}}catch(e){}}
