@@ -1,8 +1,8 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-04-09
-# Site-Version: build 26.4 / JS v2.1 / SW v1.2 / Polyfills v1.0
+# Last-Updated: 2026-04-13
+# Site-Version: v2.0.0 / build 26.4 / JS v2.1 / SW v1.3 / Polyfills v1.0
 # Format: plain text, UTF-8
 
 Contact: void@man1k.xyz
@@ -94,9 +94,9 @@ TikTok-Privacy-Policy: https://www.tiktok.com/legal/privacy-policy
 
 Service-Worker: /sw.js
 Service-Worker-Scope: /
-Cache-Main: mk-v6
-Cache-Game: mk-game-v3
-Cache-Gallery: mk-gallery-v2
+Cache-Main: mk-v7
+Cache-Game: mk-game-v4
+Cache-Gallery: mk-gallery-v3
 Cached-Pages: / /about /music /lives /gallery /services /merch /subscribe /press /legal /tap /vv17ch0uz3 /contact
 Cached-Assets: /global.js /polyfills.js /img/logo.svg /icons/favicon.ico /icons/apple-touch-icon.png fonts
 SW-Bypass-Paths: /sw.js /site.webmanifest /_cf /cdn-cgi /portal666

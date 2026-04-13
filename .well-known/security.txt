@@ -2,7 +2,7 @@
 # RFC 9116 compliant
 
 Contact: mailto:void@man1k.xyz
-Expires: 2027-03-01T00:00:00.000Z
+Expires: 2027-04-01T00:00:00.000Z
 Preferred-Languages: en, ru
 Canonical: https://man1k.xyz/.well-known/security.txt
 Policy: https://man1k.xyz/.well-known/security-policy.txt
