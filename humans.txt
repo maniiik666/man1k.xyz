@@ -7,16 +7,21 @@ IPI: 01219097059
 VIAF: 23170582395193561649
 
 /* SITE */
-Last update: 2026-04-09
+Last update: 2026-04-13
+Version: 2.0.0
+Build: 26.4
+Service Worker: v1.3
 Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
 Language: English
 Charset: UTF-8
 
-Stack: HTML, CSS, JavaScript
-Service Worker: Yes (sw.js)
+Stack: HTML, CSS, JavaScript (Vanilla)
+Analytics: SimpleAnalytics, Cloudflare Web Analytics, GTM, TikTok Pixel
+Feeds: RSS managed via Cloudflare
+Service Worker: Yes (sw.js v1.3)
 PWA: Yes (site.webmanifest)
 Accessibility: WCAG 2.1 AA target
-Performance: Vanilla JS, no frameworks
+Performance: Vanilla JS, no build steps, GPU-accelerated CSS, resource preload tags
 
 /* ACKNOWLEDGEMENTS */
 Typefaces: Google Fonts, CDN Fonts

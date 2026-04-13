@@ -139,7 +139,7 @@ Allow: /vv17ch0uz3
 Allow: /gallery
 Allow: /legal
 Allow: /404.html
-Allow: /manifest.json
+Allow: /site.webmanifest
 Allow: /legal/
 Allow: /icons/
 Allow: /game/

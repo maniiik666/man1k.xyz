@@ -1,9 +1,9 @@
-/*! MAN1K SW v1.2 | © 2026 Yaroslav Boruk */
+/*! MAN1K SW v1.3 | © 2026 Yaroslav Boruk */
 'use strict';
-var CACHE='mk-v6';
-var GAME_CACHE='mk-game-v3';
-var GALLERY_CACHE='mk-gallery-v2';
-var CACHE_VERSION=4;
+var CACHE='mk-v7';
+var GAME_CACHE='mk-game-v4';
+var GALLERY_CACHE='mk-gallery-v3';
+var CACHE_VERSION=5;
 var PRECACHE=[
   '/',
   '/about',
@@ -214,6 +214,7 @@ if(isExternal){
 self.addEventListener('message',function(e){
   if(!e.data)return;
   if(e.data.type==='SKIP_WAITING')self.skipWaiting();
+  if(e.data.type==='PAGE_SHOW'||e.data.type==='PAGE_HIDE')return;
   if(e.data.type==='CACHE_URLS'&&Array.isArray(e.data.urls)){
   var safeUrls=e.data.urls.filter(function(u){
     try{return new URL(u).hostname===self.location.hostname;}
