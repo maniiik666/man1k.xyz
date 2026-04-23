@@ -26,7 +26,7 @@
 
   "meta": {
     "version": "1.2",
-    "updated": "2026-04-10",
+    "updated": "2026-04-23",
     "language": "en",
     "availableLanguage": ["uk", "ru", "ja"],
     "generator": "manual",
@@ -300,7 +300,7 @@
 
   "contact": {
     "general": "void@man1k.xyz",
-    "booking": "void@man1k.xyz",
+    "booking": "mgmt@pr.elektrospank.com",
     "press": "void@man1k.xyz",
     "sync": "void@man1k.xyz",
     "fanmail": "void@man1k.xyz",
@@ -433,7 +433,7 @@
       "note": "Contact for quotes",
       "includes": "performance, sound check, travel within region, advertising support"
     },
-    "contact": "void@man1k.xyz"
+    "contact": "mgmt@pr.elektrospank.com"
   },
 
   "seo": {
@@ -538,7 +538,7 @@
         "name": "How do I book MAN1K for an event?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To book MAN1K for DJ sets, live performances, or B2B sets, email void@man1k.xyz. He is available for bookings worldwide."
+          "text": "To book MAN1K for DJ sets, live performances, or B2B sets, email mgmt@pr.elektrospank.com. He is available for bookings worldwide."
         }
       },
       {
@@ -723,7 +723,8 @@
       "https://huggingface.co/datasets/MAN1K/MAN1K-artist-data",
       "https://man1k.xyz/feed.xml",
       "http://viaf.org/viaf/23170582395193561649",
-      "https://id.loc.gov/authorities/names/no2026031735.html"
+      "https://id.loc.gov/authorities/names/no2026031735.html",
+      "https://man1k.elektrospank.com"
     ]
   },
   "pressKit": {
