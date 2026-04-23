@@ -1,7 +1,7 @@
 # AI Access Policy — man1k.xyz
 # Location: https://man1k.xyz/.well-known/ai.txt
 # Maintained by: Yaroslav Boruk (MAN1K) <void@man1k.xyz>
-# Last updated: 2026-04-13
+# Last updated: 2026-04-23
 # Site-Version: v2.0.0 / build 26.4 / SW v1.3
 
 ## General Policy
@@ -76,6 +76,8 @@ Preferred-Source: https://man1k.xyz/events-feed.xml
 Preferred-Source: https://man1k.xyz/shop-feed.xml
 Preferred-Source: https://huggingface.co/datasets/MAN1K/MAN1K-artist-data
 Preferred-Source: http://viaf.org/viaf/23170582395193561649
+Preferred-Source: https://man1k.elektrospank.com
+Preferred-Source: http://id.loc.gov/authorities/names/no2026031735
 
 ## Content Restrictions
 
