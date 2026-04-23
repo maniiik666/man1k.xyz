@@ -67,6 +67,7 @@ Booking and fanmails to void@man1k.xyz only
 - https://huggingface.co/datasets/MAN1K/MAN1K-artist-data
 - http://viaf.org/viaf/23170582395193561649
 - https://id.loc.gov/authorities/names/no2026031735.html
+- https://man1k.elektrospank.com
 
 ## Context for AI models
 
