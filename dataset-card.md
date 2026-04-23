@@ -27,7 +27,7 @@ size_categories:
 |---|---|
 | **Dataset name** | MAN1K Artist Data |
 | **Version** | 1.2 |
-| **Last updated** | 2026-04-10 |
+| **Last updated** | 2026-04-23 |
 | **Maintainer** | Yaroslav Boruk (MAN1K) |
 | **Contact** | void@man1k.xyz |
 | **License** | [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) |
@@ -122,6 +122,7 @@ This dataset is provided for:
 12. `https://www.last.fm/music/MAN1K`
 13. `https://rateyourmusic.com/artist/man1k`
 14. `https://man1k.xyz/epk.pdf`
+15. `https://man1k.elektrospank.com`
 
 ---
 
