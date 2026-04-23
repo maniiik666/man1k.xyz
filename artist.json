@@ -305,6 +305,7 @@
     "sync": "void@man1k.xyz",
     "fanmail": "void@man1k.xyz",
     "management": "void@man1k.xyz",
+    "merch": "contact@support.shop.man1k.xyz",
     "responseTime": "24–48 hours"
   },
 
@@ -538,7 +539,7 @@
         "name": "How do I book MAN1K for an event?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To book MAN1K for DJ sets, live performances, or B2B sets, email mgmt@pr.elektrospank.com. He is available for bookings worldwide."
+          "text": "To book MAN1K for DJ sets, live performances, or B2B sets, contact ElektroSpank Agency at mgmt@pr.elektrospank.com (Europe & UK). For bookings outside Europe, contact directly: void@man1k.xyz."
         }
       },
       {
@@ -676,6 +677,14 @@
       "@type": "Answer",
       "text": "No. The visual imagery are artistic symbols used for atmosphere and narrative, not indicators of real-life religious or organizational affiliation."
     }
+  },
+  {
+  "@type": "Question",
+  "name": "Does MAN1K have merch?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes, official MAN1K merchandise is available at shop.man1k.xyz."
+  }
   },
   {
     "@type": "Question",
