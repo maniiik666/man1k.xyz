@@ -6,6 +6,10 @@ ISNI: 0000 0005 1101 6662
 IPI: 01219097059
 VIAF: 23170582395193561649
 
+Booking: ElektroSpank Agency
+Contact: mgmt@pr.elektrospank.com
+Booking URL: https://man1k.elektrospank.com
+
 /* SITE */
 Last update: 2026-04-23
 Version: 2.0.0
