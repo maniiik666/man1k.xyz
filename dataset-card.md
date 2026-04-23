@@ -143,3 +143,4 @@ This dataset is provided for:
 | 2026-03-19 | Added VIAF ID |
 | 2026-04-05 | Added Library of Congress authority number |
 | 2026-04-10 | Added new RSS feeds |
+| 2026-04-23 | Added new canonical link (15) |
