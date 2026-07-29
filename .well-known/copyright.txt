@@ -3,7 +3,7 @@
 # Location: https://man1k.xyz/.well-known/copyright.txt
 
 Owner: Yaroslav Boruk (MAN1K)
-Contact: void@man1k.xyz
+Contact: legal@man1k.xyz
 Year: 2026
 Domain: https://man1k.xyz
 Repository: https://github.com/maniiik666/man1k.xyz
