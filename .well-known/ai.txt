@@ -32,7 +32,7 @@ Data-Source: https://man1k.xyz/dataset-card.md
 Data-Format: text/markdown
 
 # Electronic Press Kit
-Data-Source: https://man1k.xyz/epk.pdf
+Data-Source: https://press.man1k.xyz/epk.pdf
 Data-Format: application/pdf
 
 # Press FAQ
