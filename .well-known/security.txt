@@ -3,7 +3,7 @@
 
 Contact: mailto:legal@man1k.xyz
 Expires: 2028-01-01T00:00:00.000Z
-Preferred-Languages: en, ru, jp, uk
+Preferred-Languages: en, ru, ja, uk
 Canonical: https://man1k.xyz/.well-known/security.txt
 Policy: https://man1k.xyz/.well-known/security-policy.txt
 
