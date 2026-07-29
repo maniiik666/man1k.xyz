@@ -1,9 +1,9 @@
 # MAN1K.XYZ — Security Policy
 # RFC 9116 compliant
 
-Contact: mailto:void@man1k.xyz
-Expires: 2027-04-01T00:00:00.000Z
-Preferred-Languages: en, ru
+Contact: mailto:legal@man1k.xyz
+Expires: 2028-01-01T00:00:00.000Z
+Preferred-Languages: en, ru, uk
 Canonical: https://man1k.xyz/.well-known/security.txt
 Policy: https://man1k.xyz/.well-known/security-policy.txt
 
@@ -13,20 +13,21 @@ Policy: https://man1k.xyz/.well-known/security-policy.txt
 #
 # In scope for responsible disclosure:
 #   - XSS / content injection in any page
-#   - Service Worker cache poisoning
 #   - Open redirect vulnerabilities
 #   - Sensitive data exposure via JS/API endpoints
 #   - Subdomain takeover or DNS misconfiguration
 #   - CSP bypass
+#   - Client-side rate limiter bypass
 #
 # Out of scope:
-#   - Third-party embeds (Bandsintown, SoundCloud, Bandcamp)
+#   - Third-party embeds (Bandsintown, SoundCloud)
 #   - Social media accounts
 #   - Denial of service attacks
 #   - Issues requiring physical access to infrastructure
 #   - Brute force against non-existent auth endpoints
+#   - Automated scanner findings without manual validation
 #
 # Please allow up to 72 hours for an initial response.
 # We ask that you do not publicly disclose findings
 # until we have had a reasonable opportunity to address them.
-# -------------------------------------------------------
+# ----------------------------------------------------------

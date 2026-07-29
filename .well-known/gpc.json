@@ -1,7 +1,6 @@
 {
   "gpc": true,
-  "lastUpdate": "2026-04-13",
+  "lastUpdate": "2026-07-29",
   "version": 1,
-
-  "comment": "man1k.xyz respects the Global Privacy Control signal. When GPC is detected (navigator.globalPrivacyControl === true), all analytics and tracking scripts (Google Tag Manager / GTM-NT5X6BHQ) are suppressed. No cookies are set, no page_view events are fired, and no data is transmitted to third-party analytics providers. This behavior is implemented client-side in /global.js and is equivalent to honoring a DNT: 1 header."
+  "comment": "man1k.xyz respects the Global Privacy Control signal. When GPC is detected (navigator.globalPrivacyControl === true), all analytics and tracking scripts (Google Analytics 4 / G-5M1G8HHZW4 and TikTok Pixel / D7958NBC77U5V754BC6G) are suppressed. No cookies are set, no page_view events are fired, and no data is transmitted to third-party analytics or advertising providers. This behavior is implemented client-side in /global.js and is treated as equivalent to a DNT: 1 header."
 }
