@@ -1,6 +1,6 @@
 # AI Access Policy — man1k.xyz
 # Location: https://man1k.xyz/.well-known/ai.txt
-# Maintained by: Yaroslav Boruk (MAN1K) <void@man1k.xyz>
+# Maintained by: Yaroslav Boruk (MAN1K) <legal@man1k.xyz>
 # Last updated: 2026-07-29
 # Site-Version: v2.1 / build 26.7
 
