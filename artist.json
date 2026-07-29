@@ -479,6 +479,7 @@
     "logos": "https://press.man1k.xyz/logos.zip",
     "pressPage": "https://man1k.xyz/press",
     "techRider": "https://press.man1k.xyz/dj-rider.pdf",
+    "hospRider": "https://press.man1k.xyz/hosp-rider.pdf",
     "image": "https://man1k.xyz/img/og.jpg",
     "mediaKit": {
       "formats": [
@@ -959,6 +960,7 @@
     "onesheet": "https://press.man1k.xyz/onesheet.pdf",
     "logos": "https://press.man1k.xyz/logos.zip",
     "techRider": "https://press.man1k.xyz/dj-rider.pdf",
+    "hospRider": "https://press.man1k.xyz/hosp-rider.pdf",
     "contact": "void@man1k.xyz",
     "assets": "https://man1k.xyz/press"
   }

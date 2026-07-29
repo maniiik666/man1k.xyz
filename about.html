@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self' https://man1k.xyz; script-src 'self' https://man1k.xyz 'unsafe-inline' https://w.soundcloud.com https://analytics.tiktok.com https://www.tiktok.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://cdnjs.cloudflare.com https://bandcamp.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://scripts.simpleanalyticscdn.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://bandcamp.com https://soundcloud.com https://w.soundcloud.com https://open.spotify.com https://www.youtube.com https://buttondown.com https://buttondown.email; connect-src 'self' https://*.bandcamp.com https://*.bcbits.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://w.soundcloud.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://*.google-analytics.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://buttondown.com https://buttondown.email https://www.bandsintown.com https://queue.simpleanalyticscdn.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    content="default-src 'self' https://man1k.xyz; script-src 'self' https://man1k.xyz 'unsafe-inline' https://w.soundcloud.com https://analytics.tiktok.com https://www.tiktok.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://cdnjs.cloudflare.com https://bandcamp.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://scripts.simpleanalyticscdn.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://bandcamp.com https://soundcloud.com https://w.soundcloud.com https://open.spotify.com https://www.youtube.com https://buttondown.com https://buttondown.email; connect-src 'self' https://*.bandcamp.com https://*.bcbits.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://w.soundcloud.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://*.google-analytics.com https://analytics.google.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://buttondown.com https://buttondown.email https://www.bandsintown.com https://queue.simpleanalyticscdn.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,12 +72,9 @@
   <link rel="alternate" hreflang="ru" href="https://man1k.xyz/about">
   <link rel="alternate" hreflang="x-default" href="https://man1k.xyz/about">
   <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="/vcrosdmonorus_vhsicons.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="https://fonts.cdnfonts.com/css/vcr-osd-mono?display=swap" as="style">
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vcr-osd-mono?display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
   <link rel="preload" as="image" href="https://pics.man1k.xyz/_DSC0303.jpg" fetchpriority="high">
   <style>
     @font-face {
@@ -1410,12 +1407,15 @@
         document.addEventListener('visibilitychange', function () { document.hidden ? cancelAnimationFrame(id) : (id = requestAnimationFrame(anim)) });
       }
 
-      var en = $('lang-en'), jp = $('lang-jp'), ua = $('lang-ua'), bEn = $('lsEn'), bJp = $('lsJp'), bUa = $('lsUa'), w = $('txW'), cur = 'en';
-      var sw = function (lang, e) { if (e) e.preventDefault(); if (lang === cur) return; cur = lang; en.style.display = 'none'; jp.style.display = 'none'; ua.style.display = 'none'; bEn.classList.remove('act'); bEn.setAttribute('aria-selected', 'false'); bJp.classList.remove('act'); bJp.setAttribute('aria-selected', 'false'); bUa.classList.remove('act'); bUa.setAttribute('aria-selected', 'false'); if (lang === 'jp') { jp.style.display = 'block'; bJp.classList.add('act'); bJp.setAttribute('aria-selected', 'true') } else if (lang === 'ua') { ua.style.display = 'block'; bUa.classList.add('act'); bUa.setAttribute('aria-selected', 'true') } else { en.style.display = 'block'; bEn.classList.add('act'); bEn.setAttribute('aria-selected', 'true') } w.classList.add('glitch'); setTimeout(function () { w.classList.remove('glitch') }, 380) };
+      var en = $('lang-en'), jp = $('lang-jp'), ua = $('lang-ua'), bEn = $('lsEn'), bJp = $('lsJp'), bUa = $('lsUa'), w = $('txW'), cur = 'en', jpFontLoaded = false;
+      var loadJpFont = function () { if (jpFontLoaded) return; jpFontLoaded = true; var l1 = document.createElement('link'); l1.rel = 'preconnect'; l1.href = 'https://fonts.googleapis.com'; l1.crossOrigin = ''; document.head.appendChild(l1); var l2 = document.createElement('link'); l2.rel = 'preconnect'; l2.href = 'https://fonts.gstatic.com'; l2.crossOrigin = ''; document.head.appendChild(l2); var l3 = document.createElement('link'); l3.rel = 'stylesheet'; l3.href = 'https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'; document.head.appendChild(l3) };
+      var sw = function (lang, e) { if (e) e.preventDefault(); if (lang === cur) return; if (lang === 'jp') loadJpFont(); cur = lang; en.style.display = 'none'; jp.style.display = 'none'; ua.style.display = 'none'; bEn.classList.remove('act'); bEn.setAttribute('aria-selected', 'false'); bJp.classList.remove('act'); bJp.setAttribute('aria-selected', 'false'); bUa.classList.remove('act'); bUa.setAttribute('aria-selected', 'false'); if (lang === 'jp') { jp.style.display = 'block'; bJp.classList.add('act'); bJp.setAttribute('aria-selected', 'true') } else if (lang === 'ua') { ua.style.display = 'block'; bUa.classList.add('act'); bUa.setAttribute('aria-selected', 'true') } else { en.style.display = 'block'; bEn.classList.add('act'); bEn.setAttribute('aria-selected', 'true') } w.classList.add('glitch'); setTimeout(function () { w.classList.remove('glitch') }, 380) };
       bEn.addEventListener('click', function (e) { sw('en', e) }); bJp.addEventListener('click', function (e) { sw('jp', e) }); bUa.addEventListener('click', function (e) { sw('ua', e) });
     })();
   </script>
   <script src="/global.js" defer></script>
+<!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 
 </html>
