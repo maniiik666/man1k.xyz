@@ -6,28 +6,28 @@ ISNI: 0000 0005 1101 6662
 IPI: 01219097059
 VIAF: 23170582395193561649
 
-Booking: ElektroSpank Agency
+EU / UK Booking: ElektroSpank Agency
 Contact: mgmt@pr.elektrospank.com
 Booking URL: https://man1k.elektrospank.com
 
+Ukraine Booking: Alexandr
+Contact: sasha1924181999@gmail.com
+
 /* SITE */
-Last update: 2026-04-23
-Version: 2.0.0
-Build: 26.4
-Service Worker: v1.3
+Last update: 2026-07-29
+Version: 2.1
+Build: 26.7
 Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
 Language: English
 Charset: UTF-8
 
 Stack: HTML, CSS, JavaScript (Vanilla)
-Analytics: SimpleAnalytics, Cloudflare Web Analytics, GTM, TikTok Pixel
-Feeds: RSS managed via Cloudflare
-Service Worker: Yes (sw.js v1.3)
-PWA: Yes (site.webmanifest)
+Analytics: Simple Analytics, Google Analytics 4, TikTok Pixel
+Hosting: GitHub Pages + Cloudflare proxy
+Domain: Nic.ua
 Accessibility: WCAG 2.1 AA target
 Performance: Vanilla JS, no build steps, GPU-accelerated CSS, resource preload tags
 
 /* ACKNOWLEDGEMENTS */
-Typefaces: Google Fonts, CDN Fonts
-Hosting: GitHub Pages
-Domain: Nic.ua
+Typefaces: CDN Fonts (VCR OSD Mono), Google Fonts (DotGothic16 — game only)
+AI-Free Music: https://ai-free.io

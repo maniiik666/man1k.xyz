@@ -5,10 +5,10 @@ Personal website of **MAN1K** (Yaroslav Boruk) — Ukrainian witch house artist.
 ## Stack
 
 - **Core:** Static Vanilla HTML/CSS/JS — no build step, no framework.
-- **Hosting:** Deployed via GitHub Pages. RSS feeds managed independently via Cloudflare.
-- **PWA & Offline:** Custom Service Worker (`sw.js`) for offline support, local cache strategies, and `site.webmanifest`.
-- **Analytics & Tracking:** Implemented securely via strict Content Security Policy (SimpleAnalytics, Cloudflare Web Analytics, Google Tag Manager, TikTok Pixel).
-- **Aesthetics & UI:** CSS-driven VHS/glitch effects, CRT shader emulation, and custom VCR OSD Mono font with Cyrillic extension.
+- **Hosting:** GitHub Pages (origin) + Cloudflare (proxy, CDN, DNS, redirects).
+- **Analytics:** Simple Analytics (cookieless), Google Analytics 4, TikTok Pixel — all suppressed when DNT/GPC active.
+- **Aesthetics & UI:** CSS-driven VHS/glitch effects, CRT shader emulation, custom VCR OSD Mono font with Cyrillic extension.
+- **AI-Free Music:** All creative output is human-made. Certificate: [ai-free.io](https://ai-free.io)
 
 ## Structure
 
@@ -17,18 +17,26 @@ Personal website of **MAN1K** (Yaroslav Boruk) — Ukrainian witch house artist.
 /about      → artist info
 /music      → releases
 /lives      → tour dates (Bandsintown)
-/gallery    → photos (ImgBB)
+/gallery    → photos (pics.man1k.xyz CDN)
 /tap        → links aggregation (Linktree alternative)
 /services   → booking & services
 /subscribe  → newsletter (Buttondown)
 /press      → EPK & press materials
-/vv17ch0uz3 → genre info
+/press/faq  → press FAQ
+/press/genre → genre overview
 /legal      → privacy, cookies, copyright, terms
 /contact    → representatives contacts
-/game/      → mini-game easter egg
-/portal666  → hidden page
+/game/      → mini-game easter egg (VOID SIGNAL)
 /404        → custom not found page
 ```
+
+## Cloudflare redirects (not files in repo)
+
+| Path | Destination |
+|---|---|
+| `/discography` | https://www.discogs.com/artist/12948189-MAN1K |
+| `/merch` | https://shop.man1k.xyz |
+| `/donate` | https://www.paypal.com/donate/?hosted_button_id=FSF3YUGZRPJ46 |
 
 ## Legal
 
@@ -38,4 +46,7 @@ Source code is provided for reference only. No license is granted for reuse, red
 
 ## Contact
 
-All inquiries — void@man1k.xyz
+- General: void@man1k.xyz
+- EU / UK booking: ElektroSpank Agency — mgmt@pr.elektrospank.com
+- Ukraine booking: ua-booking@gmail.com
+- Legal: legal@man1k.xyz

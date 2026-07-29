@@ -1,188 +1,1203 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" data-author="MAN1K" data-build="26.4">
+<html lang="en" data-author="MAN1K" data-build="26.7">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://man1k.xyz; script-src 'self' https://man1k.xyz 'unsafe-inline' https://w.soundcloud.com https://analytics.tiktok.com https://www.tiktok.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://cdnjs.cloudflare.com https://bandcamp.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://scripts.simpleanalyticscdn.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://bandcamp.com https://soundcloud.com https://w.soundcloud.com https://open.spotify.com https://www.youtube.com https://buttondown.com https://buttondown.email; connect-src 'self' https://*.bandcamp.com https://*.bcbits.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://w.soundcloud.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://*.google-analytics.com https://analytics.tiktok.com https://www.tiktok.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://buttondown.com https://buttondown.email https://www.bandsintown.com https://rest.bandsintown.com https://queue.simpleanalyticscdn.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; upgrade-insecure-requests">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Permissions-Policy" content="interest-cohort=(), camera=(), microphone=(), geolocation=()">
-<script src="/polyfills.js"></script>
-<meta name="description" content="MAN1K Press Directory.">
-<meta name="author" content="Yaroslav Boruk (MAN1K)">
-<meta name="copyright" content="© 2026 Yaroslav Boruk (MAN1K). All rights reserved.">
-<meta name="ai:entity:agent" content="https://man1k.xyz/llms.txt">
-<meta name="ai:data:schema" content="https://man1k.xyz/artist.json">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#000000">
-<meta name="format-detection" content="telephone=no">
-<meta name="referrer" content="origin-when-cross-origin">
-<meta name="content-language" content="en">
-<meta name="msapplication-config" content="/browserconfig.xml">
-<meta property="og:title" content="MAN1K — PRESS">
-<meta property="og:description" content="Press materials, EPK, logos, and media assets for MAN1K.">
-<meta property="og:image" content="https://man1k.xyz/img/og.jpg">
-<meta property="og:url" content="https://man1k.xyz/press">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="MAN1K">
-<meta property="fb:app_id" content="306377171995934">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MAN1K — PRESS">
-<meta name="twitter:description" content="Press materials, EPK, logos, and media assets for MAN1K.">
-<meta name="twitter:image" content="https://man1k.xyz/img/og.jpg">
-<link rel="me" href="https://man1k.elektrospank.com">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site info">
-<link rel="alternate" type="application/ld+json" href="/artist.json" title="MAN1K Artist Data">
-<link rel="sitemap" type="application/xml" href="/sitemap.xml">
-<link rel="author" href="/humans.txt">
-<title>MAN1K — PRESS</title>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "CollectionPage",
-      "@id": "https://man1k.xyz/press#webpage",
-      "url": "https://man1k.xyz/press",
-      "name": "Press Kit — MAN1K",
-      "description": "EPK, booking info, and media assets for MAN1K — Ukrainian Witch House producer and DJ.",
-      "isPartOf": { "@id": "https://man1k.xyz/#website" },
-      "about": { "@id": "https://man1k.xyz/#artist" },
-      "inLanguage": "en",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://man1k.xyz/" },
-          { "@type": "ListItem", "position": 2, "name": "Press", "item": "https://man1k.xyz/press" }
-        ]
-      }
-    },
-    {
-      "@type": "DigitalDocument",
-      "name": "MAN1K — Electronic Press Kit (EPK)",
-      "url": "https://man1k.xyz/epk.pdf",
-      "encodingFormat": "application/pdf",
-      "about": { "@id": "https://man1k.xyz/#artist" },
-      "creator": { "@id": "https://man1k.xyz/#artist" }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://man1k.xyz; script-src 'self' https://man1k.xyz 'unsafe-inline' https://w.soundcloud.com https://analytics.tiktok.com https://www.tiktok.com https://www.googletagmanager.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://cdnjs.cloudflare.com https://bandcamp.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://scripts.simpleanalyticscdn.com; style-src 'self' 'unsafe-inline' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.cdnfonts.com https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://bandcamp.com https://soundcloud.com https://w.soundcloud.com https://open.spotify.com https://www.youtube.com https://buttondown.com https://buttondown.email; connect-src 'self' https://*.bandcamp.com https://*.bcbits.com https://widgetv3.bandsintown.com https://rest.bandsintown.com https://w.soundcloud.com https://cdn.cloudflareinsights.com https://static.cloudflareinsights.com https://man1k.xyz https://analytics.tiktok.com https://www.tiktok.com https://*.google-analytics.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://buttondown.com https://buttondown.email https://www.bandsintown.com https://queue.simpleanalyticscdn.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=(), camera=(), microphone=(), geolocation=()">
+  <meta name="description"
+    content="MAN1K Press Directory — EPK, press kit, logos, and media assets for journalists and promoters.">
+  <meta name="author" content="Yaroslav Boruk (MAN1K)">
+  <meta name="copyright" content="© 2026 Yaroslav Boruk (MAN1K). All rights reserved.">
+  <meta name="ai:entity:agent" content="https://man1k.xyz/llms.txt">
+  <meta name="ai:data:schema" content="https://man1k.xyz/artist.json">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta property="og:title" content="MAN1K — PRESS">
+  <meta property="og:description" content="Press materials, EPK, logos, and media assets for MAN1K.">
+  <meta property="og:image" content="https://man1k.xyz/img/og.jpg">
+  <meta property="og:url" content="https://man1k.xyz/press">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MAN1K">
+  <meta property="og:locale" content="en_US">
+  <meta property="fb:app_id" content="306377171995934">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAN1K — PRESS">
+  <meta name="twitter:description" content="Press materials, EPK, logos, and media assets for MAN1K.">
+  <meta name="twitter:image" content="https://man1k.xyz/img/og.jpg">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site info">
+  <link rel="alternate" type="application/ld+json" href="/artist.json" title="MAN1K Artist Data">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="author" href="/humans.txt">
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="canonical" href="https://man1k.xyz/press">
+  <link rel="alternate" hreflang="en" href="https://man1k.xyz/press">
+  <link rel="alternate" hreflang="uk" href="https://man1k.xyz/press">
+  <link rel="alternate" hreflang="ru" href="https://man1k.xyz/press">
+  <link rel="alternate" hreflang="x-default" href="https://man1k.xyz/press">
+  <title>MAN1K — PRESS</title>
+  <script type="application/ld+json">{
+"@context": "https://schema.org",
+"@graph": [{
+  "@type": "CollectionPage",
+  "@id": "https://man1k.xyz/press#webpage",
+  "url": "https://man1k.xyz/press",
+  "name": "Press Kit — MAN1K",
+  "description": "EPK, booking info, and media assets for MAN1K — Ukrainian Witch House producer and DJ.",
+  "isPartOf": { "@id": "https://man1k.xyz/#website" },
+  "about": { "@id": "https://man1k.xyz/#artist" },
+  "inLanguage": "en",
+  "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://man1k.xyz/" },
+    { "@type": "ListItem", "position": 2, "name": "Press", "item": "https://man1k.xyz/press" }
+  ]}
+},{
+  "@type": "DigitalDocument",
+  "name": "MAN1K — Electronic Press Kit (EPK)",
+  "url": "https://press.man1k.xyz/epk.pdf",
+  "encodingFormat": "application/pdf",
+  "about": { "@id": "https://man1k.xyz/#artist" },
+  "creator": { "@id": "https://man1k.xyz/#artist" }
+},{
+  "@type": "DigitalDocument",
+  "name": "MAN1K — One Sheet",
+  "url": "https://press.man1k.xyz/onesheet.pdf",
+  "encodingFormat": "application/pdf",
+  "about": { "@id": "https://man1k.xyz/#artist" },
+  "creator": { "@id": "https://man1k.xyz/#artist" }
+}]
+}</script>
+  <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+  <link rel="preload" href="/vcrosdmonorus_vhsicons.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="https://fonts.cdnfonts.com/css/vcr-osd-mono?display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vcr-osd-mono?display=swap">
+  <style>
+    @font-face {
+      font-family: 'VCR OSD Mono';
+      src: url('/vcrosdmonorus_vhsicons.ttf') format('truetype');
+      unicode-range: U+0400-04FF, U+0500-052F, U+1C80-1C8F, U+2DE0-2DFF, U+A640-A69F;
+      font-display: swap
     }
-  ]
-}
-</script>
-<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
-<link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
-<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180">
-<link rel="canonical" href="https://man1k.xyz/press">
-<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/vcr-osd-mono">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--g:#0f0;--f:'VCR OSD Mono','Courier New',monospace;--ft:'Courier New',Courier,monospace;--gg:0 0 15px rgba(0,255,0,.4)}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{background:#000;color:#fff;font-family:var(--f);overflow:hidden;height:100dvh;width:100vw;cursor:default;-webkit-font-smoothing:antialiased}
-::selection{background:rgba(0,255,0,.2);color:#fff;text-shadow:2px 0 rgba(0,255,0,.5)}
-.lb{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,transparent,rgba(0,100,0,.8) 20%,var(--g) 50%,rgba(0,100,0,.8) 80%,transparent);box-shadow:0 0 20px rgba(0,255,0,.6),0 0 40px rgba(0,100,0,.4);z-index:9999;opacity:0;filter:blur(.5px);transition:width .4s cubic-bezier(.4,0,.2,1);will-change:width}
-.lb.on{opacity:1;animation:lpb 2s ease-in-out infinite}
-.lb::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,rgba(0,255,0,.3) 2px,transparent 4px);animation:lbs .5s linear infinite}
-.lb::after{content:'';position:absolute;top:-1px;right:0;width:150px;height:5px;background:radial-gradient(ellipse at center,var(--g),rgba(0,255,0,.4) 40%,transparent 70%);filter:blur(3px);animation:lbg 1.5s ease-in-out infinite}
-@keyframes lpb{0%,to{filter:blur(.5px) brightness(1)}50%{filter:blur(.8px) brightness(1.3)}}
-@keyframes lbs{to{transform:translateX(100%)}}
-@keyframes lbg{0%,to{opacity:.6;transform:scaleX(1)}50%{opacity:1;transform:scaleX(1.2)}}
-.cbg{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,15,0,.3),rgba(0,5,0,.6));overflow:hidden}
-.cbg::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(0,50,0,.06) 2px,rgba(0,50,0,.06) 4px);animation:cs 6s linear infinite}
-.cbg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 50%,rgba(0,0,0,.5))}
-@keyframes cs{to{transform:translateY(100%)}}
-.cf{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0;animation:cfl 3s step-end infinite}
-@keyframes cfl{0%,4%{opacity:0}2%{opacity:.06;background:rgba(0,255,0,.02)}22%{opacity:.05;background:rgba(0,200,0,.018)}24%{opacity:0}47%{opacity:.04;background:rgba(0,255,0,.015)}49%{opacity:0}67%{opacity:.06;background:rgba(0,200,0,.02)}69%{opacity:0}87%{opacity:.03;background:rgba(0,255,0,.012)}89%{opacity:0}}
-.ch{position:fixed;left:0;width:100%;height:2px;background:linear-gradient(90deg,transparent 5%,rgba(0,255,0,.12) 50%,transparent 95%);z-index:0;pointer-events:none;opacity:0;animation:chl 4s linear infinite}
-@keyframes chl{0%{top:-2px;opacity:0}3%{opacity:.7}97%{opacity:.7}100%{top:100%;opacity:0}}
-.cg{position:fixed;inset:0;pointer-events:none;z-index:0;box-shadow:inset 0 0 150px rgba(0,20,0,.3),inset 0 0 50px rgba(0,10,0,.2)}
-.cn{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:128px;animation:cnn .12s steps(5) infinite}
-@keyframes cnn{0%{background-position:0 0}20%{background-position:-20px -10px}40%{background-position:10px -20px}60%{background-position:-10px 10px}80%{background-position:20px 20px}to{background-position:-5px 15px}}
-.bt{position:fixed;inset:0;z-index:10;background:#000;display:flex;align-items:center;justify-content:center}
-.bt::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(0,50,0,.06) 2px,rgba(0,50,0,.06) 4px);pointer-events:none}
-.bt.out{animation:btOut .6s cubic-bezier(.4,0,.2,1) forwards}
-@keyframes btOut{0%{opacity:1;filter:none}20%{filter:brightness(3) saturate(0)}40%{filter:brightness(4);transform:scaleY(.6) scaleX(1.05)}60%{filter:brightness(2);transform:scaleY(.02) scaleX(1.4)}80%{opacity:.4;transform:scaleY(.005) scaleX(2)}100%{opacity:0;transform:scaleY(0) scaleX(3)}}
-.bt-inner{font-family:var(--ft);font-size:clamp(10px,2vw,14px);color:var(--g);text-shadow:0 0 5px rgba(0,255,0,.3);max-width:600px;width:90%;line-height:1.6}
-.bt-line{opacity:0}
-.bt-line.vis{opacity:1}
-.bt-line.red{color:#d42020;text-shadow:0 0 12px rgba(212,32,32,.6)}
-.bt-line.glow{animation:btGlow .12s ease-in-out 3}
-@keyframes btGlow{0%,100%{text-shadow:0 0 12px rgba(212,32,32,.6)}50%{text-shadow:0 0 30px rgba(212,32,32,1),0 0 60px rgba(212,32,32,.4),0 0 4px #fff}}
-.bt-cur::after{content:'_';animation:bk .6s linear infinite}
-@keyframes bk{50%{opacity:0}}
-.bt-flash{position:fixed;inset:0;z-index:11;opacity:0;pointer-events:none;background:radial-gradient(circle,rgba(212,32,32,.35),rgba(0,255,0,.08));mix-blend-mode:screen}
-.bt-flash.on{animation:btFlash .45s ease-out}
-@keyframes btFlash{0%{opacity:0}20%{opacity:1}50%{opacity:.5}70%{opacity:.7}100%{opacity:0}}
-.pw{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;height:100dvh;padding:clamp(15px,3vw,30px);opacity:0;transition:padding .3s ease}
-.pw.vis{opacity:1;animation:pwIn .5s ease-out}
-@keyframes pwIn{0%{opacity:0;filter:brightness(2) blur(3px);transform:scale(1.015)}40%{opacity:.8;filter:brightness(1.2) blur(.5px)}100%{opacity:1;filter:none;transform:none}}
-.cb{background:radial-gradient(circle,rgba(0,15,0,.95),rgba(0,5,0,.98));border:2px solid rgba(0,80,0,.5);box-shadow:0 0 30px rgba(0,50,0,.5),inset 0 0 60px rgba(0,20,0,.5);padding:clamp(20px,4vw,40px);width:clamp(280px,90vw,700px);max-height:calc(100dvh - 40px);position:relative;overflow:hidden}
-.cb::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,50,0,.08) 2px,rgba(0,50,0,.08) 4px);pointer-events:none;z-index:1}
-.ph{display:flex;align-items:center;justify-content:flex-start;border-bottom:1px solid rgba(0,100,0,.4);padding-bottom:clamp(10px,2vw,15px);margin-bottom:clamp(15px,3vw,25px);position:relative;gap:clamp(10px,2vw,20px)}
-.ph::after{content:'';position:absolute;bottom:-1px;left:0;width:30%;height:1px;background:linear-gradient(90deg,rgba(0,255,0,.5),transparent)}
-.hb{z-index:20;background:transparent;border:1px solid rgba(0,150,0,.5);color:rgba(0,200,0,.7);font-family:var(--f);font-size:clamp(11px,2vw,14px);padding:clamp(5px,.8vw,8px) clamp(12px,2vw,20px);cursor:pointer;text-transform:uppercase;letter-spacing:2px;text-decoration:none;transition:all .25s ease;text-shadow:0 0 5px rgba(0,255,0,.1);flex-shrink:0;position:relative;line-height:1;order:-1}
-.hb:hover,.hb:focus-visible{background:rgba(0,255,0,.08);border-color:var(--g);color:var(--g);box-shadow:var(--gg),inset 0 0 20px rgba(0,255,0,.05);text-shadow:0 0 10px rgba(0,255,0,.5)}
-.hb::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 1px,rgba(0,255,0,.03) 1px,rgba(0,255,0,.03) 2px);pointer-events:none;opacity:0;transition:opacity .25s}
-.hb:hover::before{opacity:1}
-.pt{font-size:clamp(14px,3vw,26px);color:var(--g);text-transform:uppercase;letter-spacing:clamp(1px,.4vw,4px);text-shadow:0 0 10px rgba(0,255,0,.5),2px 2px 0 rgba(0,50,0,.8);font-weight:700}
-.fl{list-style:none;padding:0;margin:clamp(10px,2vw,20px) 0}
-.fl li{margin-bottom:clamp(6px,1.2vw,10px)}
-.fl a{text-decoration:none;color:var(--g);font-size:clamp(11px,2.2vw,16px);font-weight:700;display:flex;justify-content:space-between;align-items:center;padding:clamp(8px,1.5vw,12px) clamp(10px,2vw,15px);border:1px solid transparent;transition:all .2s;cursor:pointer;text-shadow:0 0 3px rgba(0,255,0,.3);font-family:var(--ft);background:rgba(0,20,0,.3)}
-.fl a:hover{background:var(--g);color:#000;box-shadow:0 0 20px rgba(0,255,0,.5);border-color:var(--g);transform:scale(1.02);text-shadow:none}
-.fl .pf{opacity:.7;margin-right:clamp(6px,1vw,15px);color:#d42020;flex-shrink:0}
-.fl a:hover .pf{color:#000}
-.fl .hx{color:rgba(100,100,100,.6);font-size:clamp(8px,1.5vw,12px);margin-left:auto;padding-left:10px;font-weight:400;white-space:nowrap;flex-shrink:0}
-.fl a:hover .hx{color:rgba(0,0,0,.5)}
-.fl .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sb{margin-top:clamp(12px,2.5vw,20px);font-size:clamp(8px,1.6vw,11px);font-weight:700;border-top:1px dashed rgba(0,100,0,.4);padding-top:clamp(6px,1.2vw,10px);display:flex;justify-content:space-between;text-shadow:0 0 3px rgba(0,255,0,.3);color:rgba(0,200,0,.7);font-family:var(--ft)}
-.sb .bl{animation:bk 1s linear infinite}
-@media(max-width:480px) and (orientation:portrait){.pw{padding:10px}.cb{padding:14px 12px;max-height:calc(100dvh - 20px)}.ph{gap:8px}.pt{font-size:12px;letter-spacing:1px}.hb{font-size:10px;padding:4px 10px;letter-spacing:1px}.fl a{padding:10px 8px;font-size:10px}.fl .hx{font-size:7px;padding-left:6px}.fl .pf{margin-right:4px;font-size:9px}}
-@media(max-width:375px) and (orientation:portrait){.pt{font-size:11px}.hb{font-size:9px;padding:3px 8px;letter-spacing:1px}.fl a{font-size:9px;padding:8px 6px}.fl .hx{font-size:7px}.sb{font-size:7px}}
-@media(max-width:320px) and (orientation:portrait){.cb{padding:10px 8px}.pt{font-size:10px}.fl a{font-size:8px;padding:7px 5px}}
-@media(min-width:481px) and (max-width:768px) and (orientation:portrait){.pw{padding:15px}.cb{padding:20px 18px}}
-@media(max-height:500px) and (orientation:landscape){.pw{padding:8px}.cb{padding:12px 15px;max-height:calc(100dvh - 16px)}.pt{font-size:15px}.ph{margin-bottom:10px;padding-bottom:8px}.fl{margin:6px 0}.fl li{margin-bottom:5px}.fl a{padding:6px 8px;font-size:11px}.sb{margin-top:6px;padding-top:5px}.hb{font-size:9px;padding:3px 8px}}
-@media(hover:none) and (pointer:coarse){.fl a{min-height:48px}.hb{min-height:36px;display:inline-flex;align-items:center;justify-content:center}}
-@media(min-width:1920px){.cb{max-width:800px}}
-@media(min-width:2560px){.cb{max-width:900px}.pt{font-size:30px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.bt{display:none}.pw{opacity:1}}
-</style>
-<noscript><style>.bt{display:none!important}.pw{opacity:1!important;animation:none!important}</style></noscript>
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --black: #000;
+      --white: #fff;
+      --red: #b52626;
+      --font-vhs: 'VCR OSD Mono', 'Courier New', monospace;
+      --font-nav: 'Arial Black', Arial, sans-serif;
+      --site-pad: clamp(16px, 4vw, 40px)
+    }
+
+    html {
+      background: #000;
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-vhs);
+      min-height: 100dvh;
+      overflow-x: hidden;
+      cursor: default;
+      -webkit-font-smoothing: antialiased
+    }
+
+    ::selection {
+      background: #fff;
+      color: #000;
+      text-shadow: none
+    }
+
+    a {
+      color: inherit
+    }
+
+    /* ── VHS FX ── */
+    .fx-grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .13;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.05' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 64px;
+      animation: grainFlicker .16s steps(1) infinite;
+      contain: paint
+    }
+
+    @keyframes grainFlicker {
+      0% {
+        background-position: 0 0
+      }
+
+      12% {
+        background-position: -37px 19px
+      }
+
+      24% {
+        background-position: 22px -41px
+      }
+
+      36% {
+        background-position: -14px -8px
+      }
+
+      48% {
+        background-position: 41px 27px
+      }
+
+      60% {
+        background-position: -29px 44px
+      }
+
+      72% {
+        background-position: 8px -23px
+      }
+
+      84% {
+        background-position: -46px -35px
+      }
+
+      100% {
+        background-position: 33px 6px
+      }
+    }
+
+    .glitch-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: screen
+    }
+
+    .vhs-filter {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 4;
+      background: radial-gradient(ellipse at 50% 50%, transparent 62%, rgba(0, 0, 0, .3) 100%);
+      mix-blend-mode: multiply
+    }
+
+    .glitch-line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      opacity: 0;
+      background: linear-gradient(90deg, var(--gl-color, #fff), transparent);
+      animation: glitchLine 100ms linear
+    }
+
+    @keyframes glitchLine {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0
+      }
+
+      10%,
+      90% {
+        opacity: .35
+      }
+
+      to {
+        transform: translateX(100%);
+        opacity: 0
+      }
+    }
+
+    .glitch-flash {
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, .02);
+      pointer-events: none;
+      opacity: 0;
+      z-index: 2;
+      animation: flash 150ms linear;
+      mix-blend-mode: screen
+    }
+
+    @keyframes flash {
+
+      0%,
+      to {
+        opacity: 0
+      }
+
+      50% {
+        opacity: .15
+      }
+    }
+
+    .fx-tracking {
+      position: fixed;
+      left: 0;
+      top: -6px;
+      width: 100%;
+      height: 6px;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0;
+      background: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, .025) 40%, rgba(181, 38, 38, .05) 50%, rgba(255, 255, 255, .025) 60%, transparent 95%);
+      animation: trackSweep 9s linear infinite
+    }
+
+    @keyframes trackSweep {
+      0% {
+        transform: translateY(0);
+        opacity: 0
+      }
+
+      3% {
+        opacity: .18
+      }
+
+      96% {
+        opacity: .18
+      }
+
+      100% {
+        transform: translateY(calc(100vh + 12px));
+        opacity: 0
+      }
+    }
+
+    .fx-tearline {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 6;
+      pointer-events: none;
+      opacity: 0;
+      background: rgba(255, 255, 255, .1);
+      animation: tearFlash 5.5s step-end infinite
+    }
+
+    @keyframes tearFlash {
+
+      0%,
+      100% {
+        opacity: 0;
+        transform: translateY(30vh)
+      }
+
+      32% {
+        opacity: .3;
+        transform: translateY(62vh)
+      }
+
+      34% {
+        opacity: 0
+      }
+
+      71% {
+        opacity: .3;
+        transform: translateY(18vh)
+      }
+
+      73% {
+        opacity: 0
+      }
+    }
+
+    .fx-chromab {
+      position: fixed;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0;
+      animation: chromabAmbient 7s step-end infinite
+    }
+
+    @keyframes chromabAmbient {
+
+      0%,
+      100% {
+        opacity: 0
+      }
+
+      32% {
+        opacity: 1;
+        box-shadow: inset 2px 0 0 rgba(181, 38, 38, .05), inset -2px 0 0 rgba(255, 255, 255, .035)
+      }
+
+      34% {
+        opacity: 0
+      }
+
+      67% {
+        opacity: 1;
+        box-shadow: inset -2px 0 0 rgba(181, 38, 38, .04), inset 2px 0 0 rgba(255, 255, 255, .03)
+      }
+
+      69% {
+        opacity: 0
+      }
+    }
+
+    /* ── NAV ── */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      height: 58px;
+      padding: 0 var(--site-pad);
+      background: rgba(0, 0, 0, .14);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+      transition: background .3s ease, border-color .3s ease
+    }
+
+    .site-nav.scrolled {
+      background: rgba(0, 0, 0, .5);
+      border-bottom-color: rgba(181, 38, 38, .18)
+    }
+
+    .nav-wordmark-link {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0
+    }
+
+    .nav-wordmark {
+      height: 19px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      transition: filter .2s ease
+    }
+
+    .nav-wordmark-link:hover .nav-wordmark,
+    .nav-wordmark-link:focus-visible .nav-wordmark {
+      filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(181, 38, 38, .6))
+    }
+
+    .nav-group {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      gap: clamp(16px, 2.4vw, 32px)
+    }
+
+    .nav-group a {
+      font-family: var(--font-nav);
+      font-weight: 900;
+      text-decoration: none;
+      font-size: 11.5px;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, .7);
+      transition: color .2s ease
+    }
+
+    .nav-group a:hover,
+    .nav-group a:focus-visible {
+      color: var(--red)
+    }
+
+    .nav-group a.nav-active {
+      color: #fff
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0
+    }
+
+    .minigame-btn {
+      display: none;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none
+    }
+
+    .minigame-btn img {
+      width: 17px;
+      height: 19px;
+      filter: brightness(0) invert(1);
+      transition: filter .2s ease
+    }
+
+    .minigame-btn:hover img,
+    .minigame-btn:focus-visible img {
+      filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(6000%) hue-rotate(350deg)
+    }
+
+    .menu-toggle {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: none;
+      border: none;
+      cursor: pointer
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #fff;
+      transition: transform .25s ease, opacity .2s ease, background .2s ease
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background: var(--red)
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background: var(--red)
+    }
+
+    @media(min-width:861px) {
+      .nav-group {
+        display: flex
+      }
+
+      .minigame-btn {
+        display: flex
+      }
+
+      .menu-toggle {
+        display: none
+      }
+    }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: #030303;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(18px, 4vh, 32px);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity .25s ease, transform .25s ease, visibility 0s linear .25s
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition: opacity .25s ease, transform .25s ease
+    }
+
+    .mobile-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(14px, 3.5vh, 26px)
+    }
+
+    .mobile-links a {
+      font-family: var(--font-nav);
+      font-weight: 900;
+      text-decoration: none;
+      font-size: clamp(18px, 5.2vw, 27px);
+      letter-spacing: 1px;
+      color: #fff;
+      transition: color .2s ease
+    }
+
+    .mobile-links a:hover,
+    .mobile-links a:active,
+    .mobile-links a:focus-visible {
+      color: var(--red)
+    }
+
+    .menu-close {
+      position: absolute;
+      top: clamp(14px, 3.5vw, 26px);
+      right: clamp(14px, 3.5vw, 26px);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: 1px solid rgba(255, 255, 255, .25);
+      cursor: pointer;
+      transition: border-color .2s ease, transform .3s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    .menu-close span {
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      background: #fff;
+      transition: background .2s ease
+    }
+
+    .menu-close span:nth-child(1) {
+      transform: rotate(45deg)
+    }
+
+    .menu-close span:nth-child(2) {
+      transform: rotate(-45deg)
+    }
+
+    .menu-close:hover,
+    .menu-close:focus-visible {
+      border-color: var(--red);
+      transform: rotate(90deg)
+    }
+
+    .menu-close:hover span,
+    .menu-close:focus-visible span {
+      background: var(--red)
+    }
+
+    @keyframes closeSpinIn {
+      from {
+        transform: rotate(-90deg) scale(.4);
+        opacity: 0
+      }
+
+      to {
+        transform: rotate(0deg) scale(1);
+        opacity: 1
+      }
+    }
+
+    .mobile-menu.open .menu-close {
+      animation: closeSpinIn .4s cubic-bezier(.34, 1.56, .64, 1) both
+    }
+
+    /* ── LOADING BAR ── */
+    .loading-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, rgba(122, 16, 16, .8) 20%, var(--red) 50%, rgba(122, 16, 16, .8) 80%, transparent);
+      box-shadow: 0 0 20px rgba(181, 38, 38, .7), 0 0 40px rgba(122, 16, 16, .5);
+      z-index: 9999;
+      opacity: 0;
+      filter: blur(.5px);
+      transition: width .4s cubic-bezier(.4, 0, .2, 1);
+      will-change: width
+    }
+
+    .loading-bar.active {
+      opacity: 1;
+      animation: pulseBar 2s ease-in-out infinite
+    }
+
+    .loading-bar::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(90deg, transparent 0, rgba(181, 38, 38, .3) 2px, transparent 4px);
+      animation: barScan .5s linear infinite
+    }
+
+    .loading-bar::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      right: 0;
+      width: 150px;
+      height: 5px;
+      background: radial-gradient(ellipse at center, var(--red), rgba(181, 38, 38, .4) 40%, transparent 70%);
+      filter: blur(3px);
+      animation: glowPulse 1.5s ease-in-out infinite
+    }
+
+    @keyframes pulseBar {
+
+      0%,
+      to {
+        filter: blur(.5px) brightness(1)
+      }
+
+      50% {
+        filter: blur(.8px) brightness(1.3)
+      }
+    }
+
+    @keyframes barScan {
+      to {
+        transform: translateX(100%)
+      }
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      to {
+        opacity: .6;
+        transform: scaleX(1)
+      }
+
+      50% {
+        opacity: 1;
+        transform: scaleX(1.2)
+      }
+    }
+
+    /* ── BOOT FLASH ── */
+    .boot-flash {
+      position: fixed;
+      inset: 0;
+      z-index: 70;
+      pointer-events: none;
+      background: #fff;
+      mix-blend-mode: screen;
+      animation: bootFlash .55s ease-out both
+    }
+
+    @keyframes bootFlash {
+      0% {
+        opacity: .5
+      }
+
+      12% {
+        opacity: .12
+      }
+
+      30% {
+        opacity: .28
+      }
+
+      55% {
+        opacity: .05
+      }
+
+      100% {
+        opacity: 0
+      }
+    }
+
+    /* ── CRT OPEN ── */
+    .press-wrap {
+      animation: crtOn 1s cubic-bezier(.2, .7, .2, 1) both;
+      transform-origin: center center;
+      will-change: transform, filter, opacity
+    }
+
+    @keyframes crtOn {
+      0% {
+        opacity: 0;
+        transform: scaleY(.006) scaleX(1.35);
+        filter: brightness(8) contrast(2.2)
+      }
+
+      9% {
+        opacity: 1;
+        transform: scaleY(.006) scaleX(1.35);
+        filter: brightness(6)
+      }
+
+      15% {
+        transform: scaleY(.03) scaleX(1.2);
+        filter: brightness(4.5)
+      }
+
+      23% {
+        transform: scaleY(.5) scaleX(1.03);
+        filter: brightness(2.8)
+      }
+
+      31% {
+        transform: scaleY(1.07) scaleX(1);
+        filter: brightness(2)
+      }
+
+      37% {
+        transform: scaleY(.97);
+        filter: brightness(1.5)
+      }
+
+      44% {
+        transform: translateX(-7px) skewX(-1.2deg);
+        filter: brightness(1.8) contrast(1.3)
+      }
+
+      50% {
+        transform: translateX(6px) skewX(.8deg);
+        filter: brightness(1.2)
+      }
+
+      58% {
+        transform: translateX(-4px);
+        filter: brightness(1.4)
+      }
+
+      67% {
+        transform: translateX(3px) skewX(-.4deg)
+      }
+
+      80% {
+        transform: none;
+        filter: brightness(1.05)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+        filter: none
+      }
+    }
+
+    /* ── LAYOUT ── */
+    .press-wrap {
+      position: relative;
+      z-index: 2;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(80px, 12vh, 110px) var(--site-pad) clamp(40px, 6vh, 70px)
+    }
+
+    .press-inner {
+      width: 100%;
+      max-width: 560px
+    }
+
+    /* ── HEADER LABEL ── */
+    .press-label {
+      font-family: var(--font-vhs);
+      font-size: 9px;
+      letter-spacing: 4px;
+      color: rgba(181, 38, 38, .45);
+      text-transform: uppercase;
+      margin-bottom: clamp(22px, 4vh, 36px);
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .press-label::before {
+      content: '>';
+      color: rgba(181, 38, 38, .3)
+    }
+
+    .press-cursor {
+      display: inline-block;
+      width: 7px;
+      height: 11px;
+      background: rgba(181, 38, 38, .4);
+      animation: blink .9s step-end infinite;
+      vertical-align: middle;
+      margin-left: 2px
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0
+      }
+    }
+
+    /* ── DIRECTORY LIST ── */
+    .dir-list {
+      display: flex;
+      flex-direction: column
+    }
+
+    .dir-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: clamp(13px, 2vh, 17px) 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .05);
+      text-decoration: none;
+      color: inherit;
+      transition: background .15s ease;
+      outline: none
+    }
+
+    .dir-row:first-child {
+      border-top: 1px solid rgba(255, 255, 255, .05)
+    }
+
+    .dir-name {
+      font-family: var(--font-nav);
+      font-weight: 900;
+      font-size: clamp(12px, 1.8vw, 13px);
+      letter-spacing: .5px;
+      color: rgba(255, 255, 255, .68);
+      flex: 1;
+      min-width: 0;
+      transition: color .2s ease
+    }
+
+    .dir-arr {
+      font-family: var(--font-vhs);
+      font-size: 10px;
+      color: rgba(255, 255, 255, .15);
+      flex-shrink: 0;
+      transition: color .2s ease, transform .2s ease
+    }
+
+    .dir-row:hover .dir-name {
+      color: #fff
+    }
+
+    .dir-row:hover .dir-arr {
+      color: rgba(255, 255, 255, .5);
+      transform: translate(2px, -2px)
+    }
+
+    .dir-row:focus-visible {
+      outline: 1px solid rgba(181, 38, 38, .3);
+      outline-offset: 2px
+    }
+
+    /* ── FOOTER ── */
+    .press-foot {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: clamp(12px, 2vh, 20px) var(--site-pad) calc(clamp(12px, 2vh, 20px) + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      background: rgba(0, 0, 0, .4);
+      backdrop-filter: blur(4px);
+      z-index: 10
+    }
+
+    .press-foot a {
+      display: inline-flex;
+      opacity: .35;
+      transition: opacity .3s ease
+    }
+
+    .press-foot a:hover,
+    .press-foot a:focus-visible {
+      opacity: .75
+    }
+
+    .press-foot img {
+      height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1)
+    }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:480px) {
+      .site-nav {
+        height: 52px
+      }
+
+      .nav-wordmark {
+        height: 15px
+      }
+
+      .dir-name {
+        font-size: 12px
+      }
+
+      .press-wrap {
+        padding-bottom: 90px
+      }
+    }
+
+    @media(max-height:600px) {
+      .press-wrap {
+        justify-content: flex-start;
+        padding-top: 72px
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="lb" id="lb" role="progressbar" aria-hidden="true"></div>
-<div class="cbg"></div><div class="cf"></div><div class="ch"></div><div class="cg"></div><div class="cn"></div>
-<div class="bt" id="bt">
-<div class="bt-inner" id="btI"></div>
-</div>
-<div class="bt-flash" id="btF"></div>
-<div class="pw" id="pw">
-<div class="cb" id="cb">
-<div class="ph">
-<a href="/" class="hb">HOME</a>
-<h1 class="pt">> PRESS_DIRECTORY_ACCESS</h1>
-</div>
-<ul class="fl">
-<li><a href="/epk.pdf" target="_blank" rel="noopener noreferrer"><span class="pf">[FILE]</span><span class="nm">ELECTRONIC_PRESS_KIT</span><span class="hx">0xC5A4</span></a></li>
-<li><a href="/onesheet.pdf" target="_blank" rel="noopener noreferrer"><span class="pf">[FILE]</span><span class="nm">ONE_SHEET</span><span class="hx">0x97FC</span></a></li>
-<li><a href="/logos.zip"><span class="pf">[FILE]</span><span class="nm">LOGO_ASSETS</span><span class="hx">0xA2E9</span></a></li>
-<li><a href="/pics"><span class="pf">[LINK]</span><span class="nm">PRESS_PICTURES</span><span class="hx">0x6957</span></a></li>
-<li><a href="/vv17ch0uz3" target="_blank" rel="noopener noreferrer"><span class="pf">[LINK]</span><span class="nm">ABOUT_WITCHOUSE_GENRE</span><span class="hx">0xD3B1</span></a></li>
-<li><a href="mailto:void@man1k.xyz"><span class="pf">[MAIL]</span><span class="nm">VOID@MAN1K.XYZ</span><span class="hx">0xF1C3</span></a></li>
-</ul>
-<div class="sb">
-<span>PROJECT: ACTIVE // DAY_<span id="dc">?</span>
-<span><span class="bl">_</span></span>
-</div>
-</div>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-(function(){var lines=[{t:'> INITIALIZING PRESS ARCHIVE...',c:'g'},{t:'> LOADING FILE INDEX... OK',c:'g'},{t:'> DECRYPTING MEDIA ASSETS... OK',c:'g'},{t:'> VERIFYING CHECKSUMS... PASSED',c:'g'},{t:'> ██ ACCESS GRANTED ██',c:'r'}],el=document.getElementById('btI'),bt=document.getElementById('bt'),bf=document.getElementById('btF'),pw=document.getElementById('pw'),i=0,ci=0,curDiv=null;function addLine(){if(i>=lines.length){var last=curDiv;if(last){last.classList.add('glow');setTimeout(function(){bf.classList.add('on');bt.classList.add('out');pw.classList.add('vis');setTimeout(function(){bt.remove();bf.remove()},700)},150)}return}var ln=lines[i],div=document.createElement('div');div.className='bt-line'+(ln.c==='r'?' red':'');el.appendChild(div);curDiv=div;ci=0;typeChar()}function typeChar(){if(!lines[i])return;var txt=lines[i].t;if(ci<txt.length){curDiv.textContent=txt.substring(0,ci+1);curDiv.classList.add('vis');ci++;setTimeout(typeChar,12+Math.random()*20)}else{i++;ci=0;setTimeout(addLine,120+Math.random()*140)}}setTimeout(addLine,200)})();
-(function(){var b=document.getElementById('lb'),p=0,iv=null;function go(){b.classList.add('on');p=0;b.style.width='0';iv=setInterval(function(){if(p<70)p+=Math.random()*10;else if(p<90)p+=Math.random()*3;else if(p<95)p+=.5;b.style.width=Math.min(p,95)+'%';if(p>=95)clearInterval(iv)},100)}function done(){clearInterval(iv);b.style.width='100%';setTimeout(function(){b.classList.remove('on');setTimeout(function(){b.style.width='0'},300)},200)}go();window.addEventListener('load',done);window.addEventListener('pageshow',function(e){if(e.persisted)done()});document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a||a.target==='_blank')return;if(a.hostname&&a.hostname!==location.hostname)return;var h=a.getAttribute('href')||'';if(h==='#'||h.startsWith('#'))return;go()});var w=document.getElementById('pw'),t=0;w.addEventListener('touchstart',function(){t=Date.now()});w.addEventListener('click',function(e){if(e.target.closest('#cb'))return;if('ontouchstart'in window&&Date.now()-t>300)return;location.href='/'})})();
-(function(){var bg=document.querySelectorAll('.cbg,.cr,.cf,.ch,.cg,.cn');function pause(){bg.forEach(function(el){el.style.animationPlayState='paused';el.querySelectorAll('*').forEach(function(c){c.style.animationPlayState='paused'})})}function resume(){bg.forEach(function(el){el.style.animationPlayState='running';rAll('*').forEach(function(c){c.style.animationPlayState='running'})})}document.addEventListener('visibilitychange',function(){document.hidden?pause():resume()})})();
-(function(){var d=document.getElementById('dc');if(!d)return;function u(){d.textContent=Math.floor((Date.now()-new Date('2023-02-01').getTime())/864e5)}u();var n=new Date();n.setHours(24,0,0,0);setTimeout(function(){u();setInterval(u,864e5*1000)},n-Date.now())})();
-</script>
-<script src="/global.js" defer></script>
+  <div class="boot-flash" aria-hidden="true"></div>
+  <div class="loading-bar" id="loadingBar" role="progressbar" aria-hidden="true"></div>
+  <div class="fx-grain" aria-hidden="true"></div>
+  <div class="fx-tracking" aria-hidden="true"></div>
+  <div class="fx-tearline" aria-hidden="true"></div>
+  <div class="fx-chromab" aria-hidden="true"></div>
+  <div id="glitch-container" class="glitch-overlay" aria-hidden="true"></div>
+  <div class="vhs-filter" aria-hidden="true"></div>
+
+  <header class="site-nav" id="siteNav">
+    <a href="/" class="nav-wordmark-link" aria-label="MAN1K Home">
+      <img src="/img/wm.png" alt="MAN1K" class="nav-wordmark" width="120" height="19">
+    </a>
+    <nav class="nav-group" aria-label="Primary">
+      <a href="/about">ABØUT</a>
+      <a href="/music">MUSIC</a>
+      <a href="https://shop.man1k.xyz" target="_blank" rel="noopener noreferrer">MERCH</a>
+      <a href="/lives">LIVES</a>
+      <a href="/gallery">GALLERY</a>
+      <a href="/subscribe">SUBSCRIBE</a>
+    </nav>
+    <div class="nav-right">
+      <a href="/game/index.html" class="minigame-btn" aria-label="Minigame">
+        <img src="/icons/minigame.svg" alt="" width="17" height="19">
+      </a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button type="button" class="menu-close" id="menuClose" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <nav class="mobile-links" aria-label="Mobile navigation">
+      <a href="/about">ABØUT</a>
+      <a href="/music">MUSIC</a>
+      <a href="https://shop.man1k.xyz" target="_blank" rel="noopener noreferrer">MERCH</a>
+      <a href="/lives">LIVES</a>
+      <a href="/gallery">GALLERY</a>
+      <a href="/subscribe">SUBSCRIBE</a>
+    </nav>
+  </div>
+
+  <noscript>
+    <style>
+      .nav-group {
+        display: flex !important;
+        position: static !important;
+        transform: none !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px auto 0;
+        max-width: 90%
+      }
+
+      .nav-right .menu-toggle {
+        display: none !important
+      }
+
+      .mobile-menu {
+        display: none !important
+      }
+
+      .site-nav {
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px
+      }
+    </style>
+  </noscript>
+
+  <div class="press-wrap">
+    <div class="press-inner">
+
+      <div class="press-label" aria-hidden="true">
+        PRESS_DIRECTORY<span class="press-cursor"></span>
+      </div>
+
+      <nav class="dir-list" aria-label="Press materials">
+
+        <a href="https://press.man1k.xyz/epk.pdf" target="_blank" rel="noopener noreferrer" class="dir-row"
+          aria-label="Electronic Press Kit — PDF download">
+          <span class="dir-name">Electronic Press Kit</span>
+          <span class="dir-arr" aria-hidden="true">↓</span>
+        </a>
+
+        <a href="https://press.man1k.xyz/onesheet.pdf" target="_blank" rel="noopener noreferrer" class="dir-row"
+          aria-label="One Sheet — PDF download">
+          <span class="dir-name">One Sheet</span>
+          <span class="dir-arr" aria-hidden="true">↓</span>
+        </a>
+
+        <a href="https://man1k.xyz/pics"
+          target="_blank" rel="noopener noreferrer" class="dir-row" aria-label="Press pictures — opens in new window">
+          <span class="dir-name">Press Pictures</span>
+          <span class="dir-arr" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="https://press.man1k.xyz/logos.zip" class="dir-row" aria-label="Logo Assets — ZIP download">
+          <span class="dir-name">Logo Assets</span>
+          <span class="dir-arr" aria-hidden="true">↓</span>
+        </a>
+
+        <a href="/press/genre" class="dir-row" aria-label="About Witch-House genre">
+          <span class="dir-name">About Witch-House</span>
+          <span class="dir-arr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/press/faq" class="dir-row" aria-label="Press FAQ">
+          <span class="dir-name">FAQ</span>
+          <span class="dir-arr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="mailto:void@man1k.xyz" class="dir-row" aria-label="Contact press team by email">
+          <span class="dir-name">Contact</span>
+          <span class="dir-arr" aria-hidden="true">@</span>
+        </a>
+
+        <a href="https://www.dropbox.com/scl/fo/ogz5fst9bu30fd0p429es/ADcwJhd--w2Oh5LpmLNWzgg?rlkey=mkwrvbcjtoxovwf9lzvx21n4q&st=xxpvvif8&dl=0"
+          target="_blank" rel="noopener noreferrer" class="dir-row"
+          aria-label="Press Releases Archive — opens in new window">
+          <span class="dir-name">Press Releases Archive</span>
+          <span class="dir-arr" aria-hidden="true">↗</span>
+        </a>
+
+      </nav>
+
+    </div>
+  </div>
+
+  <footer class="press-foot">
+    <a href="/" aria-label="MAN1K Home"><img src="/img/logo.svg" alt="MAN1K" width="80" height="80"></a>
+  </footer>
+
+  <script>
+    (function () {
+      var $ = function (id) { return document.getElementById(id) };
+      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+      /* ── Loading bar ── */
+      var loadingBar = $('loadingBar'), lbP = 0, lbIv = null;
+      var lbStart = function () {
+        clearInterval(lbIv); loadingBar.classList.add('active');
+        lbP = 0; loadingBar.style.width = '0';
+        lbIv = setInterval(function () {
+          if (lbP < 70) lbP += Math.random() * 10;
+          else if (lbP < 90) lbP += Math.random() * 3;
+          else if (lbP < 95) lbP += .5;
+          loadingBar.style.width = Math.min(lbP, 95) + '%';
+          if (lbP >= 95) clearInterval(lbIv);
+        }, 100);
+      };
+      var lbDone = function () {
+        clearInterval(lbIv); loadingBar.style.width = '100%';
+        setTimeout(function () {
+          loadingBar.classList.remove('active');
+          setTimeout(function () { loadingBar.style.width = '0'; }, 300);
+        }, 200);
+      };
+      window.addEventListener('load', lbDone);
+      window.addEventListener('pageshow', function (e) { if (e.persisted) lbDone(); });
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a || a.target === '_blank') return;
+        if (a.hostname && a.hostname !== location.hostname) return;
+        var h = a.getAttribute('href') || '';
+        if (h.charAt(0) === '#' || h.indexOf('mailto:') === 0) return;
+        lbStart();
+      });
+
+      /* ── Nav scroll ── */
+      var siteNav = $('siteNav');
+      document.addEventListener('scroll', function () {
+        siteNav.classList.toggle('scrolled', (window.scrollY || 0) > 20);
+      }, { passive: true });
+
+      /* ── Mobile menu ── */
+      var menuToggle = $('menuToggle'), mobileMenu = $('mobileMenu'), menuClose = $('menuClose');
+      var openMenu = function () {
+        mobileMenu.classList.add('open'); menuToggle.classList.add('open');
+        menuToggle.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden';
+      };
+      var closeMenu = function () {
+        mobileMenu.classList.remove('open'); menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false'); document.body.style.overflow = '';
+      };
+      menuToggle.addEventListener('click', function () { mobileMenu.classList.contains('open') ? closeMenu() : openMenu(); });
+      menuClose.addEventListener('click', closeMenu);
+      mobileMenu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+      /* ── Glitch FX ── */
+      if (!reduced) {
+        var gc = $('glitch-container'), vis = true;
+        document.addEventListener('visibilitychange', function () { vis = !document.hidden; });
+        var mkLine = function () {
+          if (!vis) return;
+          var l = document.createElement('div'); l.className = 'glitch-line';
+          l.style.top = Math.random() * 100 + '%';
+          l.style.setProperty('--gl-color', Math.random() > .5 ? 'var(--red)' : '#fff');
+          gc.appendChild(l); setTimeout(function () { l.remove(); }, 100);
+        };
+        var mkFlash = function () {
+          if (!vis) return;
+          var f = document.createElement('div'); f.className = 'glitch-flash';
+          document.body.appendChild(f); setTimeout(function () { f.remove(); }, 150);
+        };
+        var lt = 0, rafId = 0;
+        var loop = function (t) {
+          if (t - lt >= 16.67 && vis) {
+            if (Math.random() < .035) mkLine();
+            if (Math.random() < .015) mkFlash();
+            lt = t;
+          }
+          rafId = requestAnimationFrame(loop);
+        };
+        rafId = requestAnimationFrame(loop);
+        document.addEventListener('visibilitychange', function () {
+          document.hidden ? cancelAnimationFrame(rafId) : (rafId = requestAnimationFrame(loop));
+        });
+      }
+    })();
+  </script>
+  <script src="/global.js" defer></script>
 </body>
+
 </html>
