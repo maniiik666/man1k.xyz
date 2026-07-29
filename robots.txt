@@ -18,7 +18,6 @@ Allow: /*.txt$
 Disallow: /404
 Disallow: /icons/
 Disallow: /legal/
-Disallow: /files/
 Disallow: /server-status
 Disallow: /*.zip$
 Disallow: /*.config$
@@ -47,7 +46,6 @@ Allow: /game/
 Disallow: /404
 Disallow: /icons/
 Disallow: /legal/
-Disallow: /files/
 Disallow: /server-status
 Disallow: /*.zip$
 Disallow: /*.config$
@@ -116,9 +114,12 @@ Allow: /press/genre
 Allow: /feed.xml
 Allow: /events-feed.xml
 Allow: /shop-feed.xml
+Allow: /llms.txt
+Allow: /artist.json
+Allow: /*.md$
+Allow: /.well-known/
 Disallow: /game/
 Disallow: /icons/
-Disallow: /files/
 Disallow: /*.zip$
 Disallow: /*.config$
 Disallow: /*.ini$
