@@ -32,3 +32,5 @@ coverage/
 
 .cache/
 *.cache
+
+.claude/
