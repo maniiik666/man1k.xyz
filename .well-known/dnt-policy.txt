@@ -3,7 +3,7 @@
                     Effective Date: July 29, 2026
                     Site Version: v2.1 / build 26.7 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
-                    Contact: void@man1k.xyz
+                    Contact: legal@man1k.xyz
                     Domain: https://man1k.xyz
 
 
@@ -372,7 +372,7 @@ To exercise rights regarding TikTok Pixel data:
   https://www.tiktok.com/legal/privacy-policy
 
 For any direct inquiries regarding this policy:
-  void@man1k.xyz
+  legal@man1k.xyz
 
 
 14. POLICY UPDATES
