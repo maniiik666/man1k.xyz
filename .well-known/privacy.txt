@@ -5,7 +5,7 @@
 # Site-Version: v2.1 / build 26.7 / JS v2.1
 # Format: plain text, UTF-8
 
-Contact: void@man1k.xyz
+Contact: legal@man1k.xyz
 Owner: Yaroslav Boruk (MAN1K)
 Domain: man1k.xyz
 Language: en
@@ -230,12 +230,12 @@ Privacy-Policy: https://policies.google.com/privacy
 GDPR-Status: Compliant
 GDPR-Regulation: EU 2016/679
 Applies-To: EU and EEA residents
-Data-Controller: Yaroslav Boruk (MAN1K) — void@man1k.xyz
+Data-Controller: Yaroslav Boruk (MAN1K) — legal@man1k.xyz
 Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
 Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
 Legal-Basis-Newsletter: Explicit consent (opt-in)
 Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)
-Rights-Contact: void@man1k.xyz
+Rights-Contact: legal@man1k.xyz
 
 # -----------------------------------------------
 # DNT / GPC IMPLEMENTATION
@@ -294,7 +294,7 @@ Rate-Data-Transmitted: false
 # CONTACT
 # -----------------------------------------------
 
-Contact: void@man1k.xyz
+Contact: legal@man1k.xyz
 Subject-Prefix: Privacy — man1k.xyz
 Response-Time: best effort
 
