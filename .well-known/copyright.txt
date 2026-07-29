@@ -10,7 +10,7 @@ Repository: https://github.com/maniiik666/man1k.xyz
 
 Rights: All Rights Reserved
 License: Proprietary — https://man1k.xyz/LICENSE
-Logo-License: Proprietary — see logos.zip via https://man1k.xyz/press
+Logo-License: Proprietary — see logos.zip via https://press.man1k.xyz/logos.zip
 
 # WHAT IS COVERED
 # All source code, markup, scripts, styles, configuration files,
@@ -42,7 +42,7 @@ AI-Access-Policy: https://man1k.xyz/.well-known/ai.txt
 #   - Derivative works for public or commercial deployment
 #   - Brand or name usage for promotional or commercial purposes
 #
-# LOGO ASSETS (logos.zip via /press):
+# LOGO ASSETS (press.man1k.xyz/logos.zip):
 #   - Subject to separate Logo Usage License
 #   - Violations prosecuted — ignorance is not a defense
 #
