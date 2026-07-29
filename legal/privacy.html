@@ -1500,7 +1500,7 @@
               <div class="tp-card-name">Bandsintown</div>
               <div class="tp-card-scope">/lives</div>
               <div class="tp-card-data">Live tour event listing widget.</div>
-              <a href="https://www.bandsintown.com/privacy" target="_blank" rel="noopener noreferrer"
+              <a href="https://corp.bandsintown.com/privacy" target="_blank" rel="noopener noreferrer"
                 class="tp-card-link">Privacy policy →</a>
             </div>
             <div class="tp-card" role="listitem">
@@ -1527,12 +1527,14 @@
           <p class="tx">This site stores the following keys in <strong>localStorage</strong> for functional purposes. No
             personal data is included in any of these keys, and none is transmitted externally.</p>
           <ul class="list">
+            <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">_m1k_v1</code> —
+              aesthetic visit counter (homepage only; alters a decorative text element after 3+ visits; not suppressed by DNT)</li>
             <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">mk_r</code> —
               rate-limit event counter (cleared on rate window expiry)</li>
             <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">mk_b</code> —
               rate-ban expiry timestamp (cleared when ban expires)</li>
-            <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">mk_dnt</code> —
-              cached DNT preference to avoid re-checking on each page load</li>
+            <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">vxb</code> —
+              game high score fallback when IndexedDB is unavailable (/game/ only)</li>
           </ul>
           <div class="highlight">All localStorage entries are stored only in your browser and are never transmitted
             externally. They can be cleared at any time via your browser's developer tools ("Application" → "Local
