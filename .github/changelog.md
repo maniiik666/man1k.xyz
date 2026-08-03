@@ -5,6 +5,13 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.1] — 2026-08-03
+
+### Added
+- `/event` — temporary redirect page for Ternopil flyer QR code; fires GA4 event `qr_scan_event_ternopil` (transport: beacon) before redirecting to WayForPay payment page; `noindex, nofollow` set; not added to sitemap or robots.txt
+
+---
+
 ## [3.0.0] — 2026-07-24
 ## build 26.7 / JS v2.1 / artist.json v1.3
 
