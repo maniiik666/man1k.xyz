@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-author="MAN1K" data-build="26.7">
+<html lang="en" data-author="MAN1K" data-build="26.8">
 
 <head>
   <meta charset="UTF-8">
@@ -1335,7 +1335,7 @@
         </nav>
 
         <h1 class="doc-title">Privacy Policy</h1>
-        <div class="doc-meta">man1k.xyz <span>//</span> Last updated: July 2026 <span>//</span> Build 26.7</div>
+        <div class="doc-meta">man1k.xyz <span>//</span> Last updated: August 2026 <span>//</span> Build 26.8</div>
         <div class="doc-divider" aria-hidden="true"></div>
 
         <div class="status-strip" role="list" aria-label="Privacy status indicators">
@@ -1345,6 +1345,7 @@
           <span class="status-chip" role="listitem">No User Accounts</span>
           <span class="status-chip warn" role="listitem">GA4 When DNT Inactive</span>
           <span class="status-chip info" role="listitem">Simple Analytics Active</span>
+          <span class="status-chip info" role="listitem">SMS Database via AlphaSMS</span>
           <span class="status-chip" role="listitem">GDPR Compliant</span>
         </div>
 
@@ -1368,8 +1369,12 @@
             <li>No passwords or credentials of any kind</li>
             <li>No first-party cookies set by man1k.xyz</li>
             <li>No server-side logs retained beyond standard hosting (Cloudflare)</li>
-            <li>No sale of any data to third parties</li>
           </ul>
+          <div class="highlight"><strong>No sale or transfer:</strong> data collected through this site or its
+            associated newsletter and SMS channels is never sold, rented, or transferred to third parties for their
+            own marketing or business purposes. Data is only shared with the processors explicitly named in this
+            policy (e.g. Buttondown, AlphaSMS, Google), each acting solely to provide the service described, and
+            never with anyone else.</div>
         </div>
 
         <div class="sec">
@@ -1389,7 +1394,10 @@
             <li><strong>Simple Analytics</strong> — cookieless, privacy-first analytics. No personal data collected. <a
                 href="https://simpleanalytics.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy
                 →</a></li>
-            <li><strong>TikTok Pixel</strong> — present on select pages; disabled when DNT/GPC is active.</li>
+            <li><strong>TikTok Pixel</strong> — loaded for advertising and audience-matching purposes (retargeting,
+              Lookalike Audiences, Advanced Matching using hashed contact data). Disabled entirely when DNT/GPC is
+              active. TikTok Technology Limited acts as an independent data controller for data it receives — see <a
+                href="/legal/cookies#tiktok">Cookie Policy, Section 03.1</a> for full detail.</li>
             <li><strong>Cloudflare Web Analytics</strong> — served via Cloudflare's CDN; cookieless, collects only
               aggregate traffic metrics.</li>
           </ul>
@@ -1397,16 +1405,99 @@
 
         <div class="sec">
           <div class="sec-head"><span class="sec-num">03 //</span>
-            <h2 class="sec-title">Newsletter</h2>
+            <h2 class="sec-title">Newsletter (Email)</h2>
           </div>
           <p class="tx">The <a href="/subscribe">/subscribe</a> page uses <strong>Buttondown</strong> to manage the
             mailing list. When you subscribe, your email address is transmitted to and stored by Buttondown under their
-            own privacy policy. No email data is retained by man1k.xyz servers.</p>
+            own privacy policy. No email data is retained by man1k.xyz servers directly — Buttondown is the sole
+            processor and data store for this list.</p>
+          <p class="tx">Beyond your email address, Buttondown records the following as part of standard newsletter
+            operation:</p>
+          <ul class="list">
+            <li>An internal subscriber ID assigned automatically on signup</li>
+            <li>Engagement analytics — opens, clicks, and reply activity for each newsletter sent</li>
+            <li>Your email domain (e.g. <code
+                style="font-family:var(--font-vhs);font-size:.82em;color:rgba(181,38,38,.6)">gmail.com</code>), open
+              rate, click rate, and current subscription status (active / unsubscribed / bounced)</li>
+            <li>Internal notes may occasionally be attached to a subscriber record for list-management purposes</li>
+          </ul>
           <p class="tx">You can <strong>unsubscribe</strong> at any time via the unsubscribe link included in every
             newsletter email, or by sending a direct request to <a href="mailto:legal@man1k.xyz">legal@man1k.xyz</a>.
-          </p>
+            Unsubscribing stops engagement tracking and updates your status; you may separately request full deletion
+            of your subscriber record via the same channels.</p>
           <p class="tx"><a href="https://buttondown.com/legal/privacy" target="_blank"
               rel="noopener noreferrer">Buttondown privacy policy →</a></p>
+          <div class="info-box">
+            <div class="info-box-head">Cross-Platform List Consolidation</div>
+            <p class="tx" style="margin:0">If you subscribe to a mailing list or "follow" feature on <a
+                href="https://shop.man1k.xyz" target="_blank" rel="noopener noreferrer">shop.man1k.xyz</a> (Fourthwall),
+              Bandcamp, or ReverbNation, your email address may periodically be exported from that platform and
+              imported into the Buttondown list described above, so you receive MAN1K's newsletter alongside updates
+              from the original platform. Each platform is an independent data controller for the data it originally
+              collects, governed by its own privacy policy: <a href="https://shop.man1k.xyz/pages/privacy-policy"
+                target="_blank" rel="noopener noreferrer">Fourthwall →</a>, <a href="https://bandcamp.com/privacy"
+                target="_blank" rel="noopener noreferrer">Bandcamp →</a>, <a href="https://www.reverbnation.com/privacy"
+                target="_blank" rel="noopener noreferrer">ReverbNation →</a>. If you no longer want to receive MAN1K's
+              newsletter, unsubscribing via Buttondown (above) applies regardless of which platform you originally
+              signed up through.</p>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="sec-head"><span class="sec-num">03.1 //</span>
+            <h2 class="sec-title">Phone Number Database (SMS)</h2>
+          </div>
+          <p class="tx">Separately from the email newsletter, MAN1K (Yaroslav Boruk) maintains a phone contact
+            database used to send SMS updates about releases, live shows, and merchandise. Unlike the newsletter, this
+            database is compiled directly by the artist from multiple sources over time rather than a single online
+            opt-in form.</p>
+          <p class="tx">The following fields may be stored per contact: <strong>phone number</strong>,
+            <strong>country</strong>, <strong>name</strong>, <strong>city</strong>, and <strong>source</strong> (a
+            note on how the contact was acquired).</p>
+          <div class="info-box">
+            <div class="info-box-head">Processor &amp; Storage</div>
+            <p class="tx" style="margin:0">The database is hosted in the address book of <strong>AlphaSMS</strong>
+              (alphasms.net), an SMS delivery platform, under account/contract no. <strong>117917</strong>. Before
+              sending, numbers may be checked via an <strong>HLR (Home Location Register) lookup</strong> — a standard
+              telecom verification confirming whether a number is currently active and reachable, used to reduce
+              failed deliveries. This check does not add any field to a contact's stored record beyond those listed
+              above.</p>
+          </div>
+          <p class="tx">Separately, AlphaSMS generates a report for each SMS campaign sent, containing:</p>
+          <ul class="list">
+            <li>Recipient country and mobile operator (per campaign, not stored on individual contact records)</li>
+            <li>Click rate on links included in the message</li>
+            <li>Campaign start and end time</li>
+            <li>A Mailing ID identifying that specific send</li>
+          </ul>
+          <p class="tx"><strong>Opt-out:</strong> you can stop receiving messages at any time by blocking the sender
+            ID on your phone, or by requesting removal directly at <a
+              href="mailto:legal@man1k.xyz">legal@man1k.xyz</a>. Removal requests are honored by deleting the contact
+            from the AlphaSMS address book.</p>
+          <p class="tx">AlphaSMS is operated by <strong>Interconnect Solutions</strong> (InterConnect Solutions Pte.
+            Ltd., Singapore), which publishes its own <a href="https://alphasms.net/legal/privacy/" target="_blank"
+              rel="noopener noreferrer">GDPR-referencing privacy policy →</a>. That policy states Interconnect
+            Solutions acts as a data processor for contact data supplied by its customers and does not use it for any
+            purpose other than the one the customer specifies.</p>
+        </div>
+
+        <div class="sec">
+          <div class="sec-head"><span class="sec-num">03.2 //</span>
+            <h2 class="sec-title">Backups &amp; Processor Transitions</h2>
+          </div>
+          <p class="tx">In addition to the copies held by Buttondown and AlphaSMS, MAN1K (Yaroslav Boruk) retains a
+            local backup of the email newsletter and SMS phone contact data, kept in a secure location. This backup
+            exists for two reasons:</p>
+          <ul class="list">
+            <li>To be able to fulfil GDPR data-subject requests (access, rectification, erasure) independently of the
+              processor's own systems and availability</li>
+            <li>To allow the contact list to be migrated if MAN1K ever switches to a different newsletter or SMS
+              processor, without losing the ability to reach existing subscribers</li>
+          </ul>
+          <p class="tx">If a processor migration takes place, affected subscribers will be notified by email or SMS,
+            including a link or contact address to unsubscribe from the new processor. A deletion request made under
+            <a href="#rights">Section 08, Your Rights</a> removes your data from this local backup as well as from
+            the active processor.</p>
         </div>
 
         <div class="sec">
@@ -1483,9 +1574,33 @@
             <div class="tp-card" role="listitem">
               <div class="tp-card-name">Buttondown</div>
               <div class="tp-card-scope">/subscribe</div>
-              <div class="tp-card-data">Email newsletter management. Email address sent to Buttondown on subscription.
-              </div>
+              <div class="tp-card-data">Email newsletter management, incl. open/click engagement tracking and
+                subscriber status. See Privacy Policy, Section 03.</div>
               <a href="https://buttondown.com/legal/privacy" target="_blank" rel="noopener noreferrer"
+                class="tp-card-link">Privacy policy →</a>
+            </div>
+            <div class="tp-card" role="listitem">
+              <div class="tp-card-name">AlphaSMS</div>
+              <div class="tp-card-scope">SMS contact database</div>
+              <div class="tp-card-data">Hosts the phone contact address book used for SMS updates (contract no.
+                117917). Not embedded on the site. See Privacy Policy, Section 03.1.</div>
+              <a href="https://alphasms.net/legal/privacy/" target="_blank" rel="noopener noreferrer"
+                class="tp-card-link">Privacy policy →</a>
+            </div>
+            <div class="tp-card" role="listitem">
+              <div class="tp-card-name">Bandcamp</div>
+              <div class="tp-card-scope">Off-site mailing list</div>
+              <div class="tp-card-data">Email addresses collected via Bandcamp's follow/mailing-list feature may be
+                periodically exported into the Buttondown newsletter. See Privacy Policy, Section 03.</div>
+              <a href="https://bandcamp.com/privacy" target="_blank" rel="noopener noreferrer"
+                class="tp-card-link">Privacy policy →</a>
+            </div>
+            <div class="tp-card" role="listitem">
+              <div class="tp-card-name">ReverbNation</div>
+              <div class="tp-card-scope">Off-site mailing list</div>
+              <div class="tp-card-data">Email addresses collected via ReverbNation's fan mailing list may be
+                periodically exported into the Buttondown newsletter. See Privacy Policy, Section 03.</div>
+              <a href="https://www.reverbnation.com/privacy" target="_blank" rel="noopener noreferrer"
                 class="tp-card-link">Privacy policy →</a>
             </div>
             <div class="tp-card" role="listitem">
@@ -1541,7 +1656,7 @@
             Storage") or by clearing all site data for man1k.xyz.</div>
         </div>
 
-        <div class="sec">
+        <div class="sec" id="rights">
           <div class="sec-head"><span class="sec-num">08 //</span>
             <h2 class="sec-title">Your Rights</h2>
           </div>
