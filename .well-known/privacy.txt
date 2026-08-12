@@ -1,8 +1,8 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-07-29
-# Site-Version: v2.1 / build 26.7 / JS v2.1
+# Last-Updated: 2026-08-12
+# Site-Version: v2.2 / build 26.8 / JS v2.1
 # Format: plain text, UTF-8
 
 Contact: legal@man1k.xyz
@@ -32,7 +32,7 @@ No-User-Accounts: true
 No-Personal-Data-Collected-By-Site: true
 DNT-Respected: true
 GPC-Respected: true
-GDPR-Compliant: true
+GDPR-Measures-Implemented: true
 Analytics-Suppressed-When-DNT-Active: true
 
 # -----------------------------------------------
@@ -103,7 +103,7 @@ TikTok-AAM-Enabled: true (SHA-256 hashed email, name, phone, address — only if
 TikTok-Expanded-Data-Sharing: true (page metadata, click interactions, time on page, page load speed)
 TikTok-First-Party-Cookies: true
 TikTok-Cookies: _ttp (13 months), _tt_enable_cookie (13 months), tt_pixel_session_index (session), tt_sessionId (session)
-TikTok-Legal-Basis: Legitimate interest — Art. 6(1)(f) GDPR
+TikTok-Control-Mechanism: DNT/GPC-based opt-out suppression (no explicit consent banner implemented)
 TikTok-Opt-Out: https://www.tiktok.com/legal/privacy-policy
 TikTok-Privacy-Policy: https://www.tiktok.com/legal/privacy-policy
 
@@ -187,8 +187,33 @@ Page: /subscribe
 Purpose: Email newsletter subscription
 Loading: No iframe — HTTP POST on explicit form submit only
 Data-Collected: Email address (on opt-in only)
+Data-Collected-Ongoing: Internal subscriber ID, open/click engagement per email, email domain, open rate, click rate, subscription status, occasional internal notes
 Unsubscribe: Via link in each newsletter email, or by direct request at the email address on /contact
 Privacy-Policy: https://buttondown.com/legal/privacy
+
+# AlphaSMS (Interconnect Solutions Pte. Ltd.)
+Service: AlphaSMS
+Page: Not embedded on site — off-site SMS delivery platform
+Purpose: SMS updates (releases, live shows, merchandise) sent to a phone contact database
+Data-Collected: Phone number, country, name, city, source (how contact was acquired)
+Data-Collected-Per-Campaign: Recipient country and mobile operator (aggregate), click rate on links, campaign start/end time, Mailing ID
+Compiled-By: Yaroslav Boruk (MAN1K), from multiple sources over time (not a single opt-in form)
+Account-Contract-No: 117917
+Verification: HLR (Home Location Register) lookup before sending, to check number is active/reachable
+Unsubscribe: Block the sender ID on your phone, or request removal at legal@man1k.xyz
+Privacy-Policy: https://alphasms.net/legal/privacy/
+
+# Bandcamp (mailing list export)
+Service: Bandcamp
+Page: Off-site — follow/mailing-list feature
+Purpose: Email addresses collected via Bandcamp may be periodically exported into the Buttondown newsletter list
+Privacy-Policy: https://bandcamp.com/privacy
+
+# ReverbNation (mailing list export)
+Service: ReverbNation
+Page: Off-site — fan mailing-list feature
+Purpose: Email addresses collected via ReverbNation may be periodically exported into the Buttondown newsletter list
+Privacy-Policy: https://www.reverbnation.com/privacy
 
 # Font Awesome (cdnjs.cloudflare.com)
 Service: Font Awesome via Cloudflare CDN (cdnjs.cloudflare.com)
@@ -227,11 +252,16 @@ Privacy-Policy: https://policies.google.com/privacy
 # GDPR
 # -----------------------------------------------
 
-GDPR-Status: Compliant
+GDPR-Status: Partial
+GDPR-Status-Note: Data minimisation, DNT/GPC opt-out, and no sale/transfer of data are implemented sitewide; TikTok Pixel relies on this opt-out mechanism rather than prior opt-in consent for EU/EEA visitors — see TikTok-Control-Mechanism above
 GDPR-Regulation: EU 2016/679
 Applies-To: EU and EEA residents
 Data-Controller: Yaroslav Boruk (MAN1K) — legal@man1k.xyz
-Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
+Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Interconnect Solutions Pte. Ltd. / AlphaSMS (SMS delivery), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
+Data-Sold-Or-Transferred-To-Third-Parties: false
+Cross-Platform-List-Consolidation: Email addresses collected via shop.man1k.xyz (Fourthwall), Bandcamp, or ReverbNation mailing-list features may be periodically exported into the Buttondown newsletter list
+Local-Backups: Email and SMS contact data are additionally retained in a local, secure backup by the data controller, for GDPR request fulfilment and processor-migration purposes
+Processor-Migration-Notice: If a processor migration occurs, affected subscribers are notified by email or SMS with an unsubscribe link/contact
 Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
 Legal-Basis-Newsletter: Explicit consent (opt-in)
 Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)

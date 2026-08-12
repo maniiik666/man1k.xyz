@@ -1,6 +1,6 @@
                     MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
-                    Effective Date: July 29, 2026
+                    Effective Date: August 12, 2026
                     Site Version: v2.1 / build 26.7 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
@@ -146,7 +146,8 @@ When DNT/GPC IS active:
   * No cookies are set
   * No data is transmitted to analytics.tiktok.com
 
-Legal basis: Legitimate interest — Art. 6(1)(f) GDPR
+Control mechanism: DNT/GPC-based opt-out suppression (no explicit
+consent banner implemented for this pixel)
 Opt-out: https://www.tiktok.com/legal/privacy-policy
 TikTok Privacy Policy: https://www.tiktok.com/legal/privacy-policy
 
