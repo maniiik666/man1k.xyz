@@ -1223,7 +1223,8 @@
             DNT signal or GPC is active, no third-party analytics cookies are set and Simple Analytics transmits no
             data. <strong>Simple Analytics</strong> is active on all pages as a supplementary, fully cookie-free layer
             via noscript pixel — it sets no cookies and collects no personal data. Only embedded third-party services
-            (Bandsintown, SoundCloud in /game/, Buttondown, Cloudflare R2, etc.) may set their own cookies or receive
+            (Bandsintown, SoundCloud in /game/, YouTube on the homepage, Buttondown, Cloudflare R2, etc.) may set their
+            own cookies or receive
             data when their content loads.
           </div>
           <p class="tx">This Cookie Policy explains what cookies and similar storage technologies are used on man1k.xyz,
@@ -1384,7 +1385,9 @@
           <div class="sec-head"><span class="sec-num">04 //</span>
             <h2 class="sec-title">Simple Analytics — No Cookies</h2>
           </div>
-          <p class="tx">Simple Analytics is active on all pages via an async JavaScript script (<code>scripts.simpleanalyticscdn.com</code>). It does <strong>not set any cookies</strong>, does not use fingerprinting, and does
+          <p class="tx">Simple Analytics is active on all pages via an async JavaScript script
+            (<code>scripts.simpleanalyticscdn.com</code>). It does <strong>not set any cookies</strong>, does not use
+            fingerprinting, and does
             not collect personal data of any kind. It records only aggregated, non-identifiable statistics (page views,
             referrer origin, browser category, country). Simple Analytics respects DNT and GPC signals: when either is
             active, no data is transmitted. No consent is required under ePrivacy or GDPR.</p>
@@ -1420,6 +1423,12 @@
                   <td>Bandsintown</td>
                   <td>/lives</td>
                   <td>Async script — loads immediately on page load</td>
+                  <td><span class="badge-third">3RD PARTY</span></td>
+                </tr>
+                <tr>
+                  <td>YouTube (youtube-nocookie.com)</td>
+                  <td>Homepage (/)</td>
+                  <td>Iframe — loads on page load, lazy-loaded until scrolled into view</td>
                   <td><span class="badge-third">3RD PARTY</span></td>
                 </tr>
                 <tr>
@@ -1640,7 +1649,7 @@
     })();
   </script>
   <script src="/global.js" defer></script>
-<!-- 100% privacy-first analytics -->
+  <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 

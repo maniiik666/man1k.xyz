@@ -1176,7 +1176,7 @@
         </nav>
 
         <h1 class="doc-title">Terms of Use</h1>
-        <div class="doc-meta">man1k.xyz <span>//</span> Last updated: July 2026 <span>//</span> Build 26.7</div>
+        <div class="doc-meta">man1k.xyz <span>//</span> Last updated: August 2026 <span>//</span> Build 26.8</div>
         <div class="doc-divider" aria-hidden="true"></div>
 
         <div class="sec">
@@ -1253,11 +1253,13 @@
           <p class="tx">Rate limiting is implemented client-side: <strong>300 events/60s</strong> (soft limit) and
             <strong>600 events/60s</strong> (hard limit). Exceeding these thresholds will temporarily suspend
             interaction. Rate limiter state is stored in browser localStorage (keys <code>mk_r</code>,
-            <code>mk_b</code>).</p>
+            <code>mk_b</code>).
+          </p>
           <p class="tx">This site uses browser localStorage for a cosmetic visit counter (<code>_m1k_v1</code>, homepage
             only) and a game high score fallback (<code>vxb</code>, /game/ only). The game also uses IndexedDB (database
             <code>vxd</code>) to persist the highest score. None of this data is personal, and none is transmitted
-            externally.</p>
+            externally.
+          </p>
         </div>
 
         <div class="sec">
@@ -1269,8 +1271,9 @@
             responsible for the content, availability, or practices of these third parties.</p>
           <p class="tx">All third-party embeds use appropriate loading strategies. The Bandsintown widget on /lives
             loads on page load. The SoundCloud player on /game/ loads with auto_play disabled and initiates a network
-            request only when the user presses PLAY. The Buttondown form on /subscribe initiates no network request
-            until explicit form submission.</p>
+            request only when the user presses PLAY. The YouTube promo video embed on the homepage
+            (youtube-nocookie.com, privacy-enhanced mode) loads on page load. The Buttondown form on /subscribe
+            initiates no network request until explicit form submission.</p>
         </div>
 
         <div class="sec">
@@ -1402,7 +1405,7 @@
     })();
   </script>
   <script src="/global.js" defer></script>
-<!-- 100% privacy-first analytics -->
+  <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 

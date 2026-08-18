@@ -1453,7 +1453,8 @@
             opt-in form.</p>
           <p class="tx">The following fields may be stored per contact: <strong>phone number</strong>,
             <strong>country</strong>, <strong>name</strong>, <strong>city</strong>, and <strong>source</strong> (a
-            note on how the contact was acquired).</p>
+            note on how the contact was acquired).
+          </p>
           <div class="info-box">
             <div class="info-box-head">Processor &amp; Storage</div>
             <p class="tx" style="margin:0">The database is hosted in the address book of <strong>AlphaSMS</strong>
@@ -1471,8 +1472,8 @@
             <li>A Mailing ID identifying that specific send</li>
           </ul>
           <p class="tx"><strong>Opt-out:</strong> you can stop receiving messages at any time by blocking the sender
-            ID on your phone, or by requesting removal directly at <a
-              href="mailto:legal@man1k.xyz">legal@man1k.xyz</a>. Removal requests are honored by deleting the contact
+            ID on your phone, or by requesting removal directly at <a href="mailto:legal@man1k.xyz">legal@man1k.xyz</a>.
+            Removal requests are honored by deleting the contact
             from the AlphaSMS address book.</p>
           <p class="tx">AlphaSMS is operated by <strong>Interconnect Solutions</strong> (InterConnect Solutions Pte.
             Ltd., Singapore), which publishes its own <a href="https://alphasms.net/legal/privacy/" target="_blank"
@@ -1497,23 +1498,28 @@
           <p class="tx">If a processor migration takes place, affected subscribers will be notified by email or SMS,
             including a link or contact address to unsubscribe from the new processor. A deletion request made under
             <a href="#rights">Section 08, Your Rights</a> removes your data from this local backup as well as from
-            the active processor.</p>
+            the active processor.
+          </p>
         </div>
 
         <div class="sec">
           <div class="sec-head"><span class="sec-num">04 //</span>
             <h2 class="sec-title">Embedded Media</h2>
           </div>
-          <p class="tx">The site uses two live third-party embeds. Each platform may collect data in accordance with its
-            own privacy policies when their content loads:</p>
+          <p class="tx">The site uses three live third-party embeds. Each platform may collect data in accordance with
+            its own privacy policies when their content loads:</p>
           <ul class="list">
             <li><strong>SoundCloud</strong> — hidden audio player in <code
                 style="font-family:var(--font-vhs);font-size:.82em;color:rgba(181,38,38,.6)">/game/</code> (loaded only
               on user interaction)</li>
             <li><strong>Bandsintown</strong> — live events listing widget on <code
                 style="font-family:var(--font-vhs);font-size:.82em;color:rgba(181,38,38,.6)">/lives</code></li>
+            <li><strong>YouTube</strong> (youtube-nocookie.com, privacy-enhanced mode) — promo video embed on the
+              homepage (<code style="font-family:var(--font-vhs);font-size:.82em;color:rgba(181,38,38,.6)">/</code>),
+              loaded
+              on page load</li>
           </ul>
-          <p class="tx">External streaming platforms (Bandcamp, Spotify, YouTube, etc.) appear only as outbound links on
+          <p class="tx">External streaming platforms (Bandcamp, Spotify, etc.) appear only as outbound links on
             the site — no iframes or embeds are loaded from these services.</p>
         </div>
 
@@ -1524,7 +1530,8 @@
           <p class="tx">The site loads the VCR OSD Mono typeface from <strong>CDNFonts</strong>. Most pages also
             self-host a local variant of the font file (<code
               style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">vcrosdmonorus_vhsicons.ttf</code>)
-            to minimize external connections. The <strong>/about</strong> and <strong>/game/</strong> pages load DotGothic16 from <strong>Google
+            to minimize external connections. The <strong>/about</strong> and <strong>/game/</strong> pages load
+            DotGothic16 from <strong>Google
               Fonts</strong> for Japanese text rendering and game UI respectively.</p>
         </div>
 
@@ -1536,7 +1543,8 @@
             <div class="tp-card" role="listitem">
               <div class="tp-card-name">Cloudflare</div>
               <div class="tp-card-scope">CDN, DNS, Proxy, Analytics</div>
-              <div class="tp-card-data">CDN routing, DDoS protection, aggregate analytics. Site files are served via GitHub Pages through Cloudflare proxy.</div>
+              <div class="tp-card-data">CDN routing, DDoS protection, aggregate analytics. Site files are served via
+                GitHub Pages through Cloudflare proxy.</div>
               <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer"
                 class="tp-card-link">Privacy policy →</a>
             </div>
@@ -1619,9 +1627,18 @@
                 class="tp-card-link">Privacy policy →</a>
             </div>
             <div class="tp-card" role="listitem">
+              <div class="tp-card-name">YouTube</div>
+              <div class="tp-card-scope">Homepage (/)</div>
+              <div class="tp-card-data">Promo video embed via youtube-nocookie.com (privacy-enhanced mode). Loads on
+                page load. See Privacy Policy, Section 04.</div>
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+                class="tp-card-link">Privacy policy →</a>
+            </div>
+            <div class="tp-card" role="listitem">
               <div class="tp-card-name">Google Fonts</div>
               <div class="tp-card-scope">/about, /game/</div>
-              <div class="tp-card-data">Loads DotGothic16 for Japanese text rendering (/about) and game UI (/game/).</div>
+              <div class="tp-card-data">Loads DotGothic16 for Japanese text rendering (/about) and game UI (/game/).
+              </div>
               <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
                 class="tp-card-link">Privacy policy →</a>
             </div>
@@ -1643,7 +1660,8 @@
             personal data is included in any of these keys, and none is transmitted externally.</p>
           <ul class="list">
             <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">_m1k_v1</code> —
-              aesthetic visit counter (homepage only; alters a decorative text element after 3+ visits; not suppressed by DNT)</li>
+              aesthetic visit counter (homepage only; alters a decorative text element after 3+ visits; not suppressed
+              by DNT)</li>
             <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">mk_r</code> —
               rate-limit event counter (cleared on rate window expiry)</li>
             <li><code style="font-family:var(--font-vhs);font-size:.85em;color:rgba(181,38,38,.6)">mk_b</code> —
@@ -1735,7 +1753,7 @@
     })();
   </script>
   <script src="/global.js" defer></script>
-<!-- 100% privacy-first analytics -->
+  <!-- 100% privacy-first analytics -->
   <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 
