@@ -1,6 +1,6 @@
-                    MAN1K.XYZ — DO NOT TRACK POLICY
+MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
-                    Effective Date: August 12, 2026
+                    Effective Date: August 18, 2026
                     Site Version: v2.1 / build 26.7 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
@@ -227,14 +227,26 @@ the tracking behavior of these embeds.
   third-party connection is initiated from that page element.
   Policy: https://soundcloud.com/pages/privacy
 
-7.3 Cloudflare R2 / pics.man1k.xyz (/gallery, /about)
+7.3 YouTube (youtube-nocookie.com) — Homepage (/)
+  Provider: Google LLC / YouTube, LLC
+  Purpose:  Promo video embed on the homepage.
+  Loaded via youtube-nocookie.com (privacy-enhanced mode), which does not
+  set tracking cookies until the visitor interacts with the player.
+  Loading:  Iframe — loads on page load; browser-native lazy loading
+            defers the request until the embed is scrolled into view.
+  Note: On other pages (e.g. /music), YouTube appears as an external
+  link only — no iframe is loaded and no third-party connection is
+  initiated from those link elements.
+  Policy: https://policies.google.com/privacy
+
+7.4 Cloudflare R2 / pics.man1k.xyz (/gallery, /about)
   Provider: Cloudflare, Inc.
   Purpose:  Serving artist photos hosted on Cloudflare R2 object storage.
   Images are served from pics.man1k.xyz. First images load eagerly;
   the rest use native browser lazy loading.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-7.4 Buttondown (/subscribe)
+7.5 Buttondown (/subscribe)
   Provider: Buttondown, LLC
   Purpose:  Email newsletter subscription form. Submissions are sent via
   HTTP POST to buttondown.com/api/emails/embed-subscribe/man1k.
@@ -244,30 +256,30 @@ the tracking behavior of these embeds.
   Unsubscribe: Via link in each newsletter email, or direct request.
   Policy: https://buttondown.com/legal/privacy
 
-7.5 Font Awesome via Cloudflare CDN (/, /music)
+7.6 Font Awesome via Cloudflare CDN (/, /music)
   Provider: Cloudflare, Inc. (cdnjs.cloudflare.com)
   Purpose:  Icon font (social icons and platform icons) on the homepage
   and /music page. Served as a CSS stylesheet from cdnjs.cloudflare.com
   on page load.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-7.6 Cloudflare Pages (all pages)
+7.7 Cloudflare Pages (all pages)
   Provider: Cloudflare, Inc.
   Purpose:  CDN and static hosting for all site traffic. All HTTP requests
   to man1k.xyz pass through Cloudflare's network.
   Policy: https://www.cloudflare.com/privacypolicy/
 
-7.7 CDN Fonts (cdnfonts.com)
+7.8 CDN Fonts (cdnfonts.com)
   Provider: cdnfonts.com
   Purpose:  Serving VCR OSD Mono typeface used across all pages.
   A preconnect is established on page load.
 
-7.8 Google Fonts (fonts.googleapis.com)
+7.9 Google Fonts (fonts.googleapis.com)
   Purpose:  Serving DotGothic16 typeface on /game/ page only.
   A preconnect is established on page load.
   Policy: https://policies.google.com/privacy
 
-7.9 Simple Analytics (all pages)
+7.10 Simple Analytics (all pages)
   Provider: Simple Analytics B.V.
   Purpose:  Privacy-first, cookie-free analytics.
   Does not use cookies, does not fingerprint users, and does not collect
@@ -275,9 +287,9 @@ the tracking behavior of these embeds.
   no data is transmitted. No GDPR consent required.
   Policy: https://simpleanalytics.com/privacy
 
-Note on Spotify, Bandcamp, and YouTube: these appear as external links
-only on /music — no iframes, no third-party connections are initiated
-from those link elements.
+Note on Spotify and Bandcamp: these appear as external links only on
+/music — no iframes, no third-party connections are initiated from
+those link elements.
 
 
 8. COOKIES
@@ -289,6 +301,9 @@ Third-party cookies (set by embeds, active only when embeds load):
   - Google Analytics 4: _ga, _gid, _gat (when DNT is NOT active)
   - SoundCloud (/game/): per SoundCloud's own policy
   - Bandsintown (/lives): per Bandsintown's own policy
+  - YouTube (homepage, youtube-nocookie.com): none set on load in
+    privacy-enhanced mode; standard YouTube cookies may be set once
+    the visitor interacts with the player, per Google's own policy
 
 When DNT/GPC is active, GA4 is not loaded, TikTok Pixel is not
 initialised, and no analytics or advertising cookies are set by

@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-08-12
+# Last-Updated: 2026-08-18
 # Site-Version: v2.2 / build 26.8 / JS v2.1
 # Format: plain text, UTF-8
 
@@ -166,6 +166,14 @@ Page: /lives
 Purpose: Live events widget
 Loading: Async script (loads immediately on page load)
 Privacy-Policy: https://corp.bandsintown.com/privacy
+
+# YouTube (youtube-nocookie.com)
+Service: YouTube
+Page: / (homepage)
+Purpose: Promo video embed
+Loading: Iframe (youtube-nocookie.com, privacy-enhanced mode), loads on page load, lazy-loaded until scrolled into view
+Note: On other pages (e.g. /music), YouTube appears as an external link only — no iframe is loaded
+Privacy-Policy: https://policies.google.com/privacy
 
 # SoundCloud
 Service: SoundCloud

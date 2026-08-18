@@ -1,4 +1,4 @@
-                    MAN1K.XYZ — SECURITY POLICY
+MAN1K.XYZ — SECURITY POLICY
                     ============================
                     Effective Date: July 29, 2026
                     Operator: Yaroslav Boruk (MAN1K)
@@ -40,7 +40,7 @@ IN SCOPE
 
 OUT OF SCOPE
 ------------
-  - Third-party embeds (Bandsintown, SoundCloud)
+  - Third-party embeds (Bandsintown, SoundCloud, YouTube)
   - Social media accounts associated with MAN1K
   - Denial of service or volumetric attacks
   - Issues requiring physical access to infrastructure

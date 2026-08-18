@@ -20,7 +20,7 @@ Policy: https://man1k.xyz/.well-known/security-policy.txt
 #   - Client-side rate limiter bypass
 #
 # Out of scope:
-#   - Third-party embeds (Bandsintown, SoundCloud)
+#   - Third-party embeds (Bandsintown, SoundCloud, YouTube)
 #   - Social media accounts
 #   - Denial of service attacks
 #   - Issues requiring physical access to infrastructure
