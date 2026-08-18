@@ -47,6 +47,6 @@ Source code is provided for reference only. No license is granted for reuse, red
 ## Contact
 
 - General: void@man1k.xyz
-- EU / UK booking: ElektroSpank Agency — mgmt@pr.elektrospank.com
-- Ukraine booking: ua-booking@gmail.com
+- EU / UK booking: mgmt@pr.elektrospank.com
+- Ukraine booking: sasha1924181999@gmail.com
 - Legal: legal@man1k.xyz
