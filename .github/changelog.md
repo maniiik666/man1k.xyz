@@ -5,6 +5,20 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.2] — 2026-08-18
+
+### Added
+- Homepage — YouTube promo video embed (youtube-nocookie.com, privacy-enhanced mode) added below the hero/scroll-cue section; lazy-loaded, no additional chrome, native aspect ratio (4096×1716)
+
+### Changed
+- CSP `frame-src` extended to include `https://www.youtube-nocookie.com`
+- `/legal/privacy` — Section 04 "Embedded Media" updated to list YouTube as a third live embed (homepage only); Section 06 "Third-Party Services" — YouTube card added
+- `/legal/cookies` — Section 05 "Third-Party Embed Cookies" table updated with YouTube row
+- `/legal/terms` — Section 04 "Third-Party Services" updated with YouTube loading strategy
+- `.well-known/dnt-policy.txt` — new subsection 7.3 "YouTube" added (embedded-services list renumbered 7.4–7.10); Section 8 "Cookies" updated; Effective Date bumped to 2026-08-18
+- `.well-known/privacy.txt` — YouTube service entry added; Last-Updated bumped to 2026-08-18
+- `.well-known/security.txt`, `.well-known/security-policy.txt` — YouTube added to out-of-scope third-party-embeds list
+
 ## [3.0.1] — 2026-08-03
 
 ### Added
