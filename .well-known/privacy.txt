@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-08-18
+# Last-Updated: 2026-08-20
 # Site-Version: v2.2 / build 26.8 / JS v2.1
 # Format: plain text, UTF-8
 
@@ -206,7 +206,7 @@ Purpose: SMS updates (releases, live shows, merchandise) sent to a phone contact
 Data-Collected: Phone number, country, name, city, source (how contact was acquired)
 Data-Collected-Per-Campaign: Recipient country and mobile operator (aggregate), click rate on links, campaign start/end time, Mailing ID
 Compiled-By: Yaroslav Boruk (MAN1K), from multiple sources over time (not a single opt-in form)
-Account-Contract-No: 117917
+Account-Contract-No: 118134
 Verification: HLR (Home Location Register) lookup before sending, to check number is active/reachable
 Unsubscribe: Block the sender ID on your phone, or request removal at legal@man1k.xyz
 Privacy-Policy: https://alphasms.net/legal/privacy/
