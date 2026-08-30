@@ -5,6 +5,20 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.3] — 2026-08-30
+
+### Added
+- `/services` — "Music Composition" line item added under Production & Composition
+
+### Changed
+- `/services` — Original Track (Ghost Production) price raised
+- `/services` — Remix / Mashup price raised
+- `/services` — Custom DJ Mix price raised
+- `/services` — DJ Set / Podcast Mastering price raised
+- `sitemap.xml` — `/services` `lastmod` bumped to 2026-08-30
+
+---
+
 ## [3.0.2] — 2026-08-18
 
 ### Added
