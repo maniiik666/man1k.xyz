@@ -5,6 +5,27 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.4] — 2026-09-14
+## build 26.9 / JS v2.1 / artist.json v1.4
+
+### Removed
+- Ukraine booking contact (sasha1924181999@gmail.com, agent Alexander) — contract terminated; removed from `/contact`, homepage FAQ (`index.html`), `artist.json`, `llms.txt`, `humans.txt`, `README.md`
+- `/legal/privacy` Section 03.2 "Backups & Processor Transitions" — removed the obligation to notify subscribers by email/SMS if the newsletter/SMS processor is migrated; unsubscribe instructions and GDPR erasure rights (Section 08) kept intact
+- `.well-known/privacy.txt` — removed `Processor-Migration-Notice` field to match; `Local-Backups` field (GDPR/migration purpose) kept
+
+### Changed
+- `artist.json` — `meta.version` → `1.4`, `meta.updated` → `2026-09-14`; removed `industry.booking.ua`, `contact.bookingUA`, `press.contactUA`; FAQ answer updated
+- `dataset-card.md` — version → 1.4, Last updated → 2026-09-14; changelog row added
+- `humans.txt`, `.well-known/ai.txt` — Version/Site-Version → v2.2, Build → 26.9, Last updated → 2026-09-14
+- `/legal/privacy` doc-meta bumped to September 2026 / Build 26.9; `.well-known/privacy.txt` Last-Updated → 2026-09-14, Site-Version → build 26.9
+- `sitemap.xml` — `/`, `/contact`, `/legal` `lastmod` bumped to 2026-09-14
+- `index.html` — `dateModified` bumped to 2026-09-14
+
+### Fixed
+- `.well-known/dnt-policy.txt` — Site Version tag was still `v2.1 / build 26.7` despite the file being edited during the 2026-08-18 (build 26.8) release; corrected to `v2.2 / build 26.8` to match `.well-known/privacy.txt` and its own Effective Date
+
+---
+
 ## [3.0.3] — 2026-08-30
 
 ### Added
