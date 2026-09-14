@@ -1,8 +1,8 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-08-20
-# Site-Version: v2.2 / build 26.8 / JS v2.1
+# Last-Updated: 2026-09-14
+# Site-Version: v2.2 / build 26.9 / JS v2.1
 # Format: plain text, UTF-8
 
 Contact: legal@man1k.xyz
@@ -269,7 +269,6 @@ Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analyt
 Data-Sold-Or-Transferred-To-Third-Parties: false
 Cross-Platform-List-Consolidation: Email addresses collected via shop.man1k.xyz (Fourthwall), Bandcamp, or ReverbNation mailing-list features may be periodically exported into the Buttondown newsletter list
 Local-Backups: Email and SMS contact data are additionally retained in a local, secure backup by the data controller, for GDPR request fulfilment and processor-migration purposes
-Processor-Migration-Notice: If a processor migration occurs, affected subscribers are notified by email or SMS with an unsubscribe link/contact
 Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
 Legal-Basis-Newsletter: Explicit consent (opt-in)
 Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)

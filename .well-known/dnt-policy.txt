@@ -1,7 +1,7 @@
 MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
                     Effective Date: August 18, 2026
-                    Site Version: v2.1 / build 26.7 / JS v2.1
+                    Site Version: v2.2 / build 26.8 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
                     Domain: https://man1k.xyz
