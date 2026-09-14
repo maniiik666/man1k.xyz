@@ -26,8 +26,8 @@
     }
   },
   "meta": {
-    "version": "1.3",
-    "updated": "2026-07-29",
+    "version": "1.4",
+    "updated": "2026-09-14",
     "language": "en",
     "availableLanguage": [
       "uk",
@@ -449,10 +449,6 @@
       "eu": {
         "agency": "ElektroSpank Agency",
         "contact": "mgmt@pr.elektrospank.com"
-      },
-      "ua": {
-        "agent": "Alexander",
-        "contact": "sasha1924181999@gmail.com"
       }
     },
     "sync": {
@@ -465,7 +461,6 @@
     "general": "void@man1k.xyz",
     "press": "void@man1k.xyz",
     "booking": "mgmt@pr.elektrospank.com",
-    "bookingUA": "sasha1924181999@gmail.com",
     "sync": "void@man1k.xyz",
     "legal": "legal@man1k.xyz",
     "fanmail": "void@man1k.xyz",
@@ -622,7 +617,6 @@
       "includes": "performance, sound check, travel within region, advertising support"
     },
     "contactEU": "mgmt@pr.elektrospank.com",
-    "contactUA": "sasha1924181999@gmail.com",
     "contactGeneral": "void@man1k.xyz"
   },
   "seo": {
@@ -751,7 +745,7 @@
         "name": "How do I book MAN1K for an event?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "EU/international booking: ElektroSpank Agency at mgmt@pr.elektrospank.com. Ukraine booking: Alexander at sasha1924181999@gmail.com. General inquiries: void@man1k.xyz."
+          "text": "EU/international booking: ElektroSpank Agency at mgmt@pr.elektrospank.com. General inquiries: void@man1k.xyz."
         }
       },
       {

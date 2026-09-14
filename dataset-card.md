@@ -26,8 +26,8 @@ size_categories:
 | Field | Value |
 |---|---|
 | **Dataset name** | MAN1K Artist Data |
-| **Version** | 1.3 |
-| **Last updated** | 2026-07-29 |
+| **Version** | 1.4 |
+| **Last updated** | 2026-09-14 |
 | **Maintainer** | Yaroslav Boruk (MAN1K) |
 | **Contact** | void@man1k.xyz |
 | **License** | [CC0 1.0 Universal (Public Domain)](https://creativecommons.org/publicdomain/zero/1.0/) |
@@ -146,3 +146,4 @@ This dataset is provided for:
 | 2026-04-10 | Added new RSS feeds |
 | 2026-04-23 | Added new canonical link (15) |
 | 2026-07-29 | v1.3 — Updated biography, timeline, and recognition data; added Wild Heart Tour 2026, MIST Festival, Ivors Academy membership; updated press asset URLs to press.man1k.xyz; removed productionTools from machine-readable data; added UA booking contact; updated EPK URL |
+| 2026-09-14 | v1.4 — Removed Ukraine booking contact |

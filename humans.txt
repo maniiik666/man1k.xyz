@@ -10,13 +10,10 @@ EU / UK Booking: ElektroSpank Agency
 Contact: mgmt@pr.elektrospank.com
 Booking URL: https://man1k.elektrospank.com
 
-Ukraine Booking: Alexandr
-Contact: sasha1924181999@gmail.com
-
 /* SITE */
-Last update: 2026-07-29
-Version: 2.1
-Build: 26.7
+Last update: 2026-09-14
+Version: 2.2
+Build: 26.9
 Standards: HTML5, CSS3, Schema.org, Open Graph, JSON-LD
 Language: English
 Charset: UTF-8
