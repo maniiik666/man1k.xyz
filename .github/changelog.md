@@ -5,6 +5,21 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.5] — 2026-09-28
+## artist.json v1.5
+
+### Removed
+- One Sheet (`press.man1k.xyz/onesheet.pdf`) — removed from `/press` (press materials list + `DigitalDocument` JSON-LD entry), `artist.json` (`press.onesheet`, `pressKit.onesheet`), `llms.txt`, `dataset-card.md` data sources table
+
+### Changed
+- `/press/faq` — "Is there an EPK or one sheet available?" → "Is there an EPK available?"; answer (visible + FAQPage JSON-LD) now mentions EPK only
+- `artist.json` — `meta.version` → `1.5`, `meta.updated` → `2026-09-28`
+- `dataset-card.md` — version → 1.5, Last updated → 2026-09-28; changelog row added
+- `humans.txt`, `.well-known/ai.txt` — Last updated → 2026-09-28
+- `sitemap.xml` — `/press`, `/press/faq` `lastmod` bumped to 2026-09-28
+
+---
+
 ## [3.0.4] — 2026-09-14
 ## build 26.9 / JS v2.1 / artist.json v1.4
 
