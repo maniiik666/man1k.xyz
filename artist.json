@@ -26,8 +26,8 @@
     }
   },
   "meta": {
-    "version": "1.4",
-    "updated": "2026-09-14",
+    "version": "1.5",
+    "updated": "2026-09-28",
     "language": "en",
     "availableLanguage": [
       "uk",
@@ -470,7 +470,6 @@
   },
   "press": {
     "epk": "https://press.man1k.xyz/epk.pdf",
-    "onesheet": "https://press.man1k.xyz/onesheet.pdf",
     "logos": "https://press.man1k.xyz/logos.zip",
     "pressPage": "https://man1k.xyz/press",
     "techRider": "https://press.man1k.xyz/dj-rider.pdf",
@@ -951,7 +950,6 @@
   },
   "pressKit": {
     "pdf": "https://press.man1k.xyz/epk.pdf",
-    "onesheet": "https://press.man1k.xyz/onesheet.pdf",
     "logos": "https://press.man1k.xyz/logos.zip",
     "techRider": "https://press.man1k.xyz/dj-rider.pdf",
     "hospRider": "https://press.man1k.xyz/hosp-rider.pdf",
