@@ -5,6 +5,16 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.6] — 2026-09-29
+
+### Changed
+- `/legal/privacy`
+- `.well-known/privacy.txt`
+- `.well-known/dnt-policy.txt`
+- `sitemap.xml`
+
+---
+
 ## [3.0.5] — 2026-09-28
 ## artist.json v1.5
 
