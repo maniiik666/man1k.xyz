@@ -1,7 +1,7 @@
 MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
-                    Effective Date: August 18, 2026
-                    Site Version: v2.2 / build 26.8 / JS v2.1
+                    Effective Date: September 29, 2026
+                    Site Version: v2.2 / build 26.9 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
                     Domain: https://man1k.xyz
@@ -253,6 +253,10 @@ the tracking behavior of these embeds.
   Buttondown receives the email address entered and processes it
   according to their own privacy policy. No iframe is loaded; the
   form posts only on explicit user submission.
+  Other sources: emails may also be added if you opted in to email
+  updates when buying a ticket or merch via a third-party platform, or
+  manually when you personally agreed (e.g. at a concert, via a promo
+  campaign, or in a personal conversation) — always based on consent.
   Unsubscribe: Via link in each newsletter email, or direct request.
   Policy: https://buttondown.com/legal/privacy
 

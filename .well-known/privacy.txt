@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-09-14
+# Last-Updated: 2026-09-29
 # Site-Version: v2.2 / build 26.9 / JS v2.1
 # Format: plain text, UTF-8
 
@@ -195,6 +195,7 @@ Page: /subscribe
 Purpose: Email newsletter subscription
 Loading: No iframe — HTTP POST on explicit form submit only
 Data-Collected: Email address (on opt-in only)
+Additional-Sources: Third-party ticket/merch platforms where you opted in to email updates at purchase; manual addition by the data controller when you personally agreed (e.g. at concerts, promo campaigns, personal conversation)
 Data-Collected-Ongoing: Internal subscriber ID, open/click engagement per email, email domain, open rate, click rate, subscription status, occasional internal notes
 Unsubscribe: Via link in each newsletter email, or by direct request at the email address on /contact
 Privacy-Policy: https://buttondown.com/legal/privacy
@@ -268,9 +269,11 @@ Data-Controller: Yaroslav Boruk (MAN1K) — legal@man1k.xyz
 Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Interconnect Solutions Pte. Ltd. / AlphaSMS (SMS delivery), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
 Data-Sold-Or-Transferred-To-Third-Parties: false
 Cross-Platform-List-Consolidation: Email addresses collected via shop.man1k.xyz (Fourthwall), Bandcamp, or ReverbNation mailing-list features may be periodically exported into the Buttondown newsletter list
+Third-Party-Purchase-Opt-In: If you opted in to receive email updates when purchasing a ticket or merch via a third-party platform, your email may be added to the newsletter list based on that consent
+Direct-Opt-In: Emails may be added manually by the data controller only with personal consent (e.g. concerts, promo campaigns, personal conversation)
 Local-Backups: Email and SMS contact data are additionally retained in a local, secure backup by the data controller, for GDPR request fulfilment and processor-migration purposes
 Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
-Legal-Basis-Newsletter: Explicit consent (opt-in)
+Legal-Basis-Newsletter: Explicit consent (opt-in via /subscribe, third-party platform opt-in, or direct personal consent)
 Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)
 Rights-Contact: legal@man1k.xyz
 
