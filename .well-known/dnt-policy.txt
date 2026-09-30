@@ -1,6 +1,6 @@
 MAN1K.XYZ — DO NOT TRACK POLICY
                     ================================
-                    Effective Date: September 29, 2026
+                    Effective Date: September 30, 2026
                     Site Version: v2.2 / build 26.9 / JS v2.1
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
@@ -124,31 +124,14 @@ Data processor: Simple Analytics BV, Keizersgracht 482-1,
 1017 EG Amsterdam, Netherlands.
 Simple Analytics Privacy Policy: https://simpleanalytics.com/privacy
 
-4. ADVERTISING PIXEL — TIKTOK
--------------------------------
+4. TIKTOK PIXEL
+----------------
 Pixel ID: D7958NBC77U5V754BC6G
 Provider: TikTok Technology Limited
 
-When DNT/GPC is NOT active, the TikTok Pixel is loaded on all pages
-with the following configuration:
-
-  Advanced Matching (AAM):      enabled
-    — hashed email, name, phone, address (SHA-256)
-    — only if previously submitted on this site
-  Expanded Data Sharing:        enabled
-    — page metadata, click interactions, time on page, load speed
-  First-party cookies:          enabled
-  Cookies set: _ttp (13mo), _tt_enable_cookie (13mo),
-               tt_pixel_session_index (session), tt_sessionId (session)
-
-When DNT/GPC IS active:
-  * TikTok Pixel script is not fetched
-  * No cookies are set
-  * No data is transmitted to analytics.tiktok.com
-
-Control mechanism: DNT/GPC-based opt-out suppression (no explicit
-consent banner implemented for this pixel)
-Opt-out: https://www.tiktok.com/legal/privacy-policy
+The TikTok Pixel is technically installed but not currently used.
+When DNT/GPC is active it is not fetched and no data is transmitted
+to analytics.tiktok.com.
 TikTok Privacy Policy: https://www.tiktok.com/legal/privacy-policy
 
 5. ERROR TRACKING
@@ -170,37 +153,13 @@ is active (i.e., when DNT/GPC is NOT set). No errors are transmitted
 when DNT is respected.
 
 
-6. LOCAL STORAGE
------------------
-The following localStorage keys are used on man1k.xyz:
-
-  _m1k_v1 (homepage only)
-    Purpose: Aesthetic visit counter. Incremented on each homepage load.
-    Used exclusively to alter a decorative text element after 3+ visits.
-    Contains only an integer. Not transmitted externally.
-    Not suppressed by DNT — purely cosmetic, no tracking purpose.
-
-  mk_r (all pages)
-    Purpose: Client-side rate limiter window state.
-    Contains a JSON object {w: window_id, c: count}.
-    Persists across page reloads. Not transmitted externally.
-
-  mk_b (all pages)
-    Purpose: Rate limiter block state — stores block expiry timestamp
-    when the hard event limit is exceeded.
-    Contains a JSON object {u: unix_timestamp}.
-    Persists across page reloads. Not transmitted externally.
-
-  vxb (/game/ only)
-    Purpose: Fallback storage for game high score when IndexedDB is
-    unavailable. Contains a single integer. Not transmitted externally.
-
-
-6.1 INDEXEDDB (/game/ only)
------------------------------
-  Database: vxd (version 1), Object store: s (keyPath: id)
-  Purpose: Stores the player's highest game score as a single record
-  {id: "b", v: <score>}. Not transmitted externally. No personal data.
+6. LOCAL STORAGE & INDEXEDDB
+------------------------------
+The site stores a few non-personal technical values in the browser:
+a cosmetic visit counter (homepage), rate-limiter state (all pages)
+and the game high score (/game/, IndexedDB with localStorage
+fallback). None of it is transmitted externally.
+Details: https://man1k.xyz/legal/cookies
 
 
 7. THIRD-PARTY EMBEDDED SERVICES
@@ -258,7 +217,7 @@ the tracking behavior of these embeds.
   manually when you personally agreed (e.g. at a concert, via a promo
   campaign, or in a personal conversation) — always based on consent.
   Unsubscribe: Via link in each newsletter email, or direct request.
-  Policy: https://buttondown.com/legal/privacy
+  DPA: https://buttondown.com/legal/data-processing-agreement
 
 7.6 Font Awesome via Cloudflare CDN (/, /music)
   Provider: Cloudflare, Inc. (cdnjs.cloudflare.com)
@@ -366,40 +325,26 @@ is transmitted externally.
 
 12. DATA RETENTION
 -------------------
-man1k.xyz does not operate its own database or user accounts. No
-personal data is stored on man1k.xyz servers.
-
-For third-party services, retention is governed by their own policies:
-  - Google Analytics: 14 months (default)
-  - TikTok Pixel: 13 months (_ttp cookie); session cookies expire on browser close
-  - SoundCloud, Bandsintown: per their own policies
+man1k.xyz does not operate its own database or user accounts. Data
+is retained for as long as reasonably necessary for the purposes
+described in the Privacy Policy; third-party retention follows their
+own policies.
 
 
 13. YOUR RIGHTS
 ----------------
-Depending on your jurisdiction, you may have the right to:
-
-  - Access personal data held about you by third-party processors
-  - Request deletion of your data from third-party processors
-  - Opt out of analytics tracking (set DNT=1 in your browser or
-    enable Global Privacy Control)
-  - Block third-party cookies via browser settings
-
-To exercise rights regarding Google Analytics data:
-  https://tools.google.com/dlpage/gaoptout
-
-To exercise rights regarding TikTok Pixel data:
-  https://www.tiktok.com/legal/privacy-policy
-
-For any direct inquiries regarding this policy:
-  legal@man1k.xyz
+Opt out of analytics by enabling DNT or GPC, or via
+https://tools.google.com/dlpage/gaoptout. Data-subject requests
+(access, erasure, etc.): legal@man1k.xyz — see
+https://man1k.xyz/legal/privacy#rights
 
 
 14. POLICY UPDATES
 -------------------
-This policy may be updated to reflect changes in the site's technical
-implementation. The build version and effective date at the top of
-this document indicate the current revision.
+This policy is updated under the Terms of Use, Section 08
+(https://man1k.xyz/legal/terms#changes). The build version and
+effective date at the top of this document indicate the current
+revision.
 
 Machine-readable site information is available at:
   https://man1k.xyz/llms.txt                         — LLM-readable site summary

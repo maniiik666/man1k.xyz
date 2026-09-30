@@ -1,6 +1,7 @@
 MAN1K.XYZ — SECURITY POLICY
                     ============================
-                    Effective Date: July 29, 2026
+                    Effective Date: September 30, 2026
+                    Site Version: v2.2 / build 26.9
                     Operator: Yaroslav Boruk (MAN1K)
                     Contact: legal@man1k.xyz
                     Domain: https://man1k.xyz

@@ -1,7 +1,7 @@
 # Privacy Policy — man1k.xyz
 # Machine-readable format
 # Human-readable version: https://man1k.xyz/legal/privacy
-# Last-Updated: 2026-09-29
+# Last-Updated: 2026-09-30
 # Site-Version: v2.2 / build 26.9 / JS v2.1
 # Format: plain text, UTF-8
 
@@ -69,7 +69,6 @@ Analytics-DataSharing-Recommendations: enabled
 Analytics-Active-When: DNT not set AND GPC not set AND not localhost
 Analytics-Suppressed-When: navigator.doNotTrack === "1" OR navigator.globalPrivacyControl === true OR localhost/127.0.0.1/*.local
 Analytics-Opt-Out: https://tools.google.com/dlpage/gaoptout
-Data-Retention-Google-Analytics: 14 months
 
 # Custom GA4 Events (tracked when analytics is active)
 GA4-Event: page_view — on every page load (page_location, page_title)
@@ -95,54 +94,18 @@ GA4-User-Property: site_version — current JS version (e.g. "2.1")
 # -----------------------------------------------
 
 TikTok-Pixel-ID: D7958NBC77U5V754BC6G
-TikTok-Processor: TikTok Technology Limited
-TikTok-Purpose: Advertising audience building, ad performance measurement, retargeting, Lookalike Audience creation
-TikTok-Active-When: DNT not set AND GPC not set AND not localhost AND not bot
+TikTok-Provider: TikTok Technology Limited
+TikTok-Status: installed, not currently used
 TikTok-Suppressed-When: navigator.doNotTrack === "1" OR navigator.globalPrivacyControl === true OR localhost/127.0.0.1/*.local
-TikTok-AAM-Enabled: true (SHA-256 hashed email, name, phone, address — only if previously submitted on site)
-TikTok-Expanded-Data-Sharing: true (page metadata, click interactions, time on page, page load speed)
-TikTok-First-Party-Cookies: true
-TikTok-Cookies: _ttp (13 months), _tt_enable_cookie (13 months), tt_pixel_session_index (session), tt_sessionId (session)
-TikTok-Control-Mechanism: DNT/GPC-based opt-out suppression (no explicit consent banner implemented)
-TikTok-Opt-Out: https://www.tiktok.com/legal/privacy-policy
 TikTok-Privacy-Policy: https://www.tiktok.com/legal/privacy-policy
 
 # -----------------------------------------------
-# LOCAL STORAGE
+# LOCAL STORAGE & INDEXEDDB
 # -----------------------------------------------
 
-# Visit counter (homepage only)
-LocalStorage-Key: _m1k_v1
-LocalStorage-Purpose: Aesthetic visit counter — incremented on each homepage load. Used exclusively to alter a decorative text element after 3+ visits. Contains only an integer count. Not transmitted externally. Not suppressed by DNT (purely cosmetic, no tracking purpose).
-LocalStorage-Data: Integer (visit count)
-LocalStorage-Personal-Data: false
-
-# Rate limiter state (all pages)
-LocalStorage-Key: mk_r
-LocalStorage-Purpose: Client-side rate limiter — stores current window event count. Persists across page reloads.
-LocalStorage-Data: JSON object {w: window_id, c: count}
-LocalStorage-Personal-Data: false
-
-LocalStorage-Key: mk_b
-LocalStorage-Purpose: Rate limiter block state — stores block expiry timestamp when hard limit is exceeded. Persists across page reloads.
-LocalStorage-Data: JSON object {u: unix_timestamp}
-LocalStorage-Personal-Data: false
-
-# Game high score fallback (/game/ only)
-LocalStorage-Key: vxb
-LocalStorage-Purpose: Fallback storage for game high score when IndexedDB is unavailable. Used only on /game/. Contains a single integer (score). Not transmitted externally.
-LocalStorage-Data: Integer (best score)
-LocalStorage-Personal-Data: false
-
-# -----------------------------------------------
-# INDEXEDDB (/game/ only)
-# -----------------------------------------------
-
-IndexedDB-Database: vxd (version 1)
-IndexedDB-Store: s (keyPath: id)
-IndexedDB-Data: Single record {id: "b", v: best_score} — stores highest game score locally.
-IndexedDB-Personal-Data: false
-IndexedDB-Transmitted: false
+Browser-Storage: non-personal technical values only — visit counter (homepage), rate-limiter state (all pages), game high score (/game/, IndexedDB with localStorage fallback)
+Browser-Storage-Transmitted: false
+Browser-Storage-Details: https://man1k.xyz/legal/cookies
 
 # -----------------------------------------------
 # PRECONNECT & DNS-PREFETCH
@@ -197,11 +160,11 @@ Loading: No iframe — HTTP POST on explicit form submit only
 Data-Collected: Email address (on opt-in only)
 Additional-Sources: Third-party ticket/merch platforms where you opted in to email updates at purchase; manual addition by the data controller when you personally agreed (e.g. at concerts, promo campaigns, personal conversation)
 Data-Collected-Ongoing: Internal subscriber ID, open/click engagement per email, email domain, open rate, click rate, subscription status, occasional internal notes
-Unsubscribe: Via link in each newsletter email, or by direct request at the email address on /contact
-Privacy-Policy: https://buttondown.com/legal/privacy
+Unsubscribe: Via link in each newsletter email, or by direct request at legal@man1k.xyz
+Data-Processing-Agreement: https://buttondown.com/legal/data-processing-agreement
 
 # AlphaSMS (Interconnect Solutions Pte. Ltd.)
-Service: AlphaSMS
+Service: AlphaSMS (alphasms.net)
 Page: Not embedded on site — off-site SMS delivery platform
 Purpose: SMS updates (releases, live shows, merchandise) sent to a phone contact database
 Data-Collected: Phone number, country, name, city, source (how contact was acquired)
@@ -223,6 +186,11 @@ Service: ReverbNation
 Page: Off-site — fan mailing-list feature
 Purpose: Email addresses collected via ReverbNation may be periodically exported into the Buttondown newsletter list
 Privacy-Policy: https://www.reverbnation.com/privacy
+
+# Cloud AI / LLM tools
+Service: Cloud-based AI/LLM providers
+Page: Not embedded on site
+Purpose: Campaign optimisation (segmentation, timing, content) — may process email addresses, phone numbers and related campaign data as processors
 
 # Font Awesome (cdnjs.cloudflare.com)
 Service: Font Awesome via Cloudflare CDN (cdnjs.cloudflare.com)
@@ -262,19 +230,24 @@ Privacy-Policy: https://policies.google.com/privacy
 # -----------------------------------------------
 
 GDPR-Status: Partial
-GDPR-Status-Note: Data minimisation, DNT/GPC opt-out, and no sale/transfer of data are implemented sitewide; TikTok Pixel relies on this opt-out mechanism rather than prior opt-in consent for EU/EEA visitors — see TikTok-Control-Mechanism above
+GDPR-Status-Note: Data minimisation, DNT/GPC opt-out, and no sale of data are implemented sitewide; analytics rely on DNT/GPC opt-out rather than prior opt-in consent
 GDPR-Regulation: EU 2016/679
 Applies-To: EU and EEA residents
+Definitions: https://man1k.xyz/legal/terms#definitions
 Data-Controller: Yaroslav Boruk (MAN1K) — legal@man1k.xyz
-Data-Processors: Google Ireland Limited (analytics), Simple Analytics BV (analytics), TikTok Technology Limited (advertising pixel), Buttondown LLC (newsletter), Interconnect Solutions Pte. Ltd. / AlphaSMS (SMS delivery), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
-Data-Sold-Or-Transferred-To-Third-Parties: false
-Cross-Platform-List-Consolidation: Email addresses collected via shop.man1k.xyz (Fourthwall), Bandcamp, or ReverbNation mailing-list features may be periodically exported into the Buttondown newsletter list
-Third-Party-Purchase-Opt-In: If you opted in to receive email updates when purchasing a ticket or merch via a third-party platform, your email may be added to the newsletter list based on that consent
-Direct-Opt-In: Emails may be added manually by the data controller only with personal consent (e.g. concerts, promo campaigns, personal conversation)
-Local-Backups: Email and SMS contact data are additionally retained in a local, secure backup by the data controller, for GDPR request fulfilment and processor-migration purposes
-Legal-Basis-Analytics: Legitimate interest (anonymised, with opt-out)
-Legal-Basis-Newsletter: Explicit consent (opt-in via /subscribe, third-party platform opt-in, or direct personal consent)
-Your-Rights: access, rectification, erasure, restriction, portability, objection (Articles 15–22 GDPR)
+Data-Processors: Buttondown LLC (newsletter), Interconnect Solutions Pte. Ltd. / AlphaSMS (SMS delivery), cloud AI/LLM providers (campaign optimisation), Google Ireland Limited (analytics), Simple Analytics BV (analytics), Cloudflare Inc. (CDN/hosting), nic.ua (domain registrar)
+Data-Sold-Or-Rented: false
+Contact-Data-Sources: /subscribe form; exports from Fourthwall (shop.man1k.xyz), Bandcamp, ReverbNation and ticket platforms where the user opted in; direct personal consent (concerts, promo campaigns, personal conversation)
+Third-Party-Data-Accuracy: Data from third-party platforms is used as supplied and not verified — see https://man1k.xyz/legal/terms (Section 04)
+Cross-Channel-Combination: Email, SMS and other channel data may be combined for internal analytics, deduplication and segmentation
+AI-Processing: Email addresses and phone numbers may be processed by cloud AI/LLM tools for campaign optimisation
+Local-Backups: Email and SMS contact data are additionally kept in a secured local backup by the data controller, for GDPR request fulfilment and processor migration
+Data-Retention: As long as reasonably necessary for the stated purposes; third-party retention per their own policies
+Processor-Change-Notice: none — changes are published on https://man1k.xyz/legal/privacy; details provided on individual GDPR request
+Legal-Basis-Analytics: Legitimate interest (with DNT/GPC opt-out)
+Legal-Basis-Newsletter-SMS: Consent (opt-in via /subscribe, third-party platform opt-in, or direct personal consent)
+Legal-Basis-Campaign-Optimisation: Legitimate interest
+Your-Rights: access, rectification, erasure, restriction, portability, objection, withdrawal of consent (Articles 15–22 GDPR)
 Rights-Contact: legal@man1k.xyz
 
 # -----------------------------------------------

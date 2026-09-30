@@ -33,7 +33,12 @@ AI-Access-Policy: https://man1k.xyz/.well-known/ai.txt
 # ALLOWED without permission:
 #   - Personal and educational use
 #   - Editorial and journalistic coverage
-#   - AI / ML model training on public content
+#   - AI / ML model training on METADATA ONLY
+#
+# PROHIBITED for AI / ML training, fine-tuning, evaluation or datasets:
+#   - Graphics and visuals
+#   - Source code
+#   - Music and audio
 #   - Sharing links to man1k.xyz
 #
 # REQUIRES written permission:
@@ -56,6 +61,7 @@ DMCA-Compliance: https://www.dmca.com/compliance/man1k.xyz
 DMCA-Contact: legal@man1k.xyz (Attn: Legal Department)
 
 AI-Free-Music: https://ai-free.io
-AI-Free-Certificate: https://d2xyjr8ho4r9l4.cloudfront.net/profile/d6120a85-9b29-4435-ab65-f723614fa4e7
+AI-Free-Certificate: https://archive.org/details/yaroslavboruk-humanright
 
-Last-Updated: 2026-07-29
+Last-Updated: 2026-09-30
+Site-Version: v2.2 / build 26.9
