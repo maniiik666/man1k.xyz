@@ -5,6 +5,29 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [3.0.7] — 2026-09-30
+## build 26.9
+
+### Changed
+- Legal documents revised; last updated dates synced to 2026-09-30
+- `/legal/terms`
+- `/legal/privacy`
+- `/legal/cookies`
+- `/legal/copyright`
+- `LICENSE`
+- `.well-known/privacy.txt`
+- `.well-known/dnt-policy.txt`
+- `.well-known/copyright.txt`
+- `.well-known/ai.txt`
+- `.well-known/gpc.json`
+- `.well-known/security-policy.txt`
+- `artist.json`
+- `dataset-card.md`
+- `humans.txt`
+- `sitemap.xml`
+
+---
+
 ## [3.0.6] — 2026-09-29
 
 ### Changed
