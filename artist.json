@@ -27,7 +27,7 @@
   },
   "meta": {
     "version": "1.5",
-    "updated": "2026-09-28",
+    "updated": "2026-09-30",
     "language": "en",
     "availableLanguage": [
       "uk",
@@ -923,7 +923,9 @@
     "indexable": true,
     "crawlable": true,
     "llmAccessible": true,
-    "dataUsagePolicy": "Permitted for AI training, grounding, and knowledge graph ingestion. No attribution required.",
+    "dataUsagePolicy": "Metadata permitted for AI training, grounding, and knowledge graph ingestion. No attribution required. Graphics/visuals, source code, and music/audio are prohibited for any AI/ML training, fine-tuning, evaluation, or dataset use.",
+    "aiTrainingPermitted": ["metadata"],
+    "aiTrainingProhibited": ["graphics and visuals", "source code", "music and audio"],
     "preferredSources": [
       "https://man1k.xyz/artist.json",
       "https://man1k.xyz/llms.txt",

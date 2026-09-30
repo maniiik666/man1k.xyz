@@ -106,7 +106,6 @@ User-agent: ProRataInc
 User-agent: Terracotta Bot
 User-agent: Discordbot
 Allow: /
-Allow: /contact
 Allow: /about
 Allow: /press
 Allow: /press/faq
@@ -119,6 +118,7 @@ Allow: /artist.json
 Allow: /*.md$
 Allow: /.well-known/
 Disallow: /game/
+Disallow: /contact
 Disallow: /icons/
 Disallow: /*.zip$
 Disallow: /*.config$
